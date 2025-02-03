@@ -1,5 +1,6 @@
 import spacy
 import fitz  # PyMuPDF; install via `pip install PyMuPDF`
+import pdf_files
 
 # Load the spaCy English model (you may try a larger model if needed)
 nlp = spacy.load("en_core_web_md")
@@ -58,17 +59,12 @@ def extract_party_names_from_pdf(pdf_path):
 
 
 
-# Path to the PDF file you want to process
-pdf_path = r"C:\Users\quokka\Documents\Engineering Fun\scrape\muni_templates\idaho_health\IDHealthFacilities01a-FIN.pdf"
-pdf_path2 = r"C:\Users\quokka\Documents\Engineering Fun\scrape\muni_templates\tufts\tufts.pdf"
-pdf_path3 = r"C:\Users\quokka\Documents\Engineering Fun\scrape\muni_templates\maryland\maryland.pdf"
-pdf_path4 = r"C:\Users\quokka\Documents\Engineering Fun\scrape\muni_templates\northwell\northwell.pdf"
-
 
 # Call the function and store the results
-pdf_results2 = find_underwriter.extract_party_names_from_pdf(pdf_path2)
-pdf_results3 = find_underwriter.extract_party_names_from_pdf(pdf_path3)
-pdf_results4 = find_underwriter.extract_party_names_from_pdf(pdf_path4)
+pdf_results2 = find_underwriter.extract_party_names_from_pdf(pdf_files.pdf_path2)
+pdf_results3 = find_underwriter.extract_party_names_from_pdf(pdf_files.pdf_path3)
+pdf_results4 = find_underwriter.extract_party_names_from_pdf(pdf_files.pdf_path4)
+
 
 
 # Print the results
