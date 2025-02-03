@@ -1,4 +1,4 @@
-from scrape import run_scrape
+from scrape_homepage import run_scrape
 import logging
 
 def setup_logging():

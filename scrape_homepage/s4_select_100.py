@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def scrape_filtered(driver):
+def select_100_deals(driver):
     """
     Handles the pagination selection on the Munios website by selecting the '100' option.
 

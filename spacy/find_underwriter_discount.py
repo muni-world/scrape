@@ -1,7 +1,7 @@
 import re
 import spacy
 import fitz  
-import pdf_files
+import spacy.pdf_files as pdf_files
 
 # Initialize the spaCy English language model. Consider using a larger model if more detailed NLP processing is required.
 nlp = spacy.load("en_core_web_sm")

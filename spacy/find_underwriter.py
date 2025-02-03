@@ -1,6 +1,6 @@
 import spacy
 import fitz  # PyMuPDF; install via `pip install PyMuPDF`
-import pdf_files
+import spacy.pdf_files as pdf_files
 
 # Load the spaCy English model (you may try a larger model if needed)
 nlp = spacy.load("en_core_web_md")

@@ -1,9 +1,10 @@
-from s1_login import login
-from s2_advanced_search import click_advanced_search
-from s3_apply_filters import apply_filters
-from s4_scrape_filtered import scrape_filtered
-# from .5_deals import get_deals
-from utils import load_credentials, initialize_driver
+from .s1_login import login
+from .s2_advanced_search import click_advanced_search
+from .s3_apply_filters import apply_filters
+from .s4_select_100 import select_100_deals
+from .s5_scrape_deals import scrape_deals
+
+from .utils import load_credentials, initialize_driver
 import time
 
 __all__ = ['run_scrape']
@@ -28,12 +29,16 @@ def run_scrape():
         time.sleep(5)  # Give time for login to complete
         
         click_advanced_search(driver)
-        time.sleep(5)  # Wait for advanced search page to load
+        time.sleep(3)  # Wait for advanced search page to load
         
         apply_filters(driver)
-        time.sleep(5)  # Wait for filters to be applied
+        time.sleep(3)  # Wait for filters to be applied
 
-        scrape_filtered(driver)
+        select_100_deals(driver)
+        time.sleep(1)  # Wait for 100 deals to be selected
+
+        scrape_deals(driver)
+        time.sleep(1)  # Wait for deals to be scraped
                 
     except KeyboardInterrupt:
         print("\nScript interrupted by user")
