@@ -1,6 +1,10 @@
+from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from time import sleep
+import logging
+
 
 def scrape_deals(driver):
     """
@@ -13,11 +17,9 @@ def scrape_deals(driver):
         list: List of dictionaries containing deal information
     """
     try:
-        # Wait for the deal list to be present
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "dealList"))
-        )
-        
+        # Don't use WebDriverWait because it's not reliable.
+        sleep(3)
+
         # Get all deal rows
         deals = []
         rows = driver.find_elements(By.CSS_SELECTOR, "tbody.dealList tr")
@@ -76,18 +78,17 @@ def scrape_deals(driver):
                     "date": date,
                     "url": f"https://www.munios.com/{deal_url}",
                 }
-                
+                logging.info(f"Scraped hompage deal: {deal}")
                 deals.append(deal)
                 
             except Exception as e:
-                print(f"Error processing row: {e}")
+                logging.error(f"Error processing row: {e}")
                 continue
         
-        print(f"Successfully scraped {len(deals)} deals")
-        print(deals)
+        logging.info(f"Successfully scraped homepage and found {len(deals)} deals")
         return deals
         
 
     except Exception as e:
-        print(f"An error occurred while scraping deals: {e}")
+        logging.error(f"An error occurred while scraping deals: {e}")
         return []

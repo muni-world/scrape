@@ -1,5 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import logging
 
 def login(driver, email, password):
     """
@@ -14,12 +17,14 @@ def login(driver, email, password):
         None
     """
     try:
-
-
-        email_input = driver.find_element(By.ID, "login-email")
+        # Wait for email input to be present (this ensures the page is loaded)
+        email_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "login-email"))
+        )
         email_input.clear()
         email_input.send_keys(email)
 
+        # Proceed with the rest of the elements without explicit waits
         password_input = driver.find_element(By.ID, "login-password")
         password_input.clear()
         password_input.send_keys(password)
@@ -28,4 +33,4 @@ def login(driver, email, password):
         continue_button.click()
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}")

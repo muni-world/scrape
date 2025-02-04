@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import logging
 
 def select_100_deals(driver):
     """
@@ -22,7 +23,5 @@ def select_100_deals(driver):
         hundred_option = driver.find_element(By.XPATH, "//ul[@id='fltPage']/li[text()='100']")
         driver.execute_script("arguments[0].click();", hundred_option)
 
-        print("100 deals selected")
-
     except Exception as e:
-        print(f"An error occurred while filtering results: {e}")
+        logging.error(f"An error occurred while filtering results: {e}")

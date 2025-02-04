@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import logging
 
 def apply_filters(driver):
     """
@@ -39,4 +40,4 @@ def apply_filters(driver):
         show_button.click()
 
     except Exception as e:
-        print(f"An error occurred while applying filters: {e}")
+        logging.error(f"An error occurred while applying filters: {e}")
