@@ -1,3 +1,48 @@
 2025-02-03 17:01:28,312 - INFO - Starting scraping process
 2025-02-03 17:01:52,916 - WARNING - No deals were retrieved
 2025-02-03 17:01:52,916 - INFO - Scraping process completed
+2025-02-03 17:32:29,717 - INFO - Starting scraping process
+2025-02-03 17:32:54,703 - WARNING - No deals were retrieved
+2025-02-03 17:32:54,703 - INFO - Scraping process completed
+2025-02-03 17:33:45,728 - INFO - Starting scraping process
+2025-02-03 17:34:10,020 - WARNING - No deals were retrieved
+2025-02-03 17:34:10,020 - INFO - Scraping process completed
+2025-02-03 17:36:20,635 - INFO - Starting scraping process
+2025-02-03 17:36:45,132 - INFO - Successfully retrieved 5 deals
+2025-02-03 17:36:45,132 - INFO - Scraping process completed
+2025-02-03 18:38:25,872 - INFO - Starting scraping process
+2025-02-03 18:38:46,162 - INFO - Successfully retrieved 5 deals
+2025-02-03 18:38:46,163 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-03 18:38:46,163 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-03 18:38:52,575 - INFO - Successfully scraped deal data
+2025-02-03 18:38:54,769 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-03 18:38:54,769 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-03 18:39:01,541 - INFO - Successfully scraped deal data
+2025-02-03 18:39:03,683 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-03 18:39:03,683 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-03 18:39:09,672 - INFO - Successfully scraped deal data
+2025-02-03 18:39:11,888 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-03 18:39:11,889 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-03 18:39:20,504 - INFO - Successfully scraped deal data
+2025-02-03 18:39:22,687 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-03 18:39:22,688 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-03 18:39:28,450 - INFO - Successfully scraped deal data
+2025-02-03 18:39:30,630 - INFO - Scraping process completed
+2025-02-03 19:49:40,034 - INFO - Starting scraping process
+2025-02-03 19:49:59,951 - INFO - Successfully retrieved 5 deals
+2025-02-03 19:49:59,952 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-03 19:49:59,952 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-03 19:50:05,797 - INFO - Successfully scraped deal data
+2025-02-03 19:50:07,946 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-03 19:50:07,946 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-03 19:50:14,149 - INFO - Successfully scraped deal data
+2025-02-03 19:50:16,341 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-03 19:50:16,341 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-03 19:50:23,023 - INFO - Successfully scraped deal data
+2025-02-03 19:50:25,190 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-03 19:50:25,190 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-03 19:50:30,880 - INFO - Successfully scraped deal data
+2025-02-03 19:50:33,031 - INFO - Scraping additional data from: https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-03 19:50:33,032 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-03 19:50:39,190 - INFO - Successfully scraped deal data
+2025-02-03 19:50:41,357 - INFO - Scraping process completed

@@ -18,4 +18,3 @@ def initialize_driver():
         webdriver: Chrome driver instance
     """
     return webdriver.Chrome()
-
