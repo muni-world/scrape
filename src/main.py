@@ -2,6 +2,7 @@ from scrape.homepage import run_scrape
 from scrape.deal_info import scrape_deal_info
 from utils import initialize_driver, setup_logging
 import logging
+import time
 
 
 def main():
@@ -37,7 +38,9 @@ def main():
         logging.error(f"Scraping failed: {str(e)}")
     finally:
         logging.info("Scraping process completed")
-        driver.quit()  # Close the driver once, at the very end.
+        # Add download completion check before quitting
+        time.sleep(5)  # Give downloads extra time to complete
+        driver.quit()  # Close the driver once, at the very end
 
 # Run the main function when the script is executed
 if __name__ == "__main__":

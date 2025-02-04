@@ -1,7 +1,8 @@
+from .download_os import download_os
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from utils import initialize_driver
 import logging
 
@@ -79,7 +80,12 @@ def scrape_deal_info(url, driver=None):
         # Get counsel hrefs (optional)
         scraped_data["counsels"] = safe_get_links("bc", "counsels")
 
-        logging.info(f"Additional deal data scraped: {scraped_data}")
+        # Click the OS (Official Statement) download link
+        os_file_path = download_os(driver)
+        scraped_data["os_file_path"] = os_file_path
+
+
+        logging.info(f"Additional deal data scraped and OS downloaded: {scraped_data}")
         return scraped_data
 
 

@@ -9107,3 +9107,371 @@ Stacktrace:
 2025-02-04 13:23:32,969 - INFO - Additional deal data scraped: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}
 2025-02-04 13:23:32,969 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}
 2025-02-04 13:23:32,969 - INFO - Scraping process completed
+2025-02-04 14:17:24,550 - INFO - Logging started
+2025-02-04 14:17:24,551 - INFO - Starting scraping process
+2025-02-04 14:17:35,007 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:17:35,113 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:17:35,216 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:17:35,317 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:17:35,317 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-04 14:17:35,317 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-04 14:17:36,635 - INFO - Initiated download for file: DOWNLOAD HERE
+2025-02-04 14:17:37,310 - INFO - Agreed to terms and conditions
+2025-02-04 14:17:37,310 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:37,310 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:37,310 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-04 14:17:37,952 - INFO - Initiated download for file: DOWNLOAD HERE
+2025-02-04 14:17:38,575 - INFO - Agreed to terms and conditions
+2025-02-04 14:17:38,575 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:38,575 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:38,575 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-04 14:17:39,256 - INFO - Initiated download for file: DOWNLOAD HERE
+2025-02-04 14:17:39,914 - INFO - Agreed to terms and conditions
+2025-02-04 14:17:39,915 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:39,915 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:39,916 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-04 14:17:40,900 - INFO - Initiated download for file: DOWNLOAD HERE
+2025-02-04 14:17:41,532 - INFO - Agreed to terms and conditions
+2025-02-04 14:17:41,532 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:41,532 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'DOWNLOAD HERE'}
+2025-02-04 14:17:41,532 - INFO - Scraping process completed
+2025-02-04 14:34:32,448 - INFO - Logging started
+2025-02-04 14:34:32,449 - INFO - Starting scraping process
+2025-02-04 14:34:41,312 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:34:41,441 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:34:41,570 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:34:41,677 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:34:41,677 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-04 14:34:41,677 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-04 14:34:44,543 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-04 14:34:45,211 - INFO - Agreed to terms and conditions
+2025-02-04 14:34:45,211 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:34:45,211 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:34:45,211 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-04 14:34:46,455 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:34:47,110 - INFO - Agreed to terms and conditions
+2025-02-04 14:34:47,110 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:34:47,110 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:34:47,111 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-04 14:34:48,095 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-04 14:34:48,746 - INFO - Agreed to terms and conditions
+2025-02-04 14:34:48,746 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'MAMassDev02a-FIN.pdf'}
+2025-02-04 14:34:48,746 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'MAMassDev02a-FIN.pdf'}
+2025-02-04 14:34:48,747 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-04 14:34:49,621 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-04 14:34:50,276 - INFO - Agreed to terms and conditions
+2025-02-04 14:34:50,276 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:34:50,276 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:34:50,277 - INFO - Scraping process completed
+2025-02-04 14:45:19,470 - INFO - Logging started
+2025-02-04 14:45:19,471 - INFO - Starting scraping process
+2025-02-04 14:45:28,493 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:45:28,593 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:45:28,699 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:45:28,803 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:45:28,803 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-04 14:45:28,803 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-04 14:45:31,172 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-04 14:45:31,838 - INFO - Agreed to terms and conditions
+2025-02-04 14:45:31,845 - ERROR - Error during OS download process: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:31,846 - ERROR - Error scraping deal details: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:31,846 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:45:31,846 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-04 14:45:35,761 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:45:36,505 - INFO - Agreed to terms and conditions
+2025-02-04 14:45:36,507 - ERROR - Error during OS download process: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:36,508 - ERROR - Error scraping deal details: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:36,508 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:45:36,509 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-04 14:45:40,000 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-04 14:45:40,649 - INFO - Agreed to terms and conditions
+2025-02-04 14:45:40,653 - ERROR - Error during OS download process: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:40,654 - ERROR - Error scraping deal details: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:40,654 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:45:40,654 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-04 14:45:41,825 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-04 14:45:42,457 - INFO - Agreed to terms and conditions
+2025-02-04 14:45:42,463 - ERROR - Error during OS download process: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:42,463 - ERROR - Error scraping deal details: Message: unknown command: 'Page.getDownloadBehavior' wasn't found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7800802F5+28725]
+	(No symbol) [0x00007FF77FFE2AE0]
+	(No symbol) [0x00007FF77FE7510A]
+	(No symbol) [0x00007FF77FE62624]
+	(No symbol) [0x00007FF77FE60D33]
+	(No symbol) [0x00007FF77FE6163F]
+	(No symbol) [0x00007FF77FE61570]
+	(No symbol) [0x00007FF77FE79053]
+	(No symbol) [0x00007FF77FF1E73E]
+	(No symbol) [0x00007FF77FEEFFAA]
+	(No symbol) [0x00007FF77FF10181]
+	(No symbol) [0x00007FF77FEEFD53]
+	(No symbol) [0x00007FF77FEBA0E3]
+	(No symbol) [0x00007FF77FEBB471]
+	GetHandleVerifier [0x00007FF7803AF30D+3366989]
+	GetHandleVerifier [0x00007FF7803C12F0+3440688]
+	GetHandleVerifier [0x00007FF7803B78FD+3401277]
+	GetHandleVerifier [0x00007FF78014AAAB+858091]
+	(No symbol) [0x00007FF77FFEE74F]
+	(No symbol) [0x00007FF77FFEA304]
+	(No symbol) [0x00007FF77FFEA49D]
+	(No symbol) [0x00007FF77FFD8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-04 14:45:42,464 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:45:42,464 - INFO - Scraping process completed
+2025-02-04 14:48:41,376 - INFO - Logging started
+2025-02-04 14:48:41,376 - INFO - Starting scraping process
+2025-02-04 14:48:49,895 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:48:50,008 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:48:50,118 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:48:50,230 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:48:50,230 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-04 14:48:50,230 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-04 14:48:51,829 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-04 14:48:52,466 - INFO - Agreed to terms and conditions
+2025-02-04 14:48:55,474 - INFO - Successfully downloaded: IDHealthFacilities02a-OS.pdf
+2025-02-04 14:48:55,474 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:48:55,474 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:48:55,474 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-04 14:48:56,124 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:48:56,759 - INFO - Agreed to terms and conditions
+2025-02-04 14:48:59,767 - INFO - Successfully downloaded: IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:48:59,767 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:48:59,767 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_name': 'IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:48:59,767 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-04 14:49:00,381 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-04 14:49:01,015 - INFO - Agreed to terms and conditions
+2025-02-04 14:49:03,020 - INFO - Successfully downloaded: MAMassDev02a-FIN.pdf
+2025-02-04 14:49:03,021 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'MAMassDev02a-FIN.pdf'}
+2025-02-04 14:49:03,021 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_name': 'MAMassDev02a-FIN.pdf'}
+2025-02-04 14:49:03,022 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-04 14:49:03,577 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-04 14:49:04,200 - INFO - Agreed to terms and conditions
+2025-02-04 14:49:05,397 - INFO - Successfully downloaded: MDMHHEFA01a-FIN.pdf
+2025-02-04 14:49:05,398 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:49:05,398 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_name': 'MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:49:05,398 - INFO - Scraping process completed
+2025-02-04 14:55:10,666 - INFO - Logging started
+2025-02-04 14:55:10,667 - INFO - Starting scraping process
+2025-02-04 14:55:19,222 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-04 14:55:19,324 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-04 14:55:19,424 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-04 14:55:19,530 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-04 14:55:19,531 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-04 14:55:19,531 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-04 14:55:20,760 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-04 14:55:21,390 - INFO - Agreed to terms and conditions
+2025-02-04 14:55:24,397 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-04 14:55:24,397 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:55:24,397 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '125,850,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-04 14:55:24,397 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-04 14:55:25,232 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:55:25,907 - INFO - Agreed to terms and conditions
+2025-02-04 14:55:28,915 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-04 14:55:28,915 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:55:28,915 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'amount': '579,085,000', 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date': '01/30/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-04 14:55:28,916 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-04 14:55:29,506 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-04 14:55:30,142 - INFO - Agreed to terms and conditions
+2025-02-04 14:55:32,147 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-04 14:55:32,147 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-04 14:55:32,147 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'amount': '342,195,000', 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-04 14:55:32,147 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-04 14:55:32,701 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-04 14:55:33,348 - INFO - Agreed to terms and conditions
+2025-02-04 14:55:35,354 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-04 14:55:35,354 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:55:35,354 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'amount': '307,355,000', 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date': '01/29/25', 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-04 14:55:35,355 - INFO - Scraping process completed
