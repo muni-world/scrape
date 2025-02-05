@@ -1,8 +1,8 @@
+import datetime  # Import datetime module to work with dates
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
 import logging
 
 
@@ -38,13 +38,20 @@ def scrape_deals(driver):
                 deal_cell = row.find_element(By.CLASS_NAME, "td4")
                 issuer = deal_cell.find_element(By.CLASS_NAME, "issuer").text
                 
-                # Extract amount (if present)
-                amount = ""
+                # Initialize total_par_text to ensure it's defined.
+                total_par_text = ""
                 try:
-                    amount_text = deal_cell.find_element(By.TAG_NAME, "p").text
-                    amount = amount_text.split("$")[-1].strip("()")
-                except:
-                    pass
+                    # Get the text that likely contains a dollar amount (e.g., "$1,234.56")
+                    total_par_text = deal_cell.find_element(By.TAG_NAME, "p").text
+                    # Clean the text by splitting at "$", stripping any parentheses, and removing commas.
+                    total_par_str = total_par_text.split("$")[-1].strip("()").replace(",", "")
+                    # Convert the cleaned string into a floating point number.
+                    total_par = float(total_par_str)
+                except Exception as exc:
+                    # Log errors that occur during amount parsing.
+                    logging.error("Error parsing amount: %s", exc)
+                    total_par = None
+
                 
                 # Extract description
                 description = deal_cell.find_element(By.TAG_NAME, "span").text
@@ -52,8 +59,18 @@ def scrape_deals(driver):
                 # Extract underwriters and advisors
                 underwriters_advisors = row.find_element(By.CLASS_NAME, "td6").text.split("\n")
                 
-                # Extract date
-                date = row.find_element(By.CLASS_NAME, "td7").find_element(By.TAG_NAME, "p").text
+                # Extract date from the webpage.
+                date_str = row.find_element(By.CLASS_NAME, "td7").find_element(By.TAG_NAME, "p").text
+
+                try:
+                    # Parse the raw date string directly.
+                    # For example, "01/30/25" becomes a datetime representing 2025-01-30 00:00:00.
+                    parsed_date = datetime.datetime.strptime(date_str, "%m/%d/%y")
+
+                except Exception as parse_error:
+                    # Log the error if the conversion fails and set parsed_date to None.
+                    logging.error("Error parsing date: %s", parse_error)
+                    parsed_date = None
                 
                 # Extract deal URL
 
@@ -72,11 +89,14 @@ def scrape_deals(driver):
                     "method": deal_method,
                     "state": state,
                     "issuer": issuer,
-                    "amount": amount,
+                    "total_par_dirty": total_par_text,
+                    "total_par": total_par,
                     "description": description,
                     "underwriters_advisors": underwriters_advisors,
-                    "date": date,
+                    "date_dirty": date_str,
+                    "date": parsed_date,
                     "url": f"https://www.munios.com/{deal_url}",
+
                 }
                 logging.info(f"Scraped hompage deal: {deal}")
                 deals.append(deal)

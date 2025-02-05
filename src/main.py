@@ -1,47 +1,68 @@
+import logging
+import time
+import firebase_admin
+from firebase_admin import credentials, firestore
 from scrape.homepage import run_scrape
 from scrape.deal_info import scrape_deal_info
 from utils import initialize_driver, setup_logging
-import logging
-import time
-
 
 def main():
     """
-    Main function to run the entire scraping process using a single Chrome instance.
+    Main function to run the entire scraping process using a single Chrome instance and store deals in Firestore.
+    
+    This version uses the Firestore client available from the Firebase Admin SDK,
+    which automatically uses the service account credentials provided during initialization.
     """
     setup_logging()
     logging.info("Starting scraping process")
     
-    # Initialize the Chrome webdriver once.
+    # Check if the Firebase app is already initialized.
+    # If not, initialize it with the service account credentials.
+    try:
+        firebase_admin.get_app()  # Try retrieving an existing Firebase app.
+    except ValueError:
+        # If no app is found, initialize using your service account key file.
+        cred = credentials.Certificate("secrets/serviceAccountKey.json")  # Path to your service account key file
+        firebase_admin.initialize_app(cred)
+    
+    # Use the Firestore client from firebase_admin,
+    # which uses the credentials already loaded during Firebase app initialization.
+    db = firestore.client()
+    logging.info("Firestore client initialized using Firebase Admin SDK")
+    
+    # Initialize the Chrome webdriver only once
     driver = initialize_driver()
     
     try:
-        # Pass the single driver to the homepage scraper.
+        # Use the homepage scraper to retrieve the deals.
         deals = run_scrape(driver)
         
-        # Check if any deals were retrieved.
+        # If there are any deals, process each one.
         if deals:
-            # Iterate through each deal and enrich with additional data,
-            # reusing the same driver.
             for deal in deals:
                 try:
+                    # Enrich each deal with additional details by scraping further information using the same driver.
                     additional_data = scrape_deal_info(deal["url"], driver)
                     deal.update(additional_data)
                     logging.info(f"Combined with additional data: {deal}")
+                    
+                    # Insert the enriched deal into the Firestore database.
+                    doc_ref = db.collection("deals").document()  # Create a new document reference in the 'deals' collection.
+                    doc_ref.set(deal)  # Populate the document with the deal data.
+                    logging.info(f"Deal added to Firestore with ID: {doc_ref.id}")
                 except Exception as e:
+                    # Log any exception encountered while processing individual deals.
                     logging.error(f"Failed to scrape details for {deal}: {str(e)}")
                     continue
-
         else:
             logging.warning("No deals were retrieved")
     except Exception as e:
         logging.error(f"Scraping failed: {str(e)}")
     finally:
         logging.info("Scraping process completed")
-        # Add download completion check before quitting
-        time.sleep(5)  # Give downloads extra time to complete
-        driver.quit()  # Close the driver once, at the very end
+        time.sleep(5)  # Give downloads extra time to complete.
+        driver.quit()  # Ensure the driver is properly closed.
 
-# Run the main function when the script is executed
+# Run the main function when the script is executed.
 if __name__ == "__main__":
     main()
