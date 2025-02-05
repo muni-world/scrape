@@ -1,17 +1,21 @@
-import datetime  # Import datetime module to work with dates
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 import logging
 
+# On windows pip install tzdata because time zone data is not installed by default. Enables use of ZoneInfo.
 
-def scrape_deals(driver):
+def scrape_deals(driver, sector):
     """
     Scrapes deal information from the Munios website table.
     
     Args:
         driver: Selenium WebDriver instance
+        sector (str): Sector filter being used (e.g. 'HC')
     
     Returns:
         list: List of dictionaries containing deal information
@@ -53,9 +57,15 @@ def scrape_deals(driver):
                     total_par = None
 
                 
-                # Extract description
-                description = deal_cell.find_element(By.TAG_NAME, "span").text
-                
+                # Try to find description (second span) with safer selector
+                try:
+                    # Use adjacent sibling selector to find span after <p> tag
+                    description_span = deal_cell.find_element(By.CSS_SELECTOR, "td.td4 > p + span")
+                    series_name_obligor = description_span.text
+                except NoSuchElementException:
+                    series_name_obligor = "N/A"  # Set default value if not found
+                    # Consider logging a warning here if needed
+
                 # Extract underwriters and advisors
                 underwriters_advisors = row.find_element(By.CLASS_NAME, "td6").text.split("\n")
                 
@@ -63,13 +73,20 @@ def scrape_deals(driver):
                 date_str = row.find_element(By.CLASS_NAME, "td7").find_element(By.TAG_NAME, "p").text
 
                 try:
-                    # Parse the raw date string directly.
-                    # For example, "01/30/25" becomes a datetime representing 2025-01-30 00:00:00.
-                    parsed_date = datetime.datetime.strptime(date_str, "%m/%d/%y")
+                    # Parse as naive datetime (no timezone info)
+                    naive_date = datetime.strptime(date_str, "%m/%d/%y")
+                    
+                    # Create timezone-aware datetime in NYC time
+                    ny_time = naive_date.replace(tzinfo=ZoneInfo("America/New_York"))
+                    
+                    # Convert to UTC
+                    utc_date = ny_time.astimezone(ZoneInfo("UTC"))
+                    
+                    parsed_date = utc_date
+                    logging.debug(f"Converted NYC time {naive_date} to UTC: {utc_date}")
 
                 except Exception as parse_error:
-                    # Log the error if the conversion fails and set parsed_date to None.
-                    logging.error("Error parsing date: %s", parse_error)
+                    logging.error("Error parsing date: %s (Original: %s)", parse_error, date_str)
                     parsed_date = None
                 
                 # Extract deal URL
@@ -85,18 +102,18 @@ def scrape_deals(driver):
                 
                 # Create deal dictionary
                 deal = {
+                    "sector": sector,
                     "type": deal_type,
                     "method": deal_method,
                     "state": state,
                     "issuer": issuer,
-                    "total_par_dirty": total_par_text,
+                    "total_par_dirty": total_par_str,
                     "total_par": total_par,
-                    "description": description,
+                    "series_name_obligor": series_name_obligor,
                     "underwriters_advisors": underwriters_advisors,
                     "date_dirty": date_str,
                     "date": parsed_date,
                     "url": f"https://www.munios.com/{deal_url}",
-
                 }
                 logging.info(f"Scraped hompage deal: {deal}")
                 deals.append(deal)

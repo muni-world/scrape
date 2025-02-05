@@ -9717,3 +9717,1136 @@ Stacktrace:
 2025-02-04 20:26:55,422 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 0, 0), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
 2025-02-04 20:26:55,624 - INFO - Deal added to Firestore with ID: K9wI3oKqWTSFJkt40YeH
 2025-02-04 20:26:55,624 - INFO - Scraping process completed
+2025-02-05 07:23:13,752 - INFO - Logging started
+2025-02-05 07:23:13,752 - INFO - Starting scraping process
+2025-02-05 07:23:13,799 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-05 07:23:20,519 - ERROR - An error occurred while applying filters: Message: element not interactable
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D84F39]
+	(No symbol) [0x00007FF769DDA7D4]
+	(No symbol) [0x00007FF769DCC6B4]
+	(No symbol) [0x00007FF769DFFFAA]
+	(No symbol) [0x00007FF769DCBF86]
+	(No symbol) [0x00007FF769E001C0]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:23:23,706 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:23,713 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': '', 'issuer': 'Public Finance Authority', 'total_par_dirty': 'Public Finance Authority  ($13,444,355)', 'total_par': 13444355.0, 'description': 'Public Finance Authority', 'underwriters_advisors': ['Piper Sandler', 'SAMCO Capital Markets, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XWVG9'}
+2025-02-05 07:23:23,863 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:23,869 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'Connecticut Housing Finance Authority', 'total_par_dirty': 'Connecticut Housing Finance Authority  ($120,985,000)', 'total_par': 120985000.0, 'description': 'Connecticut Housing Finance Authority', 'underwriters_advisors': ['Morgan Stanley', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5DPAW'}
+2025-02-05 07:23:24,008 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,013 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Mississippi Development Bank', 'total_par_dirty': 'Mississippi Development Bank  ($38,500,000)', 'total_par': 38500000.0, 'description': 'Mississippi Development Bank', 'underwriters_advisors': ['Raymond James', 'Government Consultants, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=QBRB6'}
+2025-02-05 07:23:24,129 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,132 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York State Environmental Facilities Corporation', 'total_par_dirty': 'New York State Environmental Facilities Corporation  ($127,940,000)', 'total_par': 127940000.0, 'description': 'New York State Environmental Facilities Corporation', 'underwriters_advisors': ['RBC Capital Markets', 'Loop Capital Markets', 'Hilltop Securities Inc. (MA)', 'TKG & Associates LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VWP82'}
+2025-02-05 07:23:24,254 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,261 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'Columbus Regional Airport Authority', 'total_par_dirty': 'Columbus Regional Airport Authority  ($1,207,665,000)', 'total_par': 1207665000.0, 'description': 'Columbus Regional Airport Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Siebert Williams Shank', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PD506'}
+2025-02-05 07:23:24,399 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,403 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($150,000,000)', 'total_par': 150000000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PGL81'}
+2025-02-05 07:23:24,530 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,534 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'L’Anse Creuse Public Schools', 'total_par_dirty': 'L’Anse Creuse Public Schools  ($101,465,000)', 'total_par': 101465000.0, 'description': 'L’Anse Creuse Public Schools', 'underwriters_advisors': ['J.P. Morgan', 'Stifel, Nicolaus & Company, Incorporated', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XLVAC'}
+2025-02-05 07:23:24,664 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,670 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'LA', 'issuer': 'Iowa Fire Protection District No. One of Calcasieu Parish', 'total_par_dirty': 'Iowa Fire Protection District No. One of Calcasieu Parish  ($2,500,000)', 'total_par': 2500000.0, 'description': 'Iowa Fire Protection District No. One of Calcasieu Parish', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=A8ICG'}
+2025-02-05 07:23:24,791 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,795 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'Harrisburg Redevelopment Authority', 'total_par_dirty': 'Harrisburg Redevelopment Authority  ($35,000,000)', 'total_par': 35000000.0, 'description': 'Harrisburg Redevelopment Authority', 'underwriters_advisors': ['Stifel', 'Masterson Advisors (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=QWPV7'}
+2025-02-05 07:23:24,906 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:24,910 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Colorado Housing and Finance Authority', 'total_par_dirty': 'Colorado Housing and Finance Authority  ($200,000,000)', 'total_par': 200000000.0, 'description': 'Colorado Housing and Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=A9X7Y'}
+2025-02-05 07:23:25,026 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,031 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'PA', 'issuer': 'Lancaster Municipal Authority', 'total_par_dirty': 'Lancaster Municipal Authority  ($31,520,000)', 'total_par': 31520000.0, 'description': 'Lancaster Municipal Authority', 'underwriters_advisors': ['Ziegler'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=R90DK'}
+2025-02-05 07:23:25,140 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,146 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'State of Connecticut Health and Educational Facilities Authority', 'total_par_dirty': 'State of Connecticut Health and Educational Facilities Authority  ($150,000,000)', 'total_par': 150000000.0, 'description': 'State of Connecticut Health and Educational Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=2L8FX'}
+2025-02-05 07:23:25,290 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,297 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'School District Number 135, Cook County', 'total_par_dirty': 'School District Number 135, Cook County  ($14,330,000)', 'total_par': 14330000.0, 'description': 'School District Number 135, Cook County', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=80859'}
+2025-02-05 07:23:25,423 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,427 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'School District Number 46, Kane, Cook and DuPage Counties', 'total_par_dirty': 'School District Number 46, Kane, Cook and DuPage Counties  ($55,625,000)', 'total_par': 55625000.0, 'description': 'School District Number 46, Kane, Cook and DuPage Counties', 'underwriters_advisors': ['J.P. Morgan', 'Raymond James & Associates, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=BCVNI'}
+2025-02-05 07:23:25,545 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,549 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Colorado Housing and Finance Authority', 'total_par_dirty': 'Colorado Housing and Finance Authority  ($25,370,000)', 'total_par': 25370000.0, 'description': 'Colorado Housing and Finance Authority', 'underwriters_advisors': ['Jefferies', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=EDWQU'}
+2025-02-05 07:23:25,667 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/04/25)
+2025-02-05 07:23:25,672 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'DeWitt Public Schools', 'total_par_dirty': 'DeWitt Public Schools  ($28,445,000)', 'total_par': 28445000.0, 'description': 'DeWitt Public Schools', 'underwriters_advisors': ['Stifel', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=X8E0I'}
+2025-02-05 07:23:25,780 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:25,784 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'MI', 'issuer': 'Traverse City Area Public Schools', 'total_par_dirty': 'Traverse City Area Public Schools  ($81,300,000)', 'total_par': 81300000.0, 'description': 'Traverse City Area Public Schools', 'underwriters_advisors': ['PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=R8WIJ'}
+2025-02-05 07:23:25,894 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:25,899 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': '', 'issuer': 'Public Finance Authority', 'total_par_dirty': 'Public Finance Authority  ($7,110,000)', 'total_par': 7110000.0, 'description': 'Public Finance Authority', 'underwriters_advisors': ['PNC Capital Markets LLC'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=SEPXS'}
+2025-02-05 07:23:26,012 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,016 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'TX', 'issuer': 'Vidor Independent School District', 'total_par_dirty': 'Vidor Independent School District  ($50,000,000)', 'total_par': 50000000.0, 'description': 'Vidor Independent School District', 'underwriters_advisors': ['USCA Municipal Advisors, LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=YYOMT'}
+2025-02-05 07:23:26,119 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,123 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Sumter Landing Community Development District', 'total_par_dirty': 'Sumter Landing Community Development District  ($258,480,000)', 'total_par': 258480000.0, 'description': 'Sumter Landing Community Development District', 'underwriters_advisors': ['Jefferies', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=BBXT0'}
+2025-02-05 07:23:26,232 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,237 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Eagan', 'total_par_dirty': 'City of Eagan  ($16,965,000)', 'total_par': 16965000.0, 'description': 'City of Eagan', 'underwriters_advisors': ['Piper Sandler'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XGC3T'}
+2025-02-05 07:23:26,339 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,345 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'KY', 'issuer': 'Kentucky Municipal Energy Agency', 'total_par_dirty': 'Kentucky Municipal Energy Agency  ($121,780,000)', 'total_par': 121780000.0, 'description': 'Kentucky Municipal Energy Agency', 'underwriters_advisors': ['BofA Securities', 'Robert W. Baird & Co. Incorporated (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=3G5US'}
+2025-02-05 07:23:26,454 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,459 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'TX', 'issuer': 'Anderson-Shiro Consolidated Independent School District', 'total_par_dirty': 'Anderson-Shiro Consolidated Independent School District  ($31,000,000)', 'total_par': 31000000.0, 'description': 'Anderson-Shiro Consolidated Independent School District', 'underwriters_advisors': ['USCA Municipal Advisors, LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=068HU'}
+2025-02-05 07:23:26,563 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,568 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York City Transitional Finance Authority', 'total_par_dirty': 'New York City Transitional Finance Authority  ($1,617,290,000)', 'total_par': 1617290000.0, 'description': 'New York City Transitional Finance Authority', 'underwriters_advisors': ['Siebert Williams Shank', 'Public Resources Advisory Group (MA)', 'Frasca and Associates, L.L.C. (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=X12VM'}
+2025-02-05 07:23:26,676 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,681 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IA', 'issuer': 'Iowa Finance Authority', 'total_par_dirty': 'Iowa Finance Authority  ($114,150,000)', 'total_par': 114150000.0, 'description': 'Iowa Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Morgan Stanley', 'cfX (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=DM2L4'}
+2025-02-05 07:23:26,790 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,794 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'V-Dana Community Development District', 'total_par_dirty': 'V-Dana Community Development District  ($26,030,000)', 'total_par': 26030000.0, 'description': 'V-Dana Community Development District', 'underwriters_advisors': ['FMSbonds, Inc.'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XQAIH'}
+2025-02-05 07:23:26,901 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:26,905 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'State of Ohio', 'total_par_dirty': 'State of Ohio  ($770,790,000)', 'total_par': 770790000.0, 'description': 'State of Ohio', 'underwriters_advisors': ['Jefferies', 'KeyBanc Capital Markets Inc.', 'Acacia Financial Group, Inc. (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=C1IQ7'}
+2025-02-05 07:23:27,023 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:27,027 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'City of Long Beach', 'total_par_dirty': 'City of Long Beach  ($119,055,000)', 'total_par': 119055000.0, 'description': 'City of Long Beach', 'underwriters_advisors': ['BofA Securities', 'Public Resources Advisory Group (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=OQGVE'}
+2025-02-05 07:23:27,152 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:27,156 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'CA', 'issuer': 'Marina Coast Water District', 'total_par_dirty': 'Marina Coast Water District  ($18,190,000)', 'total_par': 18190000.0, 'description': 'Marina Coast Water District', 'underwriters_advisors': ['Fieldman, Rolapp & Associates (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=GLTHV'}
+2025-02-05 07:23:27,274 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 02/03/25)
+2025-02-05 07:23:27,278 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California Public Finance Authority', 'total_par_dirty': 'California Public Finance Authority  ($121,115,000)', 'total_par': 121115000.0, 'description': 'California Public Finance Authority', 'underwriters_advisors': ['Goldman Sachs & Co. LLC'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=LYB92'}
+2025-02-05 07:23:27,398 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:27,403 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Board of Governors of the Colorado State University System', 'total_par_dirty': 'Board of Governors of the Colorado State University System  ($117,515,000)', 'total_par': 117515000.0, 'description': 'Board of Governors of the Colorado State University System', 'underwriters_advisors': ['Morgan Stanley', 'North Slope Capital Advisors (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=E5CCQ'}
+2025-02-05 07:23:27,523 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:27,528 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Dallas Housing Finance Corporation', 'total_par_dirty': 'City of Dallas Housing Finance Corporation  ($30,000,000)', 'total_par': 30000000.0, 'description': 'City of Dallas Housing Finance Corporation', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated', 'Hilltop Securities Inc. (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=8L784'}
+2025-02-05 07:23:27,605 - ERROR - Error parsing amount: could not convert string to float: 'Massachusetts Development Finance Agency'
+2025-02-05 07:23:27,656 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:27,661 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency', 'total_par': None, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Barclays', 'The Yuba Group LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5YBUL'}
+2025-02-05 07:23:27,774 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:27,778 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($300,000,000)', 'total_par': 300000000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Barclays', 'Yuba Group LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=B40YA'}
+2025-02-05 07:23:27,900 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:27,904 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TN', 'issuer': 'The Health, Educational and Housing Facility Board of the County of Knox', 'total_par_dirty': 'The Health, Educational and Housing Facility Board of the County of Knox  ($17,560,000)', 'total_par': 17560000.0, 'description': 'The Health, Educational and Housing Facility Board of the County of Knox', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PW6IV'}
+2025-02-05 07:23:28,023 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,027 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'AL', 'issuer': 'Southeast Energy Authority', 'total_par_dirty': 'Southeast Energy Authority  ($850,000,000)', 'total_par': 850000000.0, 'description': 'Southeast Energy Authority', 'underwriters_advisors': ['Morgan Stanley', 'Frazer Lanier', 'Municipal Capital Markets Group, Inc. (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=YDGAY'}
+2025-02-05 07:23:28,147 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,152 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'GA', 'issuer': 'Metropolitan Atlanta Rapid Transit Authority', 'total_par_dirty': 'Metropolitan Atlanta Rapid Transit Authority  ($474,965,000)', 'total_par': 474965000.0, 'description': 'Metropolitan Atlanta Rapid Transit Authority', 'underwriters_advisors': ['Wells Fargo Securities', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=CBJOC'}
+2025-02-05 07:23:28,272 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,277 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Magnolia Island Community Development District', 'total_par_dirty': 'Magnolia Island Community Development District  ($12,500,000)', 'total_par': 12500000.0, 'description': 'Magnolia Island Community Development District', 'underwriters_advisors': ['FMSbonds, Inc.'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=TVXHE'}
+2025-02-05 07:23:28,388 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,392 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'MI', 'issuer': 'Tecumseh Public Schools', 'total_par_dirty': 'Tecumseh Public Schools  ($5,380,000)', 'total_par': 5380000.0, 'description': 'Tecumseh Public Schools', 'underwriters_advisors': ['PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=NPVAV'}
+2025-02-05 07:23:28,506 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,510 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'NJ', 'issuer': 'Passaic County Improvement Authority', 'total_par_dirty': 'Passaic County Improvement Authority  ($30,270,000)', 'total_par': 30270000.0, 'description': 'Passaic County Improvement Authority', 'underwriters_advisors': ['RBC Capital Markets', 'NW Financial Group, LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=CY28R'}
+2025-02-05 07:23:28,640 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,644 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California Municipal Finance Authority', 'total_par_dirty': 'California Municipal Finance Authority  ($30,000,000)', 'total_par': 30000000.0, 'description': 'California Municipal Finance Authority', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=E5WMT'}
+2025-02-05 07:23:28,773 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,778 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Anne Arundel County', 'total_par_dirty': 'Anne Arundel County  ($26,170,000)', 'total_par': 26170000.0, 'description': 'Anne Arundel County', 'underwriters_advisors': ['Mesirow Financial, Inc.', 'Public Resources Advisory Group (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=2S09S'}
+2025-02-05 07:23:28,950 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:28,957 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'VA', 'issuer': 'Virginia Housing Development Authority', 'total_par_dirty': 'Virginia Housing Development Authority  ($225,000,000)', 'total_par': 225000000.0, 'description': 'Virginia Housing Development Authority', 'underwriters_advisors': ['Morgan Stanley', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=DR5AV'}
+2025-02-05 07:23:29,096 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:29,102 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Florida Housing Finance Corporation', 'total_par_dirty': 'Florida Housing Finance Corporation  ($150,000,000)', 'total_par': 150000000.0, 'description': 'Florida Housing Finance Corporation', 'underwriters_advisors': ['Morgan Stanley', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XOBI2'}
+2025-02-05 07:23:29,225 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:29,231 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'NY', 'issuer': 'Triborough Bridge and Tunnel Authority', 'total_par_dirty': 'Triborough Bridge and Tunnel Authority  ($500,000,000)', 'total_par': 500000000.0, 'description': 'Triborough Bridge and Tunnel Authority', 'underwriters_advisors': ['Public Resources Advisory Group (MA)', 'Sycamore Advisors, LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=4IYME'}
+2025-02-05 07:23:29,357 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:29,362 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'PA', 'issuer': 'Union County Higher Educational Facilities Financing Authority', 'total_par_dirty': 'Union County Higher Educational Facilities Financing Authority  ($16,150,000)', 'total_par': 16150000.0, 'description': 'Union County Higher Educational Facilities Financing Authority', 'underwriters_advisors': ['RBC Capital Markets', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=HXE9F'}
+2025-02-05 07:23:29,487 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:29,492 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'SC', 'issuer': 'Florence County', 'total_par_dirty': 'Florence County  ($20,000,000)', 'total_par': 20000000.0, 'description': 'Florence County', 'underwriters_advisors': ['First Tryon Advisors (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=7CLLE'}
+2025-02-05 07:23:29,616 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/31/25)
+2025-02-05 07:23:29,623 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California School Finance Authority', 'total_par_dirty': 'California School Finance Authority  ($33,860,000)', 'total_par': 33860000.0, 'description': 'California School Finance Authority', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=0PADU'}
+2025-02-05 07:23:29,775 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:29,779 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'New Hope Cultural Education Facilities Finance Corporation', 'total_par_dirty': 'New Hope Cultural Education Facilities Finance Corporation  ($248,075,000)', 'total_par': 248075000.0, 'description': 'New Hope Cultural Education Facilities Finance Corporation', 'underwriters_advisors': ['Oppenheimer & Co. Inc.', 'Marathon Capital Strategies, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=45B06'}
+2025-02-05 07:23:29,916 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:29,924 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Canton Public School District, Madison County', 'total_par_dirty': 'Canton Public School District, Madison County  ($20,000,000)', 'total_par': 20000000.0, 'description': 'Canton Public School District, Madison County', 'underwriters_advisors': ['Raymond James', 'Daylight Capital Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VYUAK'}
+2025-02-05 07:23:30,064 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,070 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Boise State University', 'total_par_dirty': 'Boise State University  ($47,400,000)', 'total_par': 47400000.0, 'description': 'Boise State University', 'underwriters_advisors': ['Barclays', 'Piper Sandler & Co. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=UCN67'}
+2025-02-05 07:23:30,191 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,197 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'San Joaquin Valley Clean Energy Authority', 'total_par_dirty': 'San Joaquin Valley Clean Energy Authority  ($900,000,000)', 'total_par': 900000000.0, 'description': 'San Joaquin Valley Clean Energy Authority', 'underwriters_advisors': ['Goldman Sachs & Co. LLC', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=WPRAF'}
+2025-02-05 07:23:30,316 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,321 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'AZ', 'issuer': 'City of Avondale', 'total_par_dirty': 'City of Avondale  ($11,205,000)', 'total_par': 11205000.0, 'description': 'City of Avondale', 'underwriters_advisors': ['Piper Sandler', 'Stifel, Nicolaus & Company, Incorporated (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=RCAPM'}
+2025-02-05 07:23:30,447 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,451 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-05 07:23:30,581 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,585 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'State of Ohio', 'total_par_dirty': 'State of Ohio  ($90,000,000)', 'total_par': 90000000.0, 'description': 'State of Ohio', 'underwriters_advisors': ['RBC CAPITAL MARKETS, LLC', 'The Yuba Group LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VU65F'}
+2025-02-05 07:23:30,715 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,720 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York City Housing Development Corporation', 'total_par_dirty': 'New York City Housing Development Corporation  ($83,700,000)', 'total_par': 83700000.0, 'description': 'New York City Housing Development Corporation', 'underwriters_advisors': ['Wells Fargo Bank, National Association'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=OY68L'}
+2025-02-05 07:23:30,863 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:30,868 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'The Regents of the University of California', 'total_par_dirty': 'The Regents of the University of California  ($2,000,000,000)', 'total_par': 2000000000.0, 'description': 'The Regents of the University of California', 'underwriters_advisors': ['Morgan Stanley', 'Wells Fargo', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=A8DSQ'}
+2025-02-05 07:23:31,061 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,070 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Buda', 'total_par_dirty': 'City of Buda  ($47,644,000)', 'total_par': 47644000.0, 'description': 'City of Buda', 'underwriters_advisors': ['FMSbonds, Inc.', 'Specialized Public Finance, Inc. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=YJHSP'}
+2025-02-05 07:23:31,274 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,282 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'Illinois Finance Authority', 'total_par_dirty': 'Illinois Finance Authority  ($28,720,000)', 'total_par': 28720000.0, 'description': 'Illinois Finance Authority', 'underwriters_advisors': ['Ziegler', 'Longhouse Capital Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=WCE95'}
+2025-02-05 07:23:31,439 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,445 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Buda', 'total_par_dirty': 'City of Buda  ($26,391,000)', 'total_par': 26391000.0, 'description': 'City of Buda', 'underwriters_advisors': ['FMSbonds, Inc.', 'Specialized Public Finance, Inc. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=JY26B'}
+2025-02-05 07:23:31,602 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,608 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': '', 'issuer': 'National Finance Authority', 'total_par_dirty': 'National Finance Authority  ($20,299,223)', 'total_par': 20299223.0, 'description': 'National Finance Authority', 'underwriters_advisors': ['D.A. Davidson & Co.', 'Launch Development Finance Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=81BV2'}
+2025-02-05 07:23:31,755 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,761 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'Tarrant County Cultural Education Facilities Finance Corporation', 'total_par_dirty': 'Tarrant County Cultural Education Facilities Finance Corporation  ($359,550,000)', 'total_par': 359550000.0, 'description': 'Tarrant County Cultural Education Facilities Finance Corporation', 'underwriters_advisors': ['J.P. Morgan', 'Hilltop Securities Inc. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XBWIS'}
+2025-02-05 07:23:31,885 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:31,889 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($579,085,000)', 'total_par': 579085000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-05 07:23:32,025 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,030 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Dallas Housing Finance Corporation', 'total_par_dirty': 'City of Dallas Housing Finance Corporation  ($11,035,000)', 'total_par': 11035000.0, 'description': 'City of Dallas Housing Finance Corporation', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated', 'Hilltop Securities Inc. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=TN153'}
+2025-02-05 07:23:32,157 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,164 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'UT', 'issuer': 'Arrowhead Springs Public Infrastructure District', 'total_par_dirty': 'Arrowhead Springs Public Infrastructure District  ($25,000,000)', 'total_par': 25000000.0, 'description': 'Arrowhead Springs Public Infrastructure District', 'underwriters_advisors': ['D.A. Davidson & Co.', 'Zions Public Finance, Inc. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=RWM6I'}
+2025-02-05 07:23:32,312 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,319 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'MI', 'issuer': 'Linden Community Schools', 'total_par_dirty': 'Linden Community Schools  ($17,000,000)', 'total_par': 17000000.0, 'description': 'Linden Community Schools', 'underwriters_advisors': ['Baker Tilly Municipal Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=0QTRM'}
+2025-02-05 07:23:32,443 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,448 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'Board of Trustees of Ferris State University', 'total_par_dirty': 'Board of Trustees of Ferris State University  ($42,785,000)', 'total_par': 42785000.0, 'description': 'Board of Trustees of Ferris State University', 'underwriters_advisors': ['Barclays', 'Stifel', 'Blue Rose Capital Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5CJGN'}
+2025-02-05 07:23:32,571 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,576 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'NM', 'issuer': 'New Mexico Mortgage Finance Authority', 'total_par_dirty': 'New Mexico Mortgage Finance Authority  ($120,000,000)', 'total_par': 120000000.0, 'description': 'New Mexico Mortgage Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Raymond James', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=WLVR8'}
+2025-02-05 07:23:32,691 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,821 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:32,826 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'GA', 'issuer': 'Development Authority of Burke County and Monroe County', 'total_par_dirty': 'Development Authority of Burke County and Monroe County  ($272,230,000)', 'total_par': 272230000.0, 'description': 'Development Authority of Burke County and Monroe County', 'underwriters_advisors': ['BofA Securities', 'J.P. Morgan'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=AYKXO'}
+2025-02-05 07:23:32,932 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:33,086 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:33,092 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Woodland Ranch Estates Community Development District', 'total_par_dirty': 'Woodland Ranch Estates Community Development District  ($5,925,000)', 'total_par': 5925000.0, 'description': 'Woodland Ranch Estates Community Development District', 'underwriters_advisors': ['FMSbonds, Inc.'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=ETSMM'}
+2025-02-05 07:23:33,250 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:23:33,254 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'Connecticut Housing Finance Authority', 'total_par_dirty': 'Connecticut Housing Finance Authority  ($299,995,000)', 'total_par': 299995000.0, 'description': 'Connecticut Housing Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=D6JK8'}
+2025-02-05 07:23:33,361 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,366 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'NE', 'issuer': 'Nebraska Investment Finance Authority', 'total_par_dirty': 'Nebraska Investment Finance Authority  ($174,525,000)', 'total_par': 174525000.0, 'description': 'Nebraska Investment Finance Authority', 'underwriters_advisors': ['J.P. Morgan', 'cfX (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=SGV13'}
+2025-02-05 07:23:33,434 - ERROR - Error parsing amount: could not convert string to float: 'Kent State University'
+2025-02-05 07:23:33,474 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,479 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'Kent State University', 'total_par_dirty': 'Kent State University', 'total_par': None, 'description': 'Kent State University', 'underwriters_advisors': ['J.P. Morgan', 'PNC Capital Markets LLC', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=39J2N'}
+2025-02-05 07:23:33,587 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,592 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($134,230,000)', 'total_par': 134230000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Barclays'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VQSJ0'}
+2025-02-05 07:23:33,696 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,700 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'OR', 'issuer': 'City of Portland', 'total_par_dirty': 'City of Portland  ($501,580,000)', 'total_par': 501580000.0, 'description': 'City of Portland', 'underwriters_advisors': ['BofA Securities', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5T049'}
+2025-02-05 07:23:33,806 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,810 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'City of West Haven', 'total_par_dirty': 'City of West Haven  ($5,025,000)', 'total_par': 5025000.0, 'description': 'City of West Haven', 'underwriters_advisors': ['Raymond James', 'Munistat Services, Inc. (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=K4NCR'}
+2025-02-05 07:23:33,919 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:33,923 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Community Development Administration', 'total_par_dirty': 'Maryland Community Development Administration  ($250,000,000)', 'total_par': 250000000.0, 'description': 'Maryland Community Development Administration', 'underwriters_advisors': ['J.P. Morgan', 'Caine Mitter & Associates Incorporated (MA)', 'People First Financial Advisors (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=H4K3J'}
+2025-02-05 07:23:34,026 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,030 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Competitive', 'state': 'WA', 'issuer': 'State of Washington', 'total_par_dirty': 'State of Washington  ($1,169,165,000)', 'total_par': 1169165000.0, 'description': 'State of Washington', 'underwriters_advisors': ['BofA Securities, Inc.', 'Montague DeRose and Associates, LLC (MA)', 'Piper Sandler & Co. (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=89Y5T'}
+2025-02-05 07:23:34,135 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,139 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($342,195,000)', 'total_par': 342195000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-05 07:23:34,246 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,251 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-05 07:23:34,357 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,362 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Hillsborough County', 'total_par_dirty': 'Hillsborough County  ($94,160,000)', 'total_par': 94160000.0, 'description': 'Hillsborough County', 'underwriters_advisors': ['BofA Securities', 'Public Resources Advisory Group (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=D7BA1'}
+2025-02-05 07:23:34,470 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,474 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'School District Number 48, DuPage County', 'total_par_dirty': 'School District Number 48, DuPage County  ($45,570,000)', 'total_par': 45570000.0, 'description': 'School District Number 48, DuPage County', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=AQGWV'}
+2025-02-05 07:23:34,579 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,583 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'TX', 'issuer': 'Waller County', 'total_par_dirty': 'Waller County  ($95,800,000)', 'total_par': 95800000.0, 'description': 'Waller County', 'underwriters_advisors': [''], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=2YFG2'}
+2025-02-05 07:23:34,689 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,693 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Competitive', 'state': 'CT', 'issuer': 'Town of Greenwich', 'total_par_dirty': 'Town of Greenwich  ($160,000,000)', 'total_par': 160000000.0, 'description': 'Town of Greenwich', 'underwriters_advisors': ['Morgan Stanley', 'Wells Fargo Bank', 'Munistat Services, Inc. (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=QDH5D'}
+2025-02-05 07:23:34,796 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,801 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Pflugerville', 'total_par_dirty': 'City of Pflugerville  ($14,772,000)', 'total_par': 14772000.0, 'description': 'City of Pflugerville', 'underwriters_advisors': ['STIFEL', 'RBC Capital Markets, LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=X5IYY'}
+2025-02-05 07:23:34,920 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:34,925 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of San Antonio', 'total_par_dirty': 'City of San Antonio  ($89,160,000)', 'total_par': 89160000.0, 'description': 'City of San Antonio', 'underwriters_advisors': ['Jefferies', 'PFM Financial Advisors LLC (MA)', 'Estrada Hinojosa & Company, Inc. (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=LARSM'}
+2025-02-05 07:23:35,050 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:35,055 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Competitive', 'state': 'FL', 'issuer': 'Monroe County', 'total_par_dirty': 'Monroe County  ($46,890,000)', 'total_par': 46890000.0, 'description': 'Monroe County', 'underwriters_advisors': ['Jefferies LLC', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5Q3EC'}
+2025-02-05 07:23:35,135 - ERROR - Error parsing amount: could not convert string to float: 'Main Street Natural Gas Inc.'
+2025-02-05 07:23:35,179 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:35,184 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'GA', 'issuer': 'Main Street Natural Gas, Inc.', 'total_par_dirty': 'Main Street Natural Gas, Inc.', 'total_par': None, 'description': 'Main Street Natural Gas, Inc.', 'underwriters_advisors': ['TD Securities', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=BK8N4'}
+2025-02-05 07:23:35,306 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:23:35,312 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'GA', 'issuer': 'Development Authority of Appling County', 'total_par_dirty': 'Development Authority of Appling County  ($40,530,000)', 'total_par': 40530000.0, 'description': 'Development Authority of Appling County', 'underwriters_advisors': ['J.P. Morgan'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=NVK2P'}
+2025-02-05 07:23:35,445 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:35,451 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'JEA', 'total_par_dirty': 'JEA  ($42,000,000)', 'total_par': 42000000.0, 'description': 'JEA', 'underwriters_advisors': ['Ramirez & Co., Inc.', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=JGQ82'}
+2025-02-05 07:23:35,580 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:35,586 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'SD', 'issuer': 'South Dakota Housing Development Authority', 'total_par_dirty': 'South Dakota Housing Development Authority  ($199,000,000)', 'total_par': 199000000.0, 'description': 'South Dakota Housing Development Authority', 'underwriters_advisors': ['BofA Securities', 'Wells Fargo Securities', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=UBP9P'}
+2025-02-05 07:23:35,716 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:35,721 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': '', 'issuer': 'National Finance Authority', 'total_par_dirty': 'National Finance Authority  ($44,999,724)', 'total_par': 44999724.0, 'description': 'National Finance Authority', 'underwriters_advisors': ['Jefferies', 'Launch Development Finance Advisors, LLC (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XSXJ3'}
+2025-02-05 07:23:35,848 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:35,852 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'PA', 'issuer': 'Temple University – Of the Commonwealth System of Higher Education', 'total_par_dirty': 'Temple University – Of the Commonwealth System of Higher Education  ($219,475,000)', 'total_par': 219475000.0, 'description': 'Temple University – Of the Commonwealth System of Higher Education', 'underwriters_advisors': ['Loop Capital Markets', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=B3KI7'}
+2025-02-05 07:23:35,976 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:35,980 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'Durand Area Schools', 'total_par_dirty': 'Durand Area Schools  ($7,275,000)', 'total_par': 7275000.0, 'description': 'Durand Area Schools', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=3U1IS'}
+2025-02-05 07:23:36,091 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:36,095 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'North Branch Area Schools', 'total_par_dirty': 'North Branch Area Schools  ($14,265,000)', 'total_par': 14265000.0, 'description': 'North Branch Area Schools', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=U3B7P'}
+2025-02-05 07:23:36,200 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:36,205 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Mississippi Development Bank', 'total_par_dirty': 'Mississippi Development Bank  ($10,000,000)', 'total_par': 10000000.0, 'description': 'Mississippi Development Bank', 'underwriters_advisors': ['Raymond James', 'Municipal Advisors of Mississippi, Inc. (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=GCK9B'}
+2025-02-05 07:23:36,309 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:36,313 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Mississippi Development Bank', 'total_par_dirty': 'Mississippi Development Bank  ($10,000,000)', 'total_par': 10000000.0, 'description': 'Mississippi Development Bank', 'underwriters_advisors': ['Raymond James', 'Municipal Advisors of Mississippi, Inc. (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=MVSOD'}
+2025-02-05 07:23:36,427 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/28/25)
+2025-02-05 07:23:36,431 - INFO - Scraped hompage deal: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'Minnesota Housing Finance Agency', 'total_par_dirty': 'Minnesota Housing Finance Agency  ($85,000,000)', 'total_par': 85000000.0, 'description': 'Minnesota Housing Finance Agency', 'underwriters_advisors': ['RBC Capital Markets', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '01/28/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=1YMHL'}
+2025-02-05 07:23:36,432 - INFO - Successfully scraped homepage and found 100 deals
+2025-02-05 07:23:36,432 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=XWVG9
+2025-02-05 07:23:37,721 - INFO - Initiated download for file: MUPublicFinAuth02a-FIN.pdf
+2025-02-05 07:23:38,358 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:41,378 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MUPublicFinAuth02a-FIN.pdf
+2025-02-05 07:23:41,378 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.samcocapital.com/'], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUPublicFinAuth02a-FIN.pdf'}
+2025-02-05 07:23:41,378 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': '', 'issuer': 'Public Finance Authority', 'total_par_dirty': 'Public Finance Authority  ($13,444,355)', 'total_par': 13444355.0, 'description': 'Public Finance Authority', 'underwriters_advisors': ['Piper Sandler', 'SAMCO Capital Markets, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XWVG9', 'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.samcocapital.com/'], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUPublicFinAuth02a-FIN.pdf'}
+2025-02-05 07:23:41,910 - INFO - Deal added to Firestore with ID: so1CDoc85SYSVhbtk0xT
+2025-02-05 07:23:41,911 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5DPAW
+2025-02-05 07:23:42,508 - INFO - Initiated download for file: CTHousing02a-POS.pdf
+2025-02-05 07:23:43,182 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:44,185 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CTHousing02a-POS.pdf
+2025-02-05 07:23:44,186 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Mischler Financial Group, Inc.', 'RBC Capital Markets', 'Wells Fargo Securities', 'Bancroft Capital, LLC', 'Barclays', 'Drexel Hamilton, LLC', 'Janney Montgomery Scott', 'Jefferies', 'J.P. Morgan', 'Ramirez & Co., Inc.', 'Roosevelt & Cross Incorporated', 'Stern Brothers & Co.'], 'municipal_advisors': ['http://www.cainemitter.com/'], 'counsels': ['http://www.kutakrock.com/', 'http://hardwicklaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CTHousing02a-POS.pdf'}
+2025-02-05 07:23:44,186 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'Connecticut Housing Finance Authority', 'total_par_dirty': 'Connecticut Housing Finance Authority  ($120,985,000)', 'total_par': 120985000.0, 'description': 'Connecticut Housing Finance Authority', 'underwriters_advisors': ['Morgan Stanley', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5DPAW', 'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Mischler Financial Group, Inc.', 'RBC Capital Markets', 'Wells Fargo Securities', 'Bancroft Capital, LLC', 'Barclays', 'Drexel Hamilton, LLC', 'Janney Montgomery Scott', 'Jefferies', 'J.P. Morgan', 'Ramirez & Co., Inc.', 'Roosevelt & Cross Incorporated', 'Stern Brothers & Co.'], 'municipal_advisors': ['http://www.cainemitter.com/'], 'counsels': ['http://www.kutakrock.com/', 'http://hardwicklaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CTHousing02a-POS.pdf'}
+2025-02-05 07:23:44,326 - INFO - Deal added to Firestore with ID: hdX1AlvhBJdIpT9jKktK
+2025-02-05 07:23:44,326 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=QBRB6
+2025-02-05 07:23:44,852 - INFO - Initiated download for file: MSDevBank03a-POS.pdf
+2025-02-05 07:23:45,497 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:46,500 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MSDevBank03a-POS.pdf
+2025-02-05 07:23:46,500 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.butlersnow.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSDevBank03a-POS.pdf'}
+2025-02-05 07:23:46,501 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Mississippi Development Bank', 'total_par_dirty': 'Mississippi Development Bank  ($38,500,000)', 'total_par': 38500000.0, 'description': 'Mississippi Development Bank', 'underwriters_advisors': ['Raymond James', 'Government Consultants, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=QBRB6', 'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.butlersnow.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSDevBank03a-POS.pdf'}
+2025-02-05 07:23:46,615 - INFO - Deal added to Firestore with ID: 99MP13owovvAwHtFPKEv
+2025-02-05 07:23:46,615 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=VWP82
+2025-02-05 07:23:47,188 - INFO - Initiated download for file: NYEnvironmental01a-FIN.pdf
+2025-02-05 07:23:47,822 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:48,826 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYEnvironmental01a-FIN.pdf
+2025-02-05 07:23:48,826 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/', 'http://www.loopcapital.com/'], 'co_managers': ['BofA Securities', 'Drexel Hamilton, LLC', 'Goldman Sachs & Co. LLC', 'Ramirez & Co., Inc.', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.hilltopsecurities.com/', 'http://tkgassociates.net/'], 'counsels': ['http://www.barclaydamon.com/', 'http://www.mcglawyer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYEnvironmental01a-FIN.pdf'}
+2025-02-05 07:23:48,826 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York State Environmental Facilities Corporation', 'total_par_dirty': 'New York State Environmental Facilities Corporation  ($127,940,000)', 'total_par': 127940000.0, 'description': 'New York State Environmental Facilities Corporation', 'underwriters_advisors': ['RBC Capital Markets', 'Loop Capital Markets', 'Hilltop Securities Inc. (MA)', 'TKG & Associates LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VWP82', 'lead_managers': ['http://www.rbccm.com/', 'http://www.loopcapital.com/'], 'co_managers': ['BofA Securities', 'Drexel Hamilton, LLC', 'Goldman Sachs & Co. LLC', 'Ramirez & Co., Inc.', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.hilltopsecurities.com/', 'http://tkgassociates.net/'], 'counsels': ['http://www.barclaydamon.com/', 'http://www.mcglawyer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYEnvironmental01a-FIN.pdf'}
+2025-02-05 07:23:48,970 - INFO - Deal added to Firestore with ID: 41NwAbNrgSKFlqNpu1EF
+2025-02-05 07:23:48,971 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=PD506
+2025-02-05 07:23:49,534 - INFO - Initiated download for file: OHColumbus01a-FIN.pdf
+2025-02-05 07:23:50,206 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:52,212 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\OHColumbus01a-FIN.pdf
+2025-02-05 07:23:52,212 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/', 'http://www.siebertwilliams.com/'], 'co_managers': ['BofA Securities', 'Goldman Sachs & Co. LLC', 'Hilltop Securities', 'Huntington Capital Markets', 'Loop Capital Markets Inc.', 'Ramirez & Co.,'], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.squirepattonboggs.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHColumbus01a-FIN.pdf'}
+2025-02-05 07:23:52,212 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'Columbus Regional Airport Authority', 'total_par_dirty': 'Columbus Regional Airport Authority  ($1,207,665,000)', 'total_par': 1207665000.0, 'description': 'Columbus Regional Airport Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Siebert Williams Shank', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PD506', 'lead_managers': ['http://www.rbccm.com/', 'http://www.siebertwilliams.com/'], 'co_managers': ['BofA Securities', 'Goldman Sachs & Co. LLC', 'Hilltop Securities', 'Huntington Capital Markets', 'Loop Capital Markets Inc.', 'Ramirez & Co.,'], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.squirepattonboggs.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHColumbus01a-FIN.pdf'}
+2025-02-05 07:23:52,344 - INFO - Deal added to Firestore with ID: caz7J1p3jQEA46tQVvwc
+2025-02-05 07:23:52,346 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=PGL81
+2025-02-05 07:23:52,845 - INFO - Initiated download for file: MDMHHEFA03a-OS.pdf
+2025-02-05 07:23:53,509 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:54,514 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA03a-OS.pdf
+2025-02-05 07:23:54,515 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA03a-OS.pdf'}
+2025-02-05 07:23:54,515 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($150,000,000)', 'total_par': 150000000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PGL81', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA03a-OS.pdf'}
+2025-02-05 07:23:54,651 - INFO - Deal added to Firestore with ID: 2CHYgjECbFCwT93EmDGh
+2025-02-05 07:23:54,652 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=XLVAC
+2025-02-05 07:23:55,376 - INFO - Initiated download for file: MILAnseCreuse01a-FIN.pdf
+2025-02-05 07:23:56,065 - INFO - Agreed to terms and conditions
+2025-02-05 07:23:57,070 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MILAnseCreuse01a-FIN.pdf
+2025-02-05 07:23:57,070 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.thrunlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MILAnseCreuse01a-FIN.pdf'}
+2025-02-05 07:23:57,071 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'L’Anse Creuse Public Schools', 'total_par_dirty': 'L’Anse Creuse Public Schools  ($101,465,000)', 'total_par': 101465000.0, 'description': 'L’Anse Creuse Public Schools', 'underwriters_advisors': ['J.P. Morgan', 'Stifel, Nicolaus & Company, Incorporated', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XLVAC', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.thrunlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MILAnseCreuse01a-FIN.pdf'}
+2025-02-05 07:23:57,183 - INFO - Deal added to Firestore with ID: 4pn1ChQqKQnF8zeKIkwA
+2025-02-05 07:23:57,184 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=A8ICG
+2025-02-05 07:23:57,727 - INFO - Initiated download for file: LACalcasieu01a-POS.pdf
+2025-02-05 07:23:58,380 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:03,394 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\LACalcasieu01a-POS.pdf
+2025-02-05 07:24:03,395 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.joneswalker.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\LACalcasieu01a-POS.pdf'}
+2025-02-05 07:24:03,395 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'LA', 'issuer': 'Iowa Fire Protection District No. One of Calcasieu Parish', 'total_par_dirty': 'Iowa Fire Protection District No. One of Calcasieu Parish  ($2,500,000)', 'total_par': 2500000.0, 'description': 'Iowa Fire Protection District No. One of Calcasieu Parish', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=A8ICG', 'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.joneswalker.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\LACalcasieu01a-POS.pdf'}
+2025-02-05 07:24:03,671 - INFO - Deal added to Firestore with ID: kS0Jw2ppBtDIsSIT5y57
+2025-02-05 07:24:03,671 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=QWPV7
+2025-02-05 07:24:04,648 - INFO - Initiated download for file: TXHarrisburg01b-POS.pdf
+2025-02-05 07:24:05,545 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:07,553 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\TXHarrisburg01b-POS.pdf
+2025-02-05 07:24:07,553 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.stifel.com/'], 'co_managers': ['Blaylock Van, LLC', 'Crews & Associates, Inc.'], 'municipal_advisors': ['http://www.mastersonadvisors.com/'], 'counsels': ['http://www.bracewelllaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXHarrisburg01b-POS.pdf'}
+2025-02-05 07:24:07,553 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'Harrisburg Redevelopment Authority', 'total_par_dirty': 'Harrisburg Redevelopment Authority  ($35,000,000)', 'total_par': 35000000.0, 'description': 'Harrisburg Redevelopment Authority', 'underwriters_advisors': ['Stifel', 'Masterson Advisors (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=QWPV7', 'lead_managers': ['http://www.stifel.com/'], 'co_managers': ['Blaylock Van, LLC', 'Crews & Associates, Inc.'], 'municipal_advisors': ['http://www.mastersonadvisors.com/'], 'counsels': ['http://www.bracewelllaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXHarrisburg01b-POS.pdf'}
+2025-02-05 07:24:07,777 - INFO - Deal added to Firestore with ID: ZzYVgNKBDJyC62q6kRiz
+2025-02-05 07:24:07,777 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=A9X7Y
+2025-02-05 07:24:08,397 - INFO - Initiated download for file: COHousing03a-FIN.pdf
+2025-02-05 07:24:09,149 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:16,167 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\COHousing03a-FIN.pdf
+2025-02-05 07:24:16,167 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/'], 'co_managers': ['BofA Securities', 'Jefferies', 'Barclays', 'Morgan Stanley', 'Piper Sandler', 'Raymond James', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COHousing03a-FIN.pdf'}
+2025-02-05 07:24:16,167 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Colorado Housing and Finance Authority', 'total_par_dirty': 'Colorado Housing and Finance Authority  ($200,000,000)', 'total_par': 200000000.0, 'description': 'Colorado Housing and Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=A9X7Y', 'lead_managers': ['http://www.rbccm.com/'], 'co_managers': ['BofA Securities', 'Jefferies', 'Barclays', 'Morgan Stanley', 'Piper Sandler', 'Raymond James', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COHousing03a-FIN.pdf'}
+2025-02-05 07:24:16,291 - INFO - Deal added to Firestore with ID: 82X80rlRAFZjINWe3nWV
+2025-02-05 07:24:16,291 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=R90DK
+2025-02-05 07:24:16,909 - INFO - Initiated download for file: ZGLuthercare01a-FIN.pdf
+2025-02-05 07:24:17,562 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:18,566 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\ZGLuthercare01a-FIN.pdf
+2025-02-05 07:24:18,567 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.ziegler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.barley.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ZGLuthercare01a-FIN.pdf'}
+2025-02-05 07:24:18,567 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'PA', 'issuer': 'Lancaster Municipal Authority', 'total_par_dirty': 'Lancaster Municipal Authority  ($31,520,000)', 'total_par': 31520000.0, 'description': 'Lancaster Municipal Authority', 'underwriters_advisors': ['Ziegler'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=R90DK', 'lead_managers': ['http://www.ziegler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.barley.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ZGLuthercare01a-FIN.pdf'}
+2025-02-05 07:24:18,735 - INFO - Deal added to Firestore with ID: MiryH6hfLSsecEGfzwNA
+2025-02-05 07:24:18,735 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=2L8FX
+2025-02-05 07:24:19,325 - INFO - Initiated download for file: CTCHEFA02a-OS.pdf
+2025-02-05 07:24:20,003 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:22,009 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CTCHEFA02a-OS.pdf
+2025-02-05 07:24:22,009 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CTCHEFA02a-OS.pdf'}
+2025-02-05 07:24:22,010 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CT', 'issuer': 'State of Connecticut Health and Educational Facilities Authority', 'total_par_dirty': 'State of Connecticut Health and Educational Facilities Authority  ($150,000,000)', 'total_par': 150000000.0, 'description': 'State of Connecticut Health and Educational Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=2L8FX', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CTCHEFA02a-OS.pdf'}
+2025-02-05 07:24:22,125 - INFO - Deal added to Firestore with ID: o3UP3oXgHIgSzZ9ZINgi
+2025-02-05 07:24:22,125 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=80859
+2025-02-05 07:24:22,726 - INFO - Initiated download for file: ILCook01a-POS.pdf
+2025-02-05 07:24:23,362 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:24,368 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\ILCook01a-POS.pdf
+2025-02-05 07:24:24,368 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ILCook01a-POS.pdf'}
+2025-02-05 07:24:24,368 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'School District Number 135, Cook County', 'total_par_dirty': 'School District Number 135, Cook County  ($14,330,000)', 'total_par': 14330000.0, 'description': 'School District Number 135, Cook County', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=80859', 'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ILCook01a-POS.pdf'}
+2025-02-05 07:24:24,503 - INFO - Deal added to Firestore with ID: DR9wpDsILDArvoYs3R8l
+2025-02-05 07:24:24,503 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=BCVNI
+2025-02-05 07:24:25,156 - INFO - Initiated download for file: ILKane01a-FIN.pdf
+2025-02-05 07:24:25,829 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:26,835 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\ILKane01a-FIN.pdf
+2025-02-05 07:24:26,836 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/'], 'co_managers': ['Cabrera Capital Markets', 'Baird'], 'municipal_advisors': [], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ILKane01a-FIN.pdf'}
+2025-02-05 07:24:26,836 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IL', 'issuer': 'School District Number 46, Kane, Cook and DuPage Counties', 'total_par_dirty': 'School District Number 46, Kane, Cook and DuPage Counties  ($55,625,000)', 'total_par': 55625000.0, 'description': 'School District Number 46, Kane, Cook and DuPage Counties', 'underwriters_advisors': ['J.P. Morgan', 'Raymond James & Associates, Inc. (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=BCVNI', 'lead_managers': ['http://www.jpmorgan.com/'], 'co_managers': ['Cabrera Capital Markets', 'Baird'], 'municipal_advisors': [], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ILKane01a-FIN.pdf'}
+2025-02-05 07:24:27,059 - INFO - Deal added to Firestore with ID: 3zakYdwXRj2yJdbYiRi1
+2025-02-05 07:24:27,059 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=EDWQU
+2025-02-05 07:24:27,614 - INFO - Initiated download for file: COHousing05a-POS.pdf
+2025-02-05 07:24:28,263 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:33,276 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\COHousing05a-POS.pdf
+2025-02-05 07:24:33,276 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jefferies.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Barclays', 'Morgan Stanley', 'Piper Sandler', 'Raymond James', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COHousing05a-POS.pdf'}
+2025-02-05 07:24:33,277 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Colorado Housing and Finance Authority', 'total_par_dirty': 'Colorado Housing and Finance Authority  ($25,370,000)', 'total_par': 25370000.0, 'description': 'Colorado Housing and Finance Authority', 'underwriters_advisors': ['Jefferies', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=EDWQU', 'lead_managers': ['http://www.jefferies.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Barclays', 'Morgan Stanley', 'Piper Sandler', 'Raymond James', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COHousing05a-POS.pdf'}
+2025-02-05 07:24:33,414 - INFO - Deal added to Firestore with ID: zryXLNEgj0sCil0ncK4H
+2025-02-05 07:24:33,415 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=X8E0I
+2025-02-05 07:24:34,013 - INFO - Initiated download for file: MIDeWitt01a-POS.pdf
+2025-02-05 07:24:34,677 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:35,681 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MIDeWitt01a-POS.pdf
+2025-02-05 07:24:35,682 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.thrunlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MIDeWitt01a-POS.pdf'}
+2025-02-05 07:24:35,682 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MI', 'issuer': 'DeWitt Public Schools', 'total_par_dirty': 'DeWitt Public Schools  ($28,445,000)', 'total_par': 28445000.0, 'description': 'DeWitt Public Schools', 'underwriters_advisors': ['Stifel', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/04/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=X8E0I', 'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.thrunlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MIDeWitt01a-POS.pdf'}
+2025-02-05 07:24:35,794 - INFO - Deal added to Firestore with ID: oVoDc8VBX29DMhYKtWUx
+2025-02-05 07:24:35,794 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=R8WIJ
+2025-02-05 07:24:36,312 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:36,312 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:36,313 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'MI', 'issuer': 'Traverse City Area Public Schools', 'total_par_dirty': 'Traverse City Area Public Schools  ($81,300,000)', 'total_par': 81300000.0, 'description': 'Traverse City Area Public Schools', 'underwriters_advisors': ['PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=R8WIJ'}
+2025-02-05 07:24:36,427 - INFO - Deal added to Firestore with ID: IHUVLa6czgJNXyaclMv9
+2025-02-05 07:24:36,428 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=SEPXS
+2025-02-05 07:24:37,004 - INFO - Initiated download for file: MUPublicFinAuth04a-FIN.pdf
+2025-02-05 07:24:37,743 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:38,748 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MUPublicFinAuth04a-FIN.pdf
+2025-02-05 07:24:38,748 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.pnc.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUPublicFinAuth04a-FIN.pdf'}
+2025-02-05 07:24:38,748 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': '', 'issuer': 'Public Finance Authority', 'total_par_dirty': 'Public Finance Authority  ($7,110,000)', 'total_par': 7110000.0, 'description': 'Public Finance Authority', 'underwriters_advisors': ['PNC Capital Markets LLC'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=SEPXS', 'lead_managers': ['http://www.pnc.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUPublicFinAuth04a-FIN.pdf'}
+2025-02-05 07:24:38,871 - INFO - Deal added to Firestore with ID: vHhYNhY110Bk6YsdQsTq
+2025-02-05 07:24:38,871 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=YYOMT
+2025-02-05 07:24:39,405 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:39,406 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:39,406 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'TX', 'issuer': 'Vidor Independent School District', 'total_par_dirty': 'Vidor Independent School District  ($50,000,000)', 'total_par': 50000000.0, 'description': 'Vidor Independent School District', 'underwriters_advisors': ['USCA Municipal Advisors, LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=YYOMT'}
+2025-02-05 07:24:39,518 - INFO - Deal added to Firestore with ID: v4HbRCgzqrz3NL41eskB
+2025-02-05 07:24:39,518 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=BBXT0
+2025-02-05 07:24:40,145 - INFO - Initiated download for file: FLSumterLanding01a-FIN.pdf
+2025-02-05 07:24:40,805 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:43,813 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLSumterLanding01a-FIN.pdf
+2025-02-05 07:24:43,814 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jefferies.com/'], 'co_managers': ['MORGAN STANLEY'], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.gray-robinson.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLSumterLanding01a-FIN.pdf'}
+2025-02-05 07:24:43,814 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Sumter Landing Community Development District', 'total_par_dirty': 'Sumter Landing Community Development District  ($258,480,000)', 'total_par': 258480000.0, 'description': 'Sumter Landing Community Development District', 'underwriters_advisors': ['Jefferies', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=BBXT0', 'lead_managers': ['http://www.jefferies.com/'], 'co_managers': ['MORGAN STANLEY'], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.gray-robinson.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLSumterLanding01a-FIN.pdf'}
+2025-02-05 07:24:43,950 - INFO - Deal added to Firestore with ID: yysZ2IMCUF4FD8PrGJW3
+2025-02-05 07:24:43,950 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=XGC3T
+2025-02-05 07:24:44,503 - INFO - Initiated download for file: MNEagan01a-FIN.pdf
+2025-02-05 07:24:45,163 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:46,168 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MNEagan01a-FIN.pdf
+2025-02-05 07:24:46,169 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNEagan01a-FIN.pdf'}
+2025-02-05 07:24:46,169 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Eagan', 'total_par_dirty': 'City of Eagan  ($16,965,000)', 'total_par': 16965000.0, 'description': 'City of Eagan', 'underwriters_advisors': ['Piper Sandler'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XGC3T', 'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNEagan01a-FIN.pdf'}
+2025-02-05 07:24:46,294 - INFO - Deal added to Firestore with ID: YW7l2M936s9CIIKK05zt
+2025-02-05 07:24:46,294 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=3G5US
+2025-02-05 07:24:46,892 - INFO - Initiated download for file: KYMuniEnergy01a-POS.pdf
+2025-02-05 07:24:47,567 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:48,572 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\KYMuniEnergy01a-POS.pdf
+2025-02-05 07:24:48,573 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.rwbaird.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\KYMuniEnergy01a-POS.pdf'}
+2025-02-05 07:24:48,573 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'KY', 'issuer': 'Kentucky Municipal Energy Agency', 'total_par_dirty': 'Kentucky Municipal Energy Agency  ($121,780,000)', 'total_par': 121780000.0, 'description': 'Kentucky Municipal Energy Agency', 'underwriters_advisors': ['BofA Securities', 'Robert W. Baird & Co. Incorporated (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=3G5US', 'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.rwbaird.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\KYMuniEnergy01a-POS.pdf'}
+2025-02-05 07:24:48,704 - INFO - Deal added to Firestore with ID: XDGMq4HHqbuhIQ7Z6PID
+2025-02-05 07:24:48,704 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=068HU
+2025-02-05 07:24:49,196 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:49,196 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:24:49,197 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'TX', 'issuer': 'Anderson-Shiro Consolidated Independent School District', 'total_par_dirty': 'Anderson-Shiro Consolidated Independent School District  ($31,000,000)', 'total_par': 31000000.0, 'description': 'Anderson-Shiro Consolidated Independent School District', 'underwriters_advisors': ['USCA Municipal Advisors, LLC (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=068HU'}
+2025-02-05 07:24:49,299 - INFO - Deal added to Firestore with ID: XLMZ1OHzMQsgJ1o8MVyv
+2025-02-05 07:24:49,300 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=X12VM
+2025-02-05 07:24:49,882 - INFO - Initiated download for file: NYNYCTransFinAuth01a-POS.pdf
+2025-02-05 07:24:50,556 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:51,561 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYNYCTransFinAuth01a-POS.pdf
+2025-02-05 07:24:51,561 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.siebertwilliams.com/'], 'co_managers': ['BofA Securities', 'Jefferies', 'Ramirez & Co., Inc.', 'RBC Capital Markets', 'Academy Securities Inc.', 'Barclays', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'Cabrera Capital Markets LLC', 'Drexel Hamilton, LLC', 'Fidelity Capital Markets', 'Goldman Sachs & Co. LLC', 'Great Pacific Securities', 'Janney Montgomery Scott', 'J.P. Morgan', 'Loop Capital Markets', 'Morgan Stanley', 'Oppenheimer & Co.', 'Raymond James', 'Rice Financial Products Company', 'Roosevelt & Cross Incorporated', 'Stern Brothers & Co.', 'Stifel, Nicolaus & Company, Incorporated', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.pragadvisors.com/', 'http://www.frascallc.com/'], 'counsels': ['http://www.nortonrosefulbright.com/', 'http://www.bryantrabbino.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYNYCTransFinAuth01a-POS.pdf'}
+2025-02-05 07:24:51,561 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York City Transitional Finance Authority', 'total_par_dirty': 'New York City Transitional Finance Authority  ($1,617,290,000)', 'total_par': 1617290000.0, 'description': 'New York City Transitional Finance Authority', 'underwriters_advisors': ['Siebert Williams Shank', 'Public Resources Advisory Group (MA)', 'Frasca and Associates, L.L.C. (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=X12VM', 'lead_managers': ['http://www.siebertwilliams.com/'], 'co_managers': ['BofA Securities', 'Jefferies', 'Ramirez & Co., Inc.', 'RBC Capital Markets', 'Academy Securities Inc.', 'Barclays', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'Cabrera Capital Markets LLC', 'Drexel Hamilton, LLC', 'Fidelity Capital Markets', 'Goldman Sachs & Co. LLC', 'Great Pacific Securities', 'Janney Montgomery Scott', 'J.P. Morgan', 'Loop Capital Markets', 'Morgan Stanley', 'Oppenheimer & Co.', 'Raymond James', 'Rice Financial Products Company', 'Roosevelt & Cross Incorporated', 'Stern Brothers & Co.', 'Stifel, Nicolaus & Company, Incorporated', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.pragadvisors.com/', 'http://www.frascallc.com/'], 'counsels': ['http://www.nortonrosefulbright.com/', 'http://www.bryantrabbino.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYNYCTransFinAuth01a-POS.pdf'}
+2025-02-05 07:24:51,680 - INFO - Deal added to Firestore with ID: ufb7wpEQL29suxeMWAIC
+2025-02-05 07:24:51,680 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=DM2L4
+2025-02-05 07:24:52,215 - INFO - Initiated download for file: IAFinanceAuth02a-FIN.pdf
+2025-02-05 07:24:52,874 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:53,878 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IAFinanceAuth02a-FIN.pdf
+2025-02-05 07:24:53,879 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/', 'http://www.morganstanley.com/'], 'co_managers': ['BOFA SECURITIES', 'PIPER SANDLER', 'WELLS FARGO SECURITIES'], 'municipal_advisors': ['http://www.cfx.com/'], 'counsels': ['http://www.dorsey.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IAFinanceAuth02a-FIN.pdf'}
+2025-02-05 07:24:53,879 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'IA', 'issuer': 'Iowa Finance Authority', 'total_par_dirty': 'Iowa Finance Authority  ($114,150,000)', 'total_par': 114150000.0, 'description': 'Iowa Finance Authority', 'underwriters_advisors': ['RBC Capital Markets', 'Morgan Stanley', 'cfX (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=DM2L4', 'lead_managers': ['http://www.rbccm.com/', 'http://www.morganstanley.com/'], 'co_managers': ['BOFA SECURITIES', 'PIPER SANDLER', 'WELLS FARGO SECURITIES'], 'municipal_advisors': ['http://www.cfx.com/'], 'counsels': ['http://www.dorsey.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IAFinanceAuth02a-FIN.pdf'}
+2025-02-05 07:24:54,013 - INFO - Deal added to Firestore with ID: 3xpRSFnoupDVIcyuZXgX
+2025-02-05 07:24:54,013 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=XQAIH
+2025-02-05 07:24:54,556 - INFO - Initiated download for file: FLVDana01a-FIN.pdf
+2025-02-05 07:24:55,200 - INFO - Agreed to terms and conditions
+2025-02-05 07:24:58,209 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLVDana01a-FIN.pdf
+2025-02-05 07:24:58,209 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.fmsbonds.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.gtlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLVDana01a-FIN.pdf'}
+2025-02-05 07:24:58,210 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'V-Dana Community Development District', 'total_par_dirty': 'V-Dana Community Development District  ($26,030,000)', 'total_par': 26030000.0, 'description': 'V-Dana Community Development District', 'underwriters_advisors': ['FMSbonds, Inc.'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XQAIH', 'lead_managers': ['http://www.fmsbonds.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.gtlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLVDana01a-FIN.pdf'}
+2025-02-05 07:24:58,329 - INFO - Deal added to Firestore with ID: LTX3uFQ8axK9Gtt1szFs
+2025-02-05 07:24:58,329 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=C1IQ7
+2025-02-05 07:24:58,874 - INFO - Initiated download for file: OHState02b-POS.pdf
+2025-02-05 07:24:59,513 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:00,518 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\OHState02b-POS.pdf
+2025-02-05 07:25:00,518 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jefferies.com/', 'http://www.key.com/'], 'co_managers': ['Raymond James', 'Janney Montgomery Scott LLC', 'Loop Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.acaciafin.com/'], 'counsels': ['http://www.dinsmore.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHState02b-POS.pdf'}
+2025-02-05 07:25:00,519 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'State of Ohio', 'total_par_dirty': 'State of Ohio  ($770,790,000)', 'total_par': 770790000.0, 'description': 'State of Ohio', 'underwriters_advisors': ['Jefferies', 'KeyBanc Capital Markets Inc.', 'Acacia Financial Group, Inc. (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=C1IQ7', 'lead_managers': ['http://www.jefferies.com/', 'http://www.key.com/'], 'co_managers': ['Raymond James', 'Janney Montgomery Scott LLC', 'Loop Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.acaciafin.com/'], 'counsels': ['http://www.dinsmore.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHState02b-POS.pdf'}
+2025-02-05 07:25:00,643 - INFO - Deal added to Firestore with ID: fPEHORsfsxXKaGotOpVP
+2025-02-05 07:25:00,643 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=OQGVE
+2025-02-05 07:25:01,197 - INFO - Initiated download for file: CALongBeach01a-FIN.pdf
+2025-02-05 07:25:01,858 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:03,864 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CALongBeach01a-FIN.pdf
+2025-02-05 07:25:03,864 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': ['Backstrom McCarley Berry & Co., LLC', 'RBC Capital Markets'], 'municipal_advisors': ['http://www.pragadvisors.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CALongBeach01a-FIN.pdf'}
+2025-02-05 07:25:03,864 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'City of Long Beach', 'total_par_dirty': 'City of Long Beach  ($119,055,000)', 'total_par': 119055000.0, 'description': 'City of Long Beach', 'underwriters_advisors': ['BofA Securities', 'Public Resources Advisory Group (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=OQGVE', 'lead_managers': ['http://www.bofaml.com/'], 'co_managers': ['Backstrom McCarley Berry & Co., LLC', 'RBC Capital Markets'], 'municipal_advisors': ['http://www.pragadvisors.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CALongBeach01a-FIN.pdf'}
+2025-02-05 07:25:03,981 - INFO - Deal added to Firestore with ID: EdhrIWMlLjliBUfnSK7Q
+2025-02-05 07:25:03,981 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=GLTHV
+2025-02-05 07:25:04,483 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:04,483 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:04,484 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'CA', 'issuer': 'Marina Coast Water District', 'total_par_dirty': 'Marina Coast Water District  ($18,190,000)', 'total_par': 18190000.0, 'description': 'Marina Coast Water District', 'underwriters_advisors': ['Fieldman, Rolapp & Associates (MA)'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=GLTHV'}
+2025-02-05 07:25:04,620 - INFO - Deal added to Firestore with ID: BfQuYcIEtW1CRCOvCzhl
+2025-02-05 07:25:04,621 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=LYB92
+2025-02-05 07:25:05,224 - INFO - Initiated download for file: CAPubFinAuth01c-POS.pdf
+2025-02-05 07:25:05,883 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:08,892 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CAPubFinAuth01c-POS.pdf
+2025-02-05 07:25:08,893 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.goldmansachs.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CAPubFinAuth01c-POS.pdf'}
+2025-02-05 07:25:08,893 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California Public Finance Authority', 'total_par_dirty': 'California Public Finance Authority  ($121,115,000)', 'total_par': 121115000.0, 'description': 'California Public Finance Authority', 'underwriters_advisors': ['Goldman Sachs & Co. LLC'], 'date_dirty': '02/03/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=LYB92', 'lead_managers': ['http://www.goldmansachs.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CAPubFinAuth01c-POS.pdf'}
+2025-02-05 07:25:09,000 - INFO - Deal added to Firestore with ID: T6au02zJ9QfwfJFDqv8e
+2025-02-05 07:25:09,001 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=E5CCQ
+2025-02-05 07:25:09,584 - INFO - Initiated download for file: COStateUniv01a-POS.pdf
+2025-02-05 07:25:10,246 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:11,251 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\COStateUniv01a-POS.pdf
+2025-02-05 07:25:11,252 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.northslopecapital.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COStateUniv01a-POS.pdf'}
+2025-02-05 07:25:11,252 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CO', 'issuer': 'Board of Governors of the Colorado State University System', 'total_par_dirty': 'Board of Governors of the Colorado State University System  ($117,515,000)', 'total_par': 117515000.0, 'description': 'Board of Governors of the Colorado State University System', 'underwriters_advisors': ['Morgan Stanley', 'North Slope Capital Advisors (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=E5CCQ', 'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.northslopecapital.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\COStateUniv01a-POS.pdf'}
+2025-02-05 07:25:11,356 - INFO - Deal added to Firestore with ID: LWHfYgSjkgOEcM5nRc4j
+2025-02-05 07:25:11,356 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8L784
+2025-02-05 07:25:11,841 - INFO - Initiated download for file: TXDallas03a-POS.pdf
+2025-02-05 07:25:12,479 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:13,482 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\TXDallas03a-POS.pdf
+2025-02-05 07:25:13,483 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.hilltopsecurities.com/'], 'counsels': ['http://www.bracewelllaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXDallas03a-POS.pdf'}
+2025-02-05 07:25:13,483 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'City of Dallas Housing Finance Corporation', 'total_par_dirty': 'City of Dallas Housing Finance Corporation  ($30,000,000)', 'total_par': 30000000.0, 'description': 'City of Dallas Housing Finance Corporation', 'underwriters_advisors': ['Stifel, Nicolaus & Company, Incorporated', 'Hilltop Securities Inc. (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=8L784', 'lead_managers': ['http://www.stifel.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.hilltopsecurities.com/'], 'counsels': ['http://www.bracewelllaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXDallas03a-POS.pdf'}
+2025-02-05 07:25:13,606 - INFO - Deal added to Firestore with ID: uxKr54YWYSGcyurVGYK4
+2025-02-05 07:25:13,607 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5YBUL
+2025-02-05 07:25:14,156 - INFO - Initiated download for file: MAMassDev05a-POS.pdf
+2025-02-05 07:25:14,795 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:15,800 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev05a-POS.pdf
+2025-02-05 07:25:15,800 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.barclays.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev05a-POS.pdf'}
+2025-02-05 07:25:15,801 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency', 'total_par': None, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Barclays', 'The Yuba Group LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5YBUL', 'lead_managers': ['http://www.barclays.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev05a-POS.pdf'}
+2025-02-05 07:25:15,908 - INFO - Deal added to Firestore with ID: mtGVgYWdkKBkyZSVunH3
+2025-02-05 07:25:15,909 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=B40YA
+2025-02-05 07:25:16,417 - INFO - Initiated download for file: MAMassDev04a-POS.pdf
+2025-02-05 07:25:17,056 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:18,060 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev04a-POS.pdf
+2025-02-05 07:25:18,061 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.barclays.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev04a-POS.pdf'}
+2025-02-05 07:25:18,061 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($300,000,000)', 'total_par': 300000000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Barclays', 'Yuba Group LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=B40YA', 'lead_managers': ['http://www.barclays.com/'], 'co_managers': ['BofA Securities', 'RBC Capital Markets', 'Truist Securities'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev04a-POS.pdf'}
+2025-02-05 07:25:18,166 - INFO - Deal added to Firestore with ID: uRhWx4SihY5FsWVsOIVb
+2025-02-05 07:25:18,167 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=PW6IV
+2025-02-05 07:25:18,721 - INFO - Initiated download for file: TNKnox01a-POS.pdf
+2025-02-05 07:25:19,373 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:20,376 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\TNKnox01a-POS.pdf
+2025-02-05 07:25:20,376 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.bassberry.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TNKnox01a-POS.pdf'}
+2025-02-05 07:25:20,377 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TN', 'issuer': 'The Health, Educational and Housing Facility Board of the County of Knox', 'total_par_dirty': 'The Health, Educational and Housing Facility Board of the County of Knox  ($17,560,000)', 'total_par': 17560000.0, 'description': 'The Health, Educational and Housing Facility Board of the County of Knox', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=PW6IV', 'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.bassberry.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TNKnox01a-POS.pdf'}
+2025-02-05 07:25:20,940 - INFO - Deal added to Firestore with ID: SGIiiuz462sOo21uyGTx
+2025-02-05 07:25:20,940 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=YDGAY
+2025-02-05 07:25:21,491 - INFO - Initiated download for file: ALSoutheastEnergy02a-POS.pdf
+2025-02-05 07:25:22,146 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:23,149 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\ALSoutheastEnergy02a-POS.pdf
+2025-02-05 07:25:23,150 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.frazerlanier.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.municapital.com/'], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ALSoutheastEnergy02a-POS.pdf'}
+2025-02-05 07:25:23,150 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'AL', 'issuer': 'Southeast Energy Authority', 'total_par_dirty': 'Southeast Energy Authority  ($850,000,000)', 'total_par': 850000000.0, 'description': 'Southeast Energy Authority', 'underwriters_advisors': ['Morgan Stanley', 'Frazer Lanier', 'Municipal Capital Markets Group, Inc. (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=YDGAY', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.frazerlanier.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.municapital.com/'], 'counsels': ['http://www.chapman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\ALSoutheastEnergy02a-POS.pdf'}
+2025-02-05 07:25:23,281 - INFO - Deal added to Firestore with ID: lDFEt7tZbhbGWXiaGsD9
+2025-02-05 07:25:23,281 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=CBJOC
+2025-02-05 07:25:23,826 - INFO - Initiated download for file: GAMARTA01a-POS.pdf
+2025-02-05 07:25:24,476 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:26,483 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\GAMARTA01a-POS.pdf
+2025-02-05 07:25:26,483 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.wellsfargo.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['Blaylock Van', 'Estrada Hinojosa', 'Stern Brothers'], 'municipal_advisors': [], 'counsels': ['http://www.hklaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\GAMARTA01a-POS.pdf'}
+2025-02-05 07:25:26,484 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'GA', 'issuer': 'Metropolitan Atlanta Rapid Transit Authority', 'total_par_dirty': 'Metropolitan Atlanta Rapid Transit Authority  ($474,965,000)', 'total_par': 474965000.0, 'description': 'Metropolitan Atlanta Rapid Transit Authority', 'underwriters_advisors': ['Wells Fargo Securities', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=CBJOC', 'lead_managers': ['http://www.wellsfargo.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['Blaylock Van', 'Estrada Hinojosa', 'Stern Brothers'], 'municipal_advisors': [], 'counsels': ['http://www.hklaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\GAMARTA01a-POS.pdf'}
+2025-02-05 07:25:26,597 - INFO - Deal added to Firestore with ID: aAYiO1huBACWSAVGHg7D
+2025-02-05 07:25:26,597 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=TVXHE
+2025-02-05 07:25:27,130 - INFO - Initiated download for file: FLMagnoliaIsland01a-FIN.pdf
+2025-02-05 07:25:27,770 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:28,774 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLMagnoliaIsland01a-FIN.pdf
+2025-02-05 07:25:28,775 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.fmsbonds.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.ngnlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLMagnoliaIsland01a-FIN.pdf'}
+2025-02-05 07:25:28,775 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Magnolia Island Community Development District', 'total_par_dirty': 'Magnolia Island Community Development District  ($12,500,000)', 'total_par': 12500000.0, 'description': 'Magnolia Island Community Development District', 'underwriters_advisors': ['FMSbonds, Inc.'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=TVXHE', 'lead_managers': ['http://www.fmsbonds.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.ngnlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLMagnoliaIsland01a-FIN.pdf'}
+2025-02-05 07:25:28,883 - INFO - Deal added to Firestore with ID: bWJ1r9BVlkWOqrTUr7Cu
+2025-02-05 07:25:28,884 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=NPVAV
+2025-02-05 07:25:29,354 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:29,355 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:29,355 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'MI', 'issuer': 'Tecumseh Public Schools', 'total_par_dirty': 'Tecumseh Public Schools  ($5,380,000)', 'total_par': 5380000.0, 'description': 'Tecumseh Public Schools', 'underwriters_advisors': ['PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=NPVAV'}
+2025-02-05 07:25:29,449 - INFO - Deal added to Firestore with ID: OQnB3rpkN565plkEEdom
+2025-02-05 07:25:29,449 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=CY28R
+2025-02-05 07:25:29,981 - INFO - Initiated download for file: NJPassaic01a-POS.pdf
+2025-02-05 07:25:30,647 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:34,658 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NJPassaic01a-POS.pdf
+2025-02-05 07:25:34,658 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/'], 'co_managers': [''], 'municipal_advisors': ['http://nwfinancial.com/'], 'counsels': ['http://www.gibbonslaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NJPassaic01a-POS.pdf'}
+2025-02-05 07:25:34,659 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'NJ', 'issuer': 'Passaic County Improvement Authority', 'total_par_dirty': 'Passaic County Improvement Authority  ($30,270,000)', 'total_par': 30270000.0, 'description': 'Passaic County Improvement Authority', 'underwriters_advisors': ['RBC Capital Markets', 'NW Financial Group, LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=CY28R', 'lead_managers': ['http://www.rbccm.com/'], 'co_managers': [''], 'municipal_advisors': ['http://nwfinancial.com/'], 'counsels': ['http://www.gibbonslaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NJPassaic01a-POS.pdf'}
+2025-02-05 07:25:34,802 - INFO - Deal added to Firestore with ID: z9HbGgZmHNAkadMcTPiS
+2025-02-05 07:25:34,803 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=E5WMT
+2025-02-05 07:25:35,474 - INFO - Initiated download for file: MUWasteMgmt01a-FIN.pdf
+2025-02-05 07:25:36,142 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:40,156 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MUWasteMgmt01a-FIN.pdf
+2025-02-05 07:25:40,157 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUWasteMgmt01a-FIN.pdf'}
+2025-02-05 07:25:40,158 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California Municipal Finance Authority', 'total_par_dirty': 'California Municipal Finance Authority  ($30,000,000)', 'total_par': 30000000.0, 'description': 'California Municipal Finance Authority', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=E5WMT', 'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.troutman.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MUWasteMgmt01a-FIN.pdf'}
+2025-02-05 07:25:40,275 - INFO - Deal added to Firestore with ID: 50aU060OteqS7vJQZ3JJ
+2025-02-05 07:25:40,277 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=2S09S
+2025-02-05 07:25:41,937 - INFO - Initiated download for file: MDAnneArundel01a-FIN.pdf
+2025-02-05 07:25:42,921 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:45,931 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDAnneArundel01a-FIN.pdf
+2025-02-05 07:25:45,932 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.mesirowfinancial.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pragadvisors.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDAnneArundel01a-FIN.pdf'}
+2025-02-05 07:25:45,932 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Anne Arundel County', 'total_par_dirty': 'Anne Arundel County  ($26,170,000)', 'total_par': 26170000.0, 'description': 'Anne Arundel County', 'underwriters_advisors': ['Mesirow Financial, Inc.', 'Public Resources Advisory Group (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=2S09S', 'lead_managers': ['http://www.mesirowfinancial.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pragadvisors.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDAnneArundel01a-FIN.pdf'}
+2025-02-05 07:25:46,052 - INFO - Deal added to Firestore with ID: EIwVvgPhKyXbX8Kpgy4y
+2025-02-05 07:25:46,052 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=DR5AV
+2025-02-05 07:25:46,639 - INFO - Initiated download for file: VAVHDA01a-FIN.pdf
+2025-02-05 07:25:47,276 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:48,280 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\VAVHDA01a-FIN.pdf
+2025-02-05 07:25:48,281 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Raymond James', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\VAVHDA01a-FIN.pdf'}
+2025-02-05 07:25:48,281 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'VA', 'issuer': 'Virginia Housing Development Authority', 'total_par_dirty': 'Virginia Housing Development Authority  ($225,000,000)', 'total_par': 225000000.0, 'description': 'Virginia Housing Development Authority', 'underwriters_advisors': ['Morgan Stanley', 'CSG Advisors Incorporated (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=DR5AV', 'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Raymond James', 'Wells Fargo Securities'], 'municipal_advisors': ['http://csgadvisors.com/'], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\VAVHDA01a-FIN.pdf'}
+2025-02-05 07:25:48,416 - INFO - Deal added to Firestore with ID: gHbQ392LOmpJHKFwEHnF
+2025-02-05 07:25:48,416 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=XOBI2
+2025-02-05 07:25:48,964 - INFO - Initiated download for file: FLHousing01a-POS.pdf
+2025-02-05 07:25:49,629 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:50,634 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLHousing01a-POS.pdf
+2025-02-05 07:25:50,635 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Raymond James', 'RBC Capital Markets', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.cainemitter.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLHousing01a-POS.pdf'}
+2025-02-05 07:25:50,635 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Florida Housing Finance Corporation', 'total_par_dirty': 'Florida Housing Finance Corporation  ($150,000,000)', 'total_par': 150000000.0, 'description': 'Florida Housing Finance Corporation', 'underwriters_advisors': ['Morgan Stanley', 'Caine Mitter & Associates Incorporated (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=XOBI2', 'lead_managers': ['http://www.morganstanley.com/'], 'co_managers': ['BofA Securities', 'Raymond James', 'RBC Capital Markets', 'Stifel', 'Wells Fargo Securities'], 'municipal_advisors': ['http://www.cainemitter.com/'], 'counsels': ['http://www.kutakrock.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLHousing01a-POS.pdf'}
+2025-02-05 07:25:50,758 - INFO - Deal added to Firestore with ID: 7CAOzK69BNnn7PWYtEdO
+2025-02-05 07:25:50,758 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=4IYME
+2025-02-05 07:25:51,317 - INFO - Initiated download for file: NYTBTA02b-POS.pdf
+2025-02-05 07:25:52,018 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:53,021 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYTBTA02b-POS.pdf
+2025-02-05 07:25:53,021 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': [], 'co_managers': [''], 'municipal_advisors': ['http://www.pragadvisors.com/', 'http://www.sycamoreadvisors.com/'], 'counsels': ['http://www.orrick.com/', 'http://www.bryantrabbino.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYTBTA02b-POS.pdf'}
+2025-02-05 07:25:53,021 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'NY', 'issuer': 'Triborough Bridge and Tunnel Authority', 'total_par_dirty': 'Triborough Bridge and Tunnel Authority  ($500,000,000)', 'total_par': 500000000.0, 'description': 'Triborough Bridge and Tunnel Authority', 'underwriters_advisors': ['Public Resources Advisory Group (MA)', 'Sycamore Advisors, LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=4IYME', 'lead_managers': [], 'co_managers': [''], 'municipal_advisors': ['http://www.pragadvisors.com/', 'http://www.sycamoreadvisors.com/'], 'counsels': ['http://www.orrick.com/', 'http://www.bryantrabbino.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYTBTA02b-POS.pdf'}
+2025-02-05 07:25:53,151 - INFO - Deal added to Firestore with ID: ZtVcT1jpCsBKmjjJ2pMB
+2025-02-05 07:25:53,151 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=HXE9F
+2025-02-05 07:25:53,763 - INFO - Initiated download for file: PAUnion01a-POS.pdf
+2025-02-05 07:25:54,417 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:55,422 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\PAUnion01a-POS.pdf
+2025-02-05 07:25:55,423 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.ballardspahr.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\PAUnion01a-POS.pdf'}
+2025-02-05 07:25:55,423 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'PA', 'issuer': 'Union County Higher Educational Facilities Financing Authority', 'total_par_dirty': 'Union County Higher Educational Facilities Financing Authority  ($16,150,000)', 'total_par': 16150000.0, 'description': 'Union County Higher Educational Facilities Financing Authority', 'underwriters_advisors': ['RBC Capital Markets', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=HXE9F', 'lead_managers': ['http://www.rbccm.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.ballardspahr.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\PAUnion01a-POS.pdf'}
+2025-02-05 07:25:55,515 - INFO - Deal added to Firestore with ID: qaLK49IZA5a6wD7JJICL
+2025-02-05 07:25:55,515 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=7CLLE
+2025-02-05 07:25:56,002 - ERROR - Error during OS download process: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:56,003 - ERROR - Error scraping deal details: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.file"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF769F902F5+28725]
+	(No symbol) [0x00007FF769EF2AE0]
+	(No symbol) [0x00007FF769D8510A]
+	(No symbol) [0x00007FF769DD93D2]
+	(No symbol) [0x00007FF769DD95FC]
+	(No symbol) [0x00007FF769E23407]
+	(No symbol) [0x00007FF769DFFFEF]
+	(No symbol) [0x00007FF769E20181]
+	(No symbol) [0x00007FF769DFFD53]
+	(No symbol) [0x00007FF769DCA0E3]
+	(No symbol) [0x00007FF769DCB471]
+	GetHandleVerifier [0x00007FF76A2BF30D+3366989]
+	GetHandleVerifier [0x00007FF76A2D12F0+3440688]
+	GetHandleVerifier [0x00007FF76A2C78FD+3401277]
+	GetHandleVerifier [0x00007FF76A05AAAB+858091]
+	(No symbol) [0x00007FF769EFE74F]
+	(No symbol) [0x00007FF769EFA304]
+	(No symbol) [0x00007FF769EFA49D]
+	(No symbol) [0x00007FF769EE8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 07:25:56,003 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Competitive', 'state': 'SC', 'issuer': 'Florence County', 'total_par_dirty': 'Florence County  ($20,000,000)', 'total_par': 20000000.0, 'description': 'Florence County', 'underwriters_advisors': ['First Tryon Advisors (MA)'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=7CLLE'}
+2025-02-05 07:25:56,144 - INFO - Deal added to Firestore with ID: mnRGO2iTi7YPfVUrSdfa
+2025-02-05 07:25:56,144 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=0PADU
+2025-02-05 07:25:56,634 - INFO - Initiated download for file: CASchoolFinAuth01d-POS.pdf
+2025-02-05 07:25:57,286 - INFO - Agreed to terms and conditions
+2025-02-05 07:25:58,290 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CASchoolFinAuth01d-POS.pdf
+2025-02-05 07:25:58,290 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CASchoolFinAuth01d-POS.pdf'}
+2025-02-05 07:25:58,291 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'California School Finance Authority', 'total_par_dirty': 'California School Finance Authority  ($33,860,000)', 'total_par': 33860000.0, 'description': 'California School Finance Authority', 'underwriters_advisors': ['Raymond James'], 'date_dirty': '01/31/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=0PADU', 'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CASchoolFinAuth01d-POS.pdf'}
+2025-02-05 07:25:58,509 - INFO - Deal added to Firestore with ID: im6abVBIspNRBJF8UUfo
+2025-02-05 07:25:58,510 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=45B06
+2025-02-05 07:25:59,057 - INFO - Initiated download for file: TXNewHope01b-POS.pdf
+2025-02-05 07:25:59,729 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:01,736 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\TXNewHope01b-POS.pdf
+2025-02-05 07:26:01,736 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.opco.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.mara-cap.com/'], 'counsels': ['http://mphlegal.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXNewHope01b-POS.pdf'}
+2025-02-05 07:26:01,737 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'TX', 'issuer': 'New Hope Cultural Education Facilities Finance Corporation', 'total_par_dirty': 'New Hope Cultural Education Facilities Finance Corporation  ($248,075,000)', 'total_par': 248075000.0, 'description': 'New Hope Cultural Education Facilities Finance Corporation', 'underwriters_advisors': ['Oppenheimer & Co. Inc.', 'Marathon Capital Strategies, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=45B06', 'lead_managers': ['http://www.opco.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.mara-cap.com/'], 'counsels': ['http://mphlegal.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\TXNewHope01b-POS.pdf'}
+2025-02-05 07:26:01,905 - INFO - Deal added to Firestore with ID: HH0uGuoLkmgPSkdeJjRu
+2025-02-05 07:26:01,905 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=VYUAK
+2025-02-05 07:26:02,451 - INFO - Initiated download for file: MSCanton01a-FIN.pdf
+2025-02-05 07:26:03,097 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:04,101 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MSCanton01a-FIN.pdf
+2025-02-05 07:26:04,101 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.butlersnow.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSCanton01a-FIN.pdf'}
+2025-02-05 07:26:04,102 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'Canton Public School District, Madison County', 'total_par_dirty': 'Canton Public School District, Madison County  ($20,000,000)', 'total_par': 20000000.0, 'description': 'Canton Public School District, Madison County', 'underwriters_advisors': ['Raymond James', 'Daylight Capital Advisors, LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VYUAK', 'lead_managers': ['http://www.raymondjames.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.butlersnow.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSCanton01a-FIN.pdf'}
+2025-02-05 07:26:04,222 - INFO - Deal added to Firestore with ID: MAk4iFYLu8y5AI8qfp78
+2025-02-05 07:26:04,222 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=UCN67
+2025-02-05 07:26:04,828 - INFO - Initiated download for file: IDBoiseStateUniv01a-FIN.pdf
+2025-02-05 07:26:05,506 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:06,510 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDBoiseStateUniv01a-FIN.pdf
+2025-02-05 07:26:06,511 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pipersandler.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDBoiseStateUniv01a-FIN.pdf'}
+2025-02-05 07:26:06,511 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Boise State University', 'total_par_dirty': 'Boise State University  ($47,400,000)', 'total_par': 47400000.0, 'description': 'Boise State University', 'underwriters_advisors': ['Barclays', 'Piper Sandler & Co. (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=UCN67', 'lead_managers': ['http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pipersandler.com/'], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDBoiseStateUniv01a-FIN.pdf'}
+2025-02-05 07:26:06,625 - INFO - Deal added to Firestore with ID: E5sjaPEIc9mjM5kdSika
+2025-02-05 07:26:06,625 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=WPRAF
+2025-02-05 07:26:07,168 - INFO - Initiated download for file: CASanJoaquin01a-POS.pdf
+2025-02-05 07:26:07,849 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:08,853 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\CASanJoaquin01a-POS.pdf
+2025-02-05 07:26:08,853 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.goldmansachs.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CASanJoaquin01a-POS.pdf'}
+2025-02-05 07:26:08,853 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'CA', 'issuer': 'San Joaquin Valley Clean Energy Authority', 'total_par_dirty': 'San Joaquin Valley Clean Energy Authority  ($900,000,000)', 'total_par': 900000000.0, 'description': 'San Joaquin Valley Clean Energy Authority', 'underwriters_advisors': ['Goldman Sachs & Co. LLC', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=WPRAF', 'lead_managers': ['http://www.goldmansachs.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\CASanJoaquin01a-POS.pdf'}
+2025-02-05 07:26:09,152 - INFO - Deal added to Firestore with ID: fLV160nPX5nl2cIs3OeG
+2025-02-05 07:26:09,153 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=RCAPM
+2025-02-05 07:26:09,745 - INFO - Initiated download for file: AZAvondale01a-FIN.pdf
+2025-02-05 07:26:10,437 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:11,442 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\AZAvondale01a-FIN.pdf
+2025-02-05 07:26:11,443 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.stifel.com/'], 'counsels': ['http://www.gtlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\AZAvondale01a-FIN.pdf'}
+2025-02-05 07:26:11,443 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'AZ', 'issuer': 'City of Avondale', 'total_par_dirty': 'City of Avondale  ($11,205,000)', 'total_par': 11205000.0, 'description': 'City of Avondale', 'underwriters_advisors': ['Piper Sandler', 'Stifel, Nicolaus & Company, Incorporated (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=RCAPM', 'lead_managers': ['http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.stifel.com/'], 'counsels': ['http://www.gtlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\AZAvondale01a-FIN.pdf'}
+2025-02-05 07:26:11,593 - INFO - Deal added to Firestore with ID: 5h6ZMsj1BwOITgGXe3A6
+2025-02-05 07:26:11,593 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-05 07:26:12,170 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-05 07:26:12,817 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:13,864 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-05 07:26:13,864 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:26:13,865 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:26:14,056 - INFO - Deal added to Firestore with ID: mj4NftHEA1ahngFdrbv7
+2025-02-05 07:26:14,057 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=VU65F
+2025-02-05 07:26:14,621 - INFO - Initiated download for file: OHState03a-POS.pdf
+2025-02-05 07:26:15,314 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:16,318 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\OHState03a-POS.pdf
+2025-02-05 07:26:16,318 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.rbccm.com/'], 'co_managers': ['FIFTH THIRD SECURITIES, INC.', 'TRUIST SECURITIES'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.squirepattonboggs.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHState03a-POS.pdf'}
+2025-02-05 07:26:16,319 - INFO - Combined with additional data: {'type': 'PRELIM', 'method': 'Negotiated', 'state': 'OH', 'issuer': 'State of Ohio', 'total_par_dirty': 'State of Ohio  ($90,000,000)', 'total_par': 90000000.0, 'description': 'State of Ohio', 'underwriters_advisors': ['RBC CAPITAL MARKETS, LLC', 'The Yuba Group LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=VU65F', 'lead_managers': ['http://www.rbccm.com/'], 'co_managers': ['FIFTH THIRD SECURITIES, INC.', 'TRUIST SECURITIES'], 'municipal_advisors': ['http://www.yubagroup.com/'], 'counsels': ['http://www.squirepattonboggs.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\OHState03a-POS.pdf'}
+2025-02-05 07:26:16,558 - INFO - Deal added to Firestore with ID: 3ry9BGCMfXDaqGX6iwgj
+2025-02-05 07:26:16,558 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=OY68L
+2025-02-05 07:26:17,154 - INFO - Initiated download for file: NYNYCHousing02b-OS.pdf
+2025-02-05 07:26:17,810 - INFO - Agreed to terms and conditions
+2025-02-05 07:26:18,814 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYNYCHousing02b-OS.pdf
+2025-02-05 07:26:18,815 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.wellsfargo.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYNYCHousing02b-OS.pdf'}
+2025-02-05 07:26:18,815 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'New York City Housing Development Corporation', 'total_par_dirty': 'New York City Housing Development Corporation  ($83,700,000)', 'total_par': 83700000.0, 'description': 'New York City Housing Development Corporation', 'underwriters_advisors': ['Wells Fargo Bank, National Association'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=OY68L', 'lead_managers': ['http://www.wellsfargo.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.hawkins.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYNYCHousing02b-OS.pdf'}
+2025-02-05 07:26:18,987 - INFO - Deal added to Firestore with ID: uhO7fhaS9Fw2ISMiVyml
+2025-02-05 07:26:18,987 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=A8DSQ
+2025-02-05 07:26:19,325 - INFO - Scraping process completed
+2025-02-05 07:26:28,376 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022B49D8D0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2a4938514e159b5dc90ac23283891c2d
+2025-02-05 07:26:32,453 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022B49D8D880>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2a4938514e159b5dc90ac23283891c2d
+2025-02-05 07:26:36,530 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022B49D8D6D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2a4938514e159b5dc90ac23283891c2d
+2025-02-05 07:32:38,651 - INFO - Logging started
+2025-02-05 07:32:38,652 - INFO - Starting scraping process
+2025-02-05 07:32:38,689 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-05 07:32:53,776 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:32:53,781 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-05 07:32:53,885 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/30/25)
+2025-02-05 07:32:53,890 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($579,085,000)', 'total_par': 579085000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-05 07:32:54,019 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:32:54,023 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($342,195,000)', 'total_par': 342195000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-05 07:32:54,128 - ERROR - Error parsing date: type object 'datetime.datetime' has no attribute 'datetime' (Original: 01/29/25)
+2025-02-05 07:32:54,132 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-05 07:32:54,132 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-05 07:32:54,133 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-05 07:32:55,465 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-05 07:32:56,137 - INFO - Agreed to terms and conditions
+2025-02-05 07:32:57,141 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-05 07:32:57,141 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:32:57,141 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:32:57,504 - INFO - Deal added to Firestore with ID: MLlciVGprsaoSaNgRZ5S
+2025-02-05 07:32:57,504 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-05 07:32:58,206 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-05 07:32:58,878 - INFO - Agreed to terms and conditions
+2025-02-05 07:32:59,936 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-05 07:32:59,936 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 07:32:59,936 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($579,085,000)', 'total_par': 579085000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 07:33:00,063 - INFO - Deal added to Firestore with ID: Q5ArnUkFrCZMz6qayxK3
+2025-02-05 07:33:00,065 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-05 07:33:00,646 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-05 07:33:01,319 - INFO - Agreed to terms and conditions
+2025-02-05 07:33:02,377 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-05 07:33:02,378 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 07:33:02,378 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($342,195,000)', 'total_par': 342195000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 07:33:02,510 - INFO - Deal added to Firestore with ID: mPes3z6f648jzwfxDdGF
+2025-02-05 07:33:02,511 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-05 07:33:03,083 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-05 07:33:03,745 - INFO - Agreed to terms and conditions
+2025-02-05 07:33:04,788 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-05 07:33:04,788 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 07:33:04,788 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': None, 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 07:33:04,983 - INFO - Deal added to Firestore with ID: YfQiF0mZVBvtvrDHTTEh
+2025-02-05 07:33:04,983 - INFO - Scraping process completed
+2025-02-05 07:38:30,105 - INFO - Logging started
+2025-02-05 07:38:30,105 - INFO - Starting scraping process
+2025-02-05 07:38:30,141 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-05 07:38:44,898 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-05 07:38:45,035 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($579,085,000)', 'total_par': 579085000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-05 07:38:45,154 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($342,195,000)', 'total_par': 342195000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-05 07:38:45,273 - INFO - Scraped hompage deal: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-05 07:38:45,273 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-05 07:38:45,273 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-05 07:38:47,043 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-05 07:38:47,695 - INFO - Agreed to terms and conditions
+2025-02-05 07:38:48,699 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-05 07:38:48,699 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:38:48,700 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($125,850,000)', 'total_par': 125850000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 07:38:49,063 - INFO - Deal added to Firestore with ID: OxpyVdsqCeYMJJAc49Ry
+2025-02-05 07:38:49,063 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-05 07:38:49,754 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-05 07:38:50,421 - INFO - Agreed to terms and conditions
+2025-02-05 07:38:51,426 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-05 07:38:51,426 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 07:38:51,427 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': 'Idaho Health Facilities Authority  ($579,085,000)', 'total_par': 579085000.0, 'description': 'Idaho Health Facilities Authority', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 07:38:51,551 - INFO - Deal added to Firestore with ID: OmqQ2raGGbynbTRvWV7x
+2025-02-05 07:38:51,551 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-05 07:38:52,133 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-05 07:38:52,776 - INFO - Agreed to terms and conditions
+2025-02-05 07:38:53,780 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-05 07:38:53,781 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 07:38:53,781 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': 'Massachusetts Development Finance Agency  ($342,195,000)', 'total_par': 342195000.0, 'description': 'Massachusetts Development Finance Agency', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 07:38:53,896 - INFO - Deal added to Firestore with ID: GltoaK8RE5YlBz3657zP
+2025-02-05 07:38:53,896 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-05 07:38:54,458 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-05 07:38:55,121 - INFO - Agreed to terms and conditions
+2025-02-05 07:38:56,128 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-05 07:38:56,128 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 07:38:56,128 - INFO - Combined with additional data: {'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': 'Maryland Health and Higher Educational Facilities Authority  ($307,355,000)', 'total_par': 307355000.0, 'description': 'Maryland Health and Higher Educational Facilities Authority', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 07:38:56,253 - INFO - Deal added to Firestore with ID: AmXF1MiRFGo10WiVJJmD
+2025-02-05 07:38:56,253 - INFO - Scraping process completed
+2025-02-05 08:26:15,632 - INFO - Logging started
+2025-02-05 08:26:15,632 - INFO - Starting scraping process
+2025-02-05 08:26:15,684 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-05 08:26:33,308 - ERROR - Error processing row: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span:nth-of-type(2)"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61E5502F5+28725]
+	(No symbol) [0x00007FF61E4B2AE0]
+	(No symbol) [0x00007FF61E34510A]
+	(No symbol) [0x00007FF61E3993D2]
+	(No symbol) [0x00007FF61E3995FC]
+	(No symbol) [0x00007FF61E38C0BC]
+	(No symbol) [0x00007FF61E3BFFEF]
+	(No symbol) [0x00007FF61E38BF86]
+	(No symbol) [0x00007FF61E3C01C0]
+	(No symbol) [0x00007FF61E3E0181]
+	(No symbol) [0x00007FF61E3BFD53]
+	(No symbol) [0x00007FF61E38A0E3]
+	(No symbol) [0x00007FF61E38B471]
+	GetHandleVerifier [0x00007FF61E87F30D+3366989]
+	GetHandleVerifier [0x00007FF61E8912F0+3440688]
+	GetHandleVerifier [0x00007FF61E8878FD+3401277]
+	GetHandleVerifier [0x00007FF61E61AAAB+858091]
+	(No symbol) [0x00007FF61E4BE74F]
+	(No symbol) [0x00007FF61E4BA304]
+	(No symbol) [0x00007FF61E4BA49D]
+	(No symbol) [0x00007FF61E4A8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 08:26:33,391 - ERROR - Error processing row: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span:nth-of-type(2)"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61E5502F5+28725]
+	(No symbol) [0x00007FF61E4B2AE0]
+	(No symbol) [0x00007FF61E34510A]
+	(No symbol) [0x00007FF61E3993D2]
+	(No symbol) [0x00007FF61E3995FC]
+	(No symbol) [0x00007FF61E38C0BC]
+	(No symbol) [0x00007FF61E3BFFEF]
+	(No symbol) [0x00007FF61E38BF86]
+	(No symbol) [0x00007FF61E3C01C0]
+	(No symbol) [0x00007FF61E3E0181]
+	(No symbol) [0x00007FF61E3BFD53]
+	(No symbol) [0x00007FF61E38A0E3]
+	(No symbol) [0x00007FF61E38B471]
+	GetHandleVerifier [0x00007FF61E87F30D+3366989]
+	GetHandleVerifier [0x00007FF61E8912F0+3440688]
+	GetHandleVerifier [0x00007FF61E8878FD+3401277]
+	GetHandleVerifier [0x00007FF61E61AAAB+858091]
+	(No symbol) [0x00007FF61E4BE74F]
+	(No symbol) [0x00007FF61E4BA304]
+	(No symbol) [0x00007FF61E4BA49D]
+	(No symbol) [0x00007FF61E4A8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 08:26:33,484 - ERROR - Error processing row: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span:nth-of-type(2)"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61E5502F5+28725]
+	(No symbol) [0x00007FF61E4B2AE0]
+	(No symbol) [0x00007FF61E34510A]
+	(No symbol) [0x00007FF61E3993D2]
+	(No symbol) [0x00007FF61E3995FC]
+	(No symbol) [0x00007FF61E38C0BC]
+	(No symbol) [0x00007FF61E3BFFEF]
+	(No symbol) [0x00007FF61E38BF86]
+	(No symbol) [0x00007FF61E3C01C0]
+	(No symbol) [0x00007FF61E3E0181]
+	(No symbol) [0x00007FF61E3BFD53]
+	(No symbol) [0x00007FF61E38A0E3]
+	(No symbol) [0x00007FF61E38B471]
+	GetHandleVerifier [0x00007FF61E87F30D+3366989]
+	GetHandleVerifier [0x00007FF61E8912F0+3440688]
+	GetHandleVerifier [0x00007FF61E8878FD+3401277]
+	GetHandleVerifier [0x00007FF61E61AAAB+858091]
+	(No symbol) [0x00007FF61E4BE74F]
+	(No symbol) [0x00007FF61E4BA304]
+	(No symbol) [0x00007FF61E4BA49D]
+	(No symbol) [0x00007FF61E4A8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 08:26:33,557 - ERROR - Error processing row: Message: no such element: Unable to locate element: {"method":"css selector","selector":"span:nth-of-type(2)"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61E5502F5+28725]
+	(No symbol) [0x00007FF61E4B2AE0]
+	(No symbol) [0x00007FF61E34510A]
+	(No symbol) [0x00007FF61E3993D2]
+	(No symbol) [0x00007FF61E3995FC]
+	(No symbol) [0x00007FF61E38C0BC]
+	(No symbol) [0x00007FF61E3BFFEF]
+	(No symbol) [0x00007FF61E38BF86]
+	(No symbol) [0x00007FF61E3C01C0]
+	(No symbol) [0x00007FF61E3E0181]
+	(No symbol) [0x00007FF61E3BFD53]
+	(No symbol) [0x00007FF61E38A0E3]
+	(No symbol) [0x00007FF61E38B471]
+	GetHandleVerifier [0x00007FF61E87F30D+3366989]
+	GetHandleVerifier [0x00007FF61E8912F0+3440688]
+	GetHandleVerifier [0x00007FF61E8878FD+3401277]
+	GetHandleVerifier [0x00007FF61E61AAAB+858091]
+	(No symbol) [0x00007FF61E4BE74F]
+	(No symbol) [0x00007FF61E4BA304]
+	(No symbol) [0x00007FF61E4BA49D]
+	(No symbol) [0x00007FF61E4A8B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-05 08:26:33,558 - INFO - Successfully scraped homepage and found 0 deals
+2025-02-05 08:26:33,558 - WARNING - No deals were retrieved
+2025-02-05 08:26:33,558 - INFO - Scraping process completed
+2025-02-05 08:35:13,804 - INFO - Logging started
+2025-02-05 08:35:13,804 - INFO - Starting scraping process
+2025-02-05 08:35:13,844 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-05 08:35:31,064 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-05 08:35:31,170 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-05 08:35:31,286 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-05 08:35:31,396 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-05 08:35:31,396 - INFO - Successfully scraped homepage and found 4 deals
+2025-02-05 08:35:31,397 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-05 08:35:32,657 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-05 08:35:33,406 - INFO - Agreed to terms and conditions
+2025-02-05 08:35:34,411 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-05 08:35:34,411 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 08:35:34,412 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf'}
+2025-02-05 08:35:34,961 - INFO - Deal added to Firestore with ID: woZQ29fK5bLVuYgYdDgd
+2025-02-05 08:35:34,961 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-05 08:35:35,556 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-05 08:35:36,241 - INFO - Agreed to terms and conditions
+2025-02-05 08:35:37,246 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-05 08:35:37,246 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 08:35:37,246 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf'}
+2025-02-05 08:35:37,381 - INFO - Deal added to Firestore with ID: aymRMRNymyTyI4LbYMwh
+2025-02-05 08:35:37,381 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-05 08:35:38,183 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-05 08:35:38,944 - INFO - Agreed to terms and conditions
+2025-02-05 08:35:39,949 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-05 08:35:39,950 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 08:35:39,950 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf'}
+2025-02-05 08:35:40,087 - INFO - Deal added to Firestore with ID: IVdCGq0LfUfkIF2p1C3P
+2025-02-05 08:35:40,088 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-05 08:35:40,763 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-05 08:35:41,482 - INFO - Agreed to terms and conditions
+2025-02-05 08:35:42,487 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-05 08:35:42,487 - INFO - Additional deal data scraped and OS downloaded: {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 08:35:42,488 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf'}
+2025-02-05 08:35:42,615 - INFO - Deal added to Firestore with ID: kdHpAYB7nVDukSR2Er8S
+2025-02-05 08:35:42,615 - INFO - Scraping process completed

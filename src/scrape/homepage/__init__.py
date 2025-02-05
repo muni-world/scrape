@@ -6,10 +6,12 @@ from .s5_scrape_deals import scrape_deals
 
 from utils import load_credentials, initialize_driver
 import logging
+from time import sleep
 
 __all__ = ['run_scrape']
 
 def run_scrape(driver=None):
+
 
     """
     Main function to run all scraping steps in sequence.
@@ -33,13 +35,21 @@ def run_scrape(driver=None):
         email, password = load_credentials()
         driver.get("https://login.munios.com/")
         
+        # Define configurable sector at start of process. This is the sector code for Healthcare. We can change this to other sectors if desired
+        SECTOR = "HC"
+        
         # Execute the scraping steps sequentially.
         login(driver, email, password)
+        sleep(2)
         click_advanced_search(driver)
-        apply_filters(driver)      
-        select_100_deals(driver)
-        deals = scrape_deals(driver)
+        sleep(3)
+        apply_filters(driver, sector=SECTOR)      
+        sleep(3)
+        select_100_deals(driver)    
+        sleep(2)
+        deals = scrape_deals(driver, sector=SECTOR)
         
+
         return deals
 
     except Exception as e:
