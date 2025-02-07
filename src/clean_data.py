@@ -1,10 +1,11 @@
 """
-Data standardization module for financial institution names and websites.
+Data standardization module for financial institutions, law firms, and municipal advisors.
 
 This module provides functionality to standardize company names across different
 sources and formats, mapping various spellings and website domains to canonical
 company names.
 """
+
 
 from typing import Dict, List, Set, Optional
 import re
@@ -174,6 +175,8 @@ class CompanyStandardizer:
                     "BofA Merrill Lynch",
                     "BOFA SECURITIES",
                     "Bank of America Securities",
+                    "Bank of America Securities, Inc.",
+                    "BofA"
                 ],
                 "websites": [
                     "bofaml.com",
@@ -298,6 +301,18 @@ class CompanyStandardizer:
                     "morganstanley.com",
                 ],
             },
+            {
+                "canonical_name": "Citigroup",
+                "name_variations": [
+                    "Citigroup",
+                    "CITIGROUP",
+                    "Citigroup Inc.",
+                ],
+                "websites": [
+                    "citigroup.com",
+                ],
+            },
+
             {
                 "canonical_name": "RBC Capital Markets",
                 "name_variations": [
