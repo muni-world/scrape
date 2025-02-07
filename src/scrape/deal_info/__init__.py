@@ -63,7 +63,7 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
     
     return standardized
 
-def scrape_deal_info(url, driver=None, standardizer=None):
+def scrape_deal_info(url, driver=None, standardizer=None, download_os=True):
     """
     Scrapes and standardizes deal information from a given URL.
     
@@ -71,6 +71,7 @@ def scrape_deal_info(url, driver=None, standardizer=None):
         url (str): The URL of the deal page to process
         driver (webdriver, optional): Selenium WebDriver instance to use
         standardizer (CompanyStandardizer, optional): Instance for name standardization
+        download_os (bool): If True, downloads OS files. Defaults to True.
         
     Returns:
         dict: Standardized data containing lead managers, co-managers, etc.
@@ -125,9 +126,11 @@ def scrape_deal_info(url, driver=None, standardizer=None):
         raw_data["municipal_advisors"] = safe_get_links("ma", "municipal advisors")
         raw_data["counsels"] = safe_get_links("bc", "counsels")
 
-        # Download OS
-        os_file_path = download_os(driver)
-        raw_data["os_file_path"] = os_file_path
+        # Only download OS if the flag is True
+        if download_os:
+            os_file_path = download_os(driver)
+            if os_file_path:  # Only add the path if we successfully downloaded the OS
+                raw_data["os_file_path"] = os_file_path
 
         # Standardize the scraped data
         standardized_data = standardize_scraped_data(raw_data, standardizer)

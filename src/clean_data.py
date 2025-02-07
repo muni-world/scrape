@@ -357,10 +357,12 @@ class CompanyStandardizer:
                     "Morgan Stanley & Co. LLC",
                 ],
                 "websites": [
-                                ],
+                    "morganstanley.com",
+                ],
             },
             {
                 "canonical_name": "Citigroup",
+
                 "name_variations": [
                     "Citigroup",
                     "CITIGROUP",

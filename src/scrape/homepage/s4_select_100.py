@@ -20,7 +20,7 @@ def select_100_deals(driver):
         )
 
         # Use JavaScript to click the element since it doesn't have a click handler
-        hundred_option = driver.find_element(By.XPATH, "//ul[@id='fltPage']/li[text()='10']")
+        hundred_option = driver.find_element(By.XPATH, "//ul[@id='fltPage']/li[text()='100']")
         driver.execute_script("arguments[0].click();", hundred_option)
 
     except Exception as e:

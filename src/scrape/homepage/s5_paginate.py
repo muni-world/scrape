@@ -6,13 +6,14 @@ from time import sleep
 import logging
 from .s5_scrape_deals import scrape_deals
 
-def paginate_and_scrape(driver, sector):
+def paginate_and_scrape(driver, sector, max_pages=4):
     """
     Handles pagination and scrapes deals from all available pages.
     
     Args:
         driver: Selenium WebDriver instance
         sector (str): Sector filter being used (e.g. 'HC')
+        max_pages (int, optional): Maximum number of pages to scrape, for testing purposes
     
     Returns:
         list: Combined list of dictionaries containing deal information from all pages
@@ -23,6 +24,11 @@ def paginate_and_scrape(driver, sector):
     try:
         while True:
             logging.info(f"Scraping page {page_number}")
+            
+            # Check if we've reached the maximum pages (for testing)
+            if max_pages and page_number > max_pages:
+                logging.info(f"Reached maximum test pages limit of {max_pages}")
+                break
             
             # Scrape current page
             page_deals = scrape_deals(driver, sector)
@@ -63,7 +69,7 @@ def paginate_and_scrape(driver, sector):
                 driver.execute_script("arguments[0].click();", next_link)
                 
                 # Wait for the page to load
-                sleep(3)  # Basic wait for page load
+                sleep(5)  # Basic wait for page load
                 
                 page_number += 1
                 

@@ -6,15 +6,15 @@ from scrape.homepage import run_scrape
 from scrape.deal_info import scrape_deal_info
 from utils import initialize_driver, setup_logging
 
-def main():
+def main(download_os_files=False):
     """
     Main function to run the entire scraping process using a single Chrome instance and store deals in Firestore.
     
-    This version uses the Firestore client available from the Firebase Admin SDK,
-    which automatically uses the service account credentials provided during initialization.
+    Args:
+        download_os_files (bool): If True, downloads OS files during scraping. Defaults to False.
     """
     setup_logging()
-    logging.info("Starting scraping process")
+    logging.info(f"Starting scraping process (OS downloads: {'enabled' if download_os_files else 'disabled'})")
     
     # Check if the Firebase app is already initialized.
     # If not, initialize it with the service account credentials.
@@ -42,7 +42,7 @@ def main():
             for deal in deals:
                 try:
                     # Enrich each deal with additional details by scraping further information using the same driver.
-                    additional_data = scrape_deal_info(deal["url"], driver)
+                    additional_data = scrape_deal_info(deal["url"], driver, download_os=download_os_files)
                     deal.update(additional_data)
                     logging.info(f"Combined with additional data: {deal}")
                     
@@ -60,9 +60,12 @@ def main():
         logging.error(f"Scraping failed: {str(e)}")
     finally:
         logging.info("Scraping process completed")
-        time.sleep(5)  # Give downloads extra time to complete.
+        # Only wait if we're downloading OS files
+        if download_os_files:
+            time.sleep(5)  # Give downloads extra time to complete.
         driver.quit()  # Ensure the driver is properly closed.
 
 # Run the main function when the script is executed.
 if __name__ == "__main__":
-    main()
+    # You can modify this value to control OS downloads
+    main(download_os_files=False)

@@ -26,11 +26,12 @@ def apply_filters(driver, sector):
         healthcare_option = driver.find_element(By.CSS_SELECTOR, f"#txtAdvSector option[value='{sector}']")
         healthcare_option.click()
 
-        # Select Timeframe = Past week
+        # Select Timeframe = Past week (options: -7, -30, -365, ALL)
         timeframe_dropdown = driver.find_element(By.ID, "txtAdvTime")
         timeframe_dropdown.click()
-        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='-30']")
+        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='ALL']")
         past_week_option.click()
+
 
         # Select Type: Finals Only
         finals_only_radio = driver.find_element(By.CSS_SELECTOR, "input#rbType3")
