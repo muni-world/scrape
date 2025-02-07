@@ -116,7 +116,7 @@ def scrape_deals(driver, sector):
                     "underwriters_advisors": underwriters_advisors,
                     "date": parsed_date,
                     "url": f"https://www.munios.com/{deal_url}",
-                    "unprocessed_data": {
+                    "unprocessed_homepage_scrape": {
                         "total_par": total_par_str,
                         "date": date_str,
                     }

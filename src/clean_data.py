@@ -96,6 +96,37 @@ class CompanyStandardizer:
         for website in clean_websites:
             self._website_to_canonical[website] = canonical_name
     
+    def extract_company_from_website(self, website: str) -> Optional[str]:
+        """
+        Attempts to extract a company name from a website URL.
+        
+        Args:
+            website: Website URL to extract company name from
+            
+        Returns:
+            Extracted company name or None if extraction not possible
+        """
+        if not website:
+            return None
+        
+        # Clean the domain first
+        domain = self.clean_website(website)
+        if not domain:
+            return None
+        
+        # Remove common TLDs
+        domain = re.sub(r"\.(com|org|net|edu|gov|co\.uk|io)$", "", domain)
+        
+        # Split on dots and take first part
+        parts = domain.split(".")
+        if not parts:
+            return None
+        
+        # Convert to title case and clean up
+        company_name = parts[0].replace("-", " ").replace("_", " ").title()
+        
+        return company_name
+
     def get_canonical_name(self, raw_name: Optional[str]) -> Optional[str]:
         """
         Converts a raw company name to its canonical form.
@@ -104,17 +135,24 @@ class CompanyStandardizer:
             raw_name: Raw company name with potential variations
             
         Returns:
-            Canonical company name, or None if no match found
+            Canonical company name, or extracted website name if no match found
         """
         if not raw_name:
             return None
-            
+        
         # Check if this is actually a website URL
-        if raw_name.startswith("http://") or raw_name.startswith("https://"):
+        if raw_name.startswith("http://") or raw_name.startswith("https://") or raw_name.startswith("www."):
             # Try to get canonical name from website
             canonical = self.get_canonical_name_from_website(raw_name)
             if canonical:
                 return canonical
+            
+            # If no match found, try to extract company name from website
+            extracted_name = self.extract_company_from_website(raw_name)
+            if extracted_name:
+                print(f"WARNING: No standardized company found for {raw_name}. "
+                      f"Falling back to extracted name: {extracted_name}")
+            return extracted_name
             
         cleaned_name = raw_name.strip()
         return self._name_to_canonical.get(cleaned_name)
@@ -319,8 +357,7 @@ class CompanyStandardizer:
                     "Morgan Stanley & Co. LLC",
                 ],
                 "websites": [
-                    "morganstanley.com",
-                ],
+                                ],
             },
             {
                 "canonical_name": "Citigroup",
@@ -802,6 +839,18 @@ class CompanyStandardizer:
                     "holleypearsonfarrer.com"
                 ]
             },
+            {
+                "canonical_name": "Hinckley Allen",
+                "name_variations": [
+                    "Hinckley Allen",
+                    "HINCKLEY ALLEN",
+                    "Hinckley Allen LLP",
+                ],
+                "websites": [
+                    "hinckleyallen.com",  # Existing website
+                    "www.hinckleyallen.com",  # New website to add
+                ],
+            },
         ]
 
         # Combine all categories
@@ -809,6 +858,7 @@ class CompanyStandardizer:
         
         # Add all companies to the standardizer
         for company in all_companies:
+
             self.add_company(
                 canonical_name=company["canonical_name"],
                 name_variations=company["name_variations"],

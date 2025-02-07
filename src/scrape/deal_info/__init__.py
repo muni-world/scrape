@@ -13,30 +13,26 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
     Standardizes all company names and websites in the scraped data.
     
     Args:
-        data: Dictionary containing scraped company data
-        standardizer: CompanyStandardizer instance
+        data (dict): Dictionary containing scraped company data.
+        standardizer (CompanyStandardizer): Instance to standardize company names.
         
     Returns:
-        dict: Data with standardized company names and original raw data
+        dict: Data with standardized company names and preserved original raw data.
     """
-    # Initialize with existing unprocessed_data if it exists
-    existing_unprocessed = data.get("unprocessed_data", {})
-    
-    # Check for lead managers and log error if missing
-    if not data.get("lead_managers"):
+    # Verify required field "lead_managers" exists; if missing, log error and return
+    if "lead_managers" not in data or not data["lead_managers"]:
         logging.error("No lead managers found - this is a required field")
         return {}
     
+    # Build the standardized output dictionary
     standardized = {
         "lead_managers": [],
         "co_managers": [],
         "municipal_advisors": [],
         "counsels": [],
         "os_file_path": data.get("os_file_path"),
-        # Merge existing unprocessed data with new data
-        "unprocessed_data": {
-            **existing_unprocessed,
-            "lead_managers": data["lead_managers"],
+        "unprocessed_deal_scrape": {
+            "lead_managers": data.get("lead_managers", []),
             "co_managers": data.get("co_managers", []),
             "municipal_advisors": data.get("municipal_advisors", []),
             "counsels": data.get("counsels", []),
@@ -45,7 +41,7 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
     
     # Standardize lead managers
     for manager in data["lead_managers"]:
-        if manager:  # Only process non-empty values
+        if manager:  # Only process non-empty manager names
             canonical = standardizer.get_canonical_name(manager)
             if canonical:
                 standardized["lead_managers"].append(canonical)
@@ -53,7 +49,7 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
                 logging.warning(f"Unknown lead manager name: {manager}")
                 standardized["lead_managers"].append(manager)
     
-    # Standardize other fields
+    # Standardize other fields (co_managers, municipal_advisors, and counsels)
     for field in ["co_managers", "municipal_advisors", "counsels"]:
         if field in data:
             for item in data[field]:
