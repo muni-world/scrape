@@ -3,12 +3,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 
-def apply_filters(driver):
+def apply_filters(driver, sector):
     """
     Applies filters for Sector = Healthcare and Type: Finals Only, then clicks Show.
 
     Args:
         driver: Selenium WebDriver instance
+        sector: Sector code to apply filters for
 
     Returns:
         None
@@ -22,14 +23,15 @@ def apply_filters(driver):
         # Select Sector = Healthcare
         sector_dropdown = driver.find_element(By.ID, "txtAdvSector")
         sector_dropdown.click()
-        healthcare_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvSector option[value='HC']")
+        healthcare_option = driver.find_element(By.CSS_SELECTOR, f"#txtAdvSector option[value='{sector}']")
         healthcare_option.click()
 
-        # Select Timeframe = Past week
+        # Select Timeframe = Past week (options: -7, -30, -365, ALL)
         timeframe_dropdown = driver.find_element(By.ID, "txtAdvTime")
         timeframe_dropdown.click()
-        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='-7']")
+        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='ALL']")
         past_week_option.click()
+
 
         # Select Type: Finals Only
         finals_only_radio = driver.find_element(By.CSS_SELECTOR, "input#rbType3")
