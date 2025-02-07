@@ -135,7 +135,7 @@ class CompanyStandardizer:
             raw_name: Raw company name with potential variations
             
         Returns:
-            Canonical company name, or extracted website name if no match found
+            Canonical company name, or None if no match found
         """
         if not raw_name:
             return None
@@ -147,12 +147,8 @@ class CompanyStandardizer:
             if canonical:
                 return canonical
             
-            # If no match found, try to extract company name from website
-            extracted_name = self.extract_company_from_website(raw_name)
-            if extracted_name:
-                print(f"WARNING: No standardized company found for {raw_name}. "
-                      f"Falling back to extracted name: {extracted_name}")
-            return extracted_name
+            print(f"WARNING: No standardized company found for website: {raw_name}")
+            return None
             
         cleaned_name = raw_name.strip()
         return self._name_to_canonical.get(cleaned_name)
@@ -219,9 +215,11 @@ class CompanyStandardizer:
                     "BofA Securities, Inc.",
                     "BofA Merrill Lynch",
                     "BOFA SECURITIES",
+                    "BofA SECURITIES",
                     "Bank of America Securities",
                     "Bank of America Securities, Inc.",
                     "BofA"
+
                 ],
                 "websites": [
                     "bofaml.com",
@@ -249,6 +247,7 @@ class CompanyStandardizer:
                     "Colliers Securities",
                     "Colliers Securities LLC",
                     "COLLIERS",
+                    "COLLIERS SECURITIES LLC",
                 ],
                 "websites": [
                     "colliers.com",
@@ -405,10 +404,14 @@ class CompanyStandardizer:
                     "WELLS FARGO",
                     "Wells Fargo Securities",
                     "Wells Fargo Bank",
+                    "Wells Fargo & Company",
+                    "Wells Fargo Corporate & Investment Banking",
+                    "Wells Fargo & Company, N.A.",
                 ],
                 "websites": [
                     "wellsfargo.com",
                 ],
+
             },
             {
                 "canonical_name": "Jefferies",
@@ -479,13 +482,379 @@ class CompanyStandardizer:
             {
                 "canonical_name": "Siebert Williams Shank",
                 "name_variations": [
+                    "Siebert Williams Shank",
+                    "Siebert Williams Shank & Co.",
                     "Siebert Williams Shank & Co., LLC",
-                    "Siebert Williams Shank"
+                    "SWS",
+                    "Siebert Williams",
+                    "SIEBERT WILLIAMS SHANK",
                 ],
                 "websites": [
-                    "siebert.com"
-                ]
+                    "siebertwilliams.com",
+                ],
             },
+            {
+                "canonical_name": "Stephens Inc.",
+                "name_variations": [
+                    "Stephens",
+                    "Stephens Inc.",
+                    "Stephens Inc",
+                    "STEPHENS",
+                    "STEPHENS INC",
+                ],
+                "websites": [
+                    "stephens.com",
+                ],
+            },
+            {
+                "canonical_name": "UBS Financial Services",
+                "name_variations": [
+                    "UBS",
+                    "UBS Group",
+                    "Ubs",
+                    "UBS Financial",
+                    "UBS Financial Services",
+                    "UBS Financial Services Inc.",
+                    "UBS Securities",
+                    "UBS Investment Bank",
+                ],
+                "websites": [
+                    "ubs.com",
+                    "www.ubs.com",
+                ],
+            },
+            {
+                "canonical_name": "PNC Capital Markets",
+                "name_variations": [
+                    "PNC",
+                    "PNC Capital Markets",
+                    "PNC Capital Markets LLC",
+                    "PNC CAPITAL MARKETS",
+                    "PNC CAPITAL MARKETS LLC",
+                    "PNC Bank",
+                    "PNC Financial Services",
+                ],
+                "websites": [
+                    "pnc.com",
+                    "pnccapitalmarkets.com",
+                ],
+            },
+            {
+                "canonical_name": "HJ Sims",
+                "name_variations": [
+                    "HJ Sims",
+                    "H.J. Sims",
+                    "Herbert J. Sims",
+                    "Herbert J. Sims & Co.",
+                    "Herbert J. Sims & Co., LLC",
+                    "HJS",
+                    "HJSIMS",
+                ],
+                "websites": [
+                    "hjsims.com",
+                ],
+            },
+            {
+                "canonical_name": "U.S. Bank",
+                "name_variations": [
+                    "U.S. Bank",
+                    "US Bank",
+                    "USBank",
+                    "U.S. Bancorp",
+                    "US BANK",
+                    "U.S. BANK",
+                    "U.S. Bank National Association",
+                ],
+                "websites": [
+                    "usbank.com",
+                    "www.usbank.com",
+                ],
+            },
+            {
+                "canonical_name": "Northland Securities",
+                "name_variations": [
+                    "Northland Securities",
+                    "Northland Securities, Inc.",
+                    "NORTHLAND SECURITIES",
+                    "Northland",
+                    "NorthlandSecurities",
+                    "Northland Capital Markets",
+                ],
+                "websites": [
+                    "northlandsecurities.com",
+                    "northlandcapitalmarkets.com",
+                ],
+            },
+            {
+                "canonical_name": "Academy Securities",
+                "name_variations": [
+                    "Academy Securities",
+                    "Academy Securities, Inc.",
+                    "ACADEMY SECURITIES",
+                ],
+                "websites": [
+                    "academysecurities.com",
+                ],
+            },
+            {
+                "canonical_name": "AmeriVet Securities",
+                "name_variations": [
+                    "AmeriVet Securities",
+                    "AmeriVet Securities, Inc.",
+                    "AMERIVET SECURITIES",
+                ],
+                "websites": [
+                    "amerivetsecurities.com",
+                ],
+            },
+            {
+                "canonical_name": "Bancroft Capital",
+                "name_variations": [
+                    "Bancroft Capital",
+                    "Bancroft Capital, LLC",
+                    "BANCROFT CAPITAL",
+                ],
+                "websites": [
+                    "bancroft4vets.com",
+                ],
+            },
+            {
+                "canonical_name": "Cabrera Capital Markets",
+                "name_variations": [
+                    "Cabrera Capital Markets",
+                    "Cabrera Capital Markets, LLC",
+                    "CABRERA CAPITAL MARKETS",
+                ],
+                "websites": [
+                    "cabreracapital.com",
+                ],
+            },
+            {
+                "canonical_name": "Davenport & Company",
+                "name_variations": [
+                    "Davenport & Company",
+                    "Davenport & Company LLC",
+                    "Davenport & Co.",
+                    "DAVENPORT & COMPANY",
+                ],
+                "websites": [
+                    "davenportllc.com",
+                    "investdavenport.com",
+                ],
+            },
+            {
+                "canonical_name": "FHN Financial Capital Markets",
+                "name_variations": [
+                    "FHN Financial Capital Markets",
+                    "FHN Financial",
+                    "First Horizon",
+                    "FHN FINANCIAL",
+                ],
+                "websites": [
+                    "fhnfinancial.com",
+                ],
+            },
+            {
+                "canonical_name": "Huntington Capital Markets",
+                "name_variations": [
+                    "Huntington Capital Markets",
+                    "Huntington",
+                    "HUNTINGTON CAPITAL MARKETS",
+                    "The Huntington Investment Company",
+                ],
+                "websites": [
+                    "huntington.com",
+                ],
+            },
+            {
+                "canonical_name": "Janney Montgomery Scott",
+                "name_variations": [
+                    "Janney Montgomery Scott",
+                    "Janney Montgomery Scott LLC",
+                    "Janney",
+                    "JANNEY MONTGOMERY SCOTT",
+                ],
+                "websites": [
+                    "janney.com",
+                ],
+            },
+            {
+                "canonical_name": "Melvin Securities",
+                "name_variations": [
+                    "Melvin Securities",
+                    "Melvin Securities, LLC",
+                    "MELVIN SECURITIES",
+                ],
+                "websites": [
+                    "melvinsecurities.com",
+                ],
+            },
+            {
+                "canonical_name": "Multi-Bank Securities",
+                "name_variations": [
+                    "Multi-Bank Securities",
+                    "Multi-Bank Securities, Inc.",
+                    "MULTI-BANK SECURITIES",
+                    "MBS",
+                ],
+                "websites": [
+                    "mbssecurities.com",
+                ],
+            },
+            {
+                "canonical_name": "Rice Financial Products Company",
+                "name_variations": [
+                    "Rice Financial Products Company",
+                    "Rice Financial",
+                    "RICE FINANCIAL PRODUCTS COMPANY",
+                    "Rice Financial Products Co.",
+                ],
+                "websites": [
+                    "ricefin.com",
+                ],
+            },
+            {
+                "canonical_name": "SMBC Nikko",
+                "name_variations": [
+                    "SMBC Nikko",
+                    "SMBC Nikko Securities America",
+                    "SMBC NIKKO",
+                    "SMBC Nikko Securities",
+                ],
+                "websites": [
+                    "smbcnikko-si.com",
+                ],
+            },
+            {
+                "canonical_name": "Ramirez & Co.",
+                "name_variations": [
+                    "Ramirez & Co.",
+                    "Ramirez & Co., Inc.",
+                    "RAMIREZ & CO., INC.",
+                    "Ramirez",
+                    "Samuel A. Ramirez & Company",
+                ],
+                "websites": [
+                    "ramirezco.com",
+                ],
+            },
+            {
+                "canonical_name": "Estrada Hinojosa",
+                "name_variations": [
+                    "Estrada Hinojosa",
+                    "Estrada Hinojosa & Company",
+                    "Estrada Hinojosa & Company, Inc.",
+                    "ESTRADA HINOJOSA",
+                    "TRB Capital Markets",
+                    "TRB Capital Markets, LLC",
+                    "Estrada Hinojosa Investment Bankers",
+                ],
+                "websites": [
+                    "ehmuni.com",
+                    "estradahinojosa.com",
+                ],
+            },
+            {
+                "canonical_name": "Bryant Miller Olive",
+                "name_variations": [
+                    "Burke, Mayborn, O'Mara",
+                    "Burke Mayborn O'Mara",
+                    "Bryant Miller Olive",
+                    "BMO Law",
+
+                ],
+                "websites": [
+                    "bmolaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Brown Hutchinson",
+                "name_variations": [
+                    "Brown Hutchinson",
+                    "BROWN HUTCHINSON",
+                    "Brown Hutchinson LLP",
+                ],
+                "websites": [
+                    "brownhutchinson.com",
+                ],
+            },
+            {
+                "canonical_name": "Hardwick Shiver",
+                "name_variations": [
+                    "Hardwick Shiver",
+                    "HARDWICK SHIVER",
+                    "Hardwick Shiver Brown",
+                    "HSB Law",
+                ],
+                "websites": [
+                    "hsblawfirm.com",
+                ],
+            },
+            {
+                "canonical_name": "Katten Muchin Rosenman",
+                "name_variations": [
+                    "Katten Muchin Rosenman",
+                    "Katten",
+                    "KATTEN",
+                    "Katten Law",
+                ],
+                "websites": [
+                    "kattenlaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Nabors, Giblin & Nickerson, P.A.",
+                "name_variations": [
+                    "NG&N",
+                    "Nabors, Giblin & Nickerson",
+                    "NGN Law",
+                    "Nabors, Giblin & Nickerson, P.A.",	
+
+                ],
+                "websites": [
+                    "ngnlaw.com",
+                ],
+
+            },
+            {
+                "canonical_name": "Pearlman & Miranda, LLC",
+                "name_variations": [
+                    "Pearlman & Miranda",
+                    "Pearlman & Miranda, LLC",
+                    "Pearlman and Miranda",
+                    "PEARLMAN & MIRANDA",
+                    "Pearlman Miranda",
+                ],
+                "websites": [
+                    "pearlmanmiranda.com",
+                ],
+            },
+            {
+                "canonical_name": "Robinson Bradshaw",
+                "name_variations": [
+                    "Robinson Bradshaw",
+                    "ROBINSON BRADSHAW",
+                    "Robinson Bradshaw & Hinson",
+                    "RBH Law",
+                ],
+                "websites": [
+                    "rbh.com",
+                    "robinsonbradshaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Saul Ewing",
+                "name_variations": [
+                    "Saul Ewing",
+                    "SAUL EWING",
+                    "Saul Ewing LLP",
+                    "Saul Ewing Arnstein & Lehr",
+                ],
+                "websites": [
+                    "saul.com",
+                ],
+            },
+            
         ]
 
         # Municipal Advisors

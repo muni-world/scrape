@@ -101,10 +101,41 @@ def scrape_deal_info(url, driver=None, standardizer=None, download_os=True):
         }
 
         def safe_get_links(class_name, section_name):
+            """
+            Gets either href links or text content from a section based on class name.
+            
+            Args:
+                class_name (str): CSS class name to search for
+                section_name (str): Name of section for logging purposes
+                
+            Returns:
+                list: List of either href links or text content found
+            """
             try:
+                # First try to find the section
                 section = driver.find_element(By.CLASS_NAME, class_name)
+                
+                # Try to find links first
                 links = section.find_elements(By.TAG_NAME, "a")
-                return [link.get_attribute("href") for link in links]
+                if links:
+                    return [link.get_attribute("href") for link in links]
+                    
+                # If no links found, look for text content in nologo class
+                try:
+                    nologo = section.find_element(By.CLASS_NAME, "nologo")
+                    # Return text content in a list to maintain consistent return type
+                    return [nologo.text.strip()]
+                except Exception:
+                    # If no nologo class found, try getting text from logo div
+                    logo_div = section.find_element(By.CLASS_NAME, "logo")
+                    text = logo_div.text.strip()
+                    if text:
+                        # Split by newlines and clean up any bullet points
+                        return [item.strip().replace("•", "").strip() 
+                               for item in text.split("\n")
+                               if item.strip()]
+                    return []
+                    
             except Exception as e:
                 logging.info(f"No {section_name} found: {str(e)}")
                 return []
