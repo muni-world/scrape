@@ -2,11 +2,11 @@ from .s1_login import login
 from .s2_advanced_search import click_advanced_search
 from .s3_apply_filters import apply_filters
 from .s4_select_100 import select_100_deals
-from .s5_scrape_deals import scrape_deals
-
+from .s5_paginate import paginate_and_scrape
 from utils import load_credentials, initialize_driver
 import logging
 from time import sleep
+
 
 __all__ = ['run_scrape']
 
@@ -47,8 +47,9 @@ def run_scrape(driver=None):
         sleep(3)
         select_100_deals(driver)    
         sleep(2)
-        deals = scrape_deals(driver, sector=SECTOR)
+        deals = paginate_and_scrape(driver, sector=SECTOR)
         
+
 
         return deals
 

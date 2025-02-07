@@ -35,6 +35,10 @@ def scrape_deals(driver, sector):
                 deal_type = type_box.find_element(By.CLASS_NAME, "l1").text
                 deal_method = type_box.find_element(By.CLASS_NAME, "l2").text
                 
+                # Skip this row if it's an Investor Update
+                if "Investor Update" in deal_method:
+                    continue
+                    
                 # Extract state code
                 state = row.find_element(By.CLASS_NAME, "td3").text
                 

@@ -11706,3 +11706,373 @@ Stacktrace:
 2025-02-06 21:29:38,232 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['J.P. Morgan', 'Barclays Capital'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
 2025-02-06 21:29:38,376 - INFO - Deal added to Firestore with ID: CDsN5lqwze72tTlPHA8A
 2025-02-06 21:29:38,376 - INFO - Scraping process completed
+2025-02-07 10:55:53,045 - INFO - Logging started
+2025-02-07 10:55:53,046 - INFO - Starting scraping process
+2025-02-07 10:55:53,107 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-07 10:56:08,333 - INFO - Scraping page 1
+2025-02-07 10:56:11,344 - INFO - Successfully scraped homepage and found 0 deals
+2025-02-07 10:56:11,352 - INFO - No pagination found - single page of results
+2025-02-07 10:56:11,352 - INFO - Completed scraping 1 pages. Total deals found: 0
+2025-02-07 10:56:11,352 - WARNING - No deals were retrieved
+2025-02-07 10:56:11,353 - INFO - Scraping process completed
+2025-02-07 10:57:39,011 - INFO - Logging started
+2025-02-07 10:57:39,011 - INFO - Starting scraping process
+2025-02-07 10:57:39,047 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-07 10:57:52,853 - INFO - Scraping page 1
+2025-02-07 10:57:56,042 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-07 10:57:56,195 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-07 10:57:56,332 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-07 10:57:56,452 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-07 10:57:56,567 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'WA', 'issuer': 'Washington Health Care Facilities Authority', 'total_par_dirty': '172745000', 'total_par': 172745000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A (Fred Hutchinson Cancer Center)', 'underwriters_advisors': ['BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/27/25', 'date': datetime.datetime(2025, 1, 27, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=KMYTU'}
+2025-02-07 10:57:56,677 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'City of Gulfport', 'total_par_dirty': '71285000', 'total_par': 71285000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Memorial Hospital at Gulfport Project), Series 2025', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/24/25', 'date': datetime.datetime(2025, 1, 24, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=4IE0A'}
+2025-02-07 10:57:56,815 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'Dormitory Authority of the State of New York', 'total_par_dirty': '1113870000', 'total_par': 1113870000.0, 'series_name_obligor': 'Northwell Health Obligated Group Revenue Bonds, Series 2024A and Series 2025A (Forward Delivery)', 'underwriters_advisors': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/23/25', 'date': datetime.datetime(2025, 1, 23, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=7D65B'}
+2025-02-07 10:57:56,946 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Minneapolis and Housing and Redevelopment Authority of the City of Saint Paul', 'total_par_dirty': '182620000', 'total_par': 182620000.0, 'series_name_obligor': 'Health Care System Revenue Bonds, Series 2025 (Children’s Health Care)', 'underwriters_advisors': ['J.P. Morgan', 'Piper Sandler & Co.'], 'date_dirty': '01/22/25', 'date': datetime.datetime(2025, 1, 22, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=M736W'}
+2025-02-07 10:57:57,091 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orange County Health Facilities Authority', 'total_par_dirty': '853080000', 'total_par': 853080000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Orlando Health Obligated Group), Series 2025A', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=T81UK'}
+2025-02-07 10:57:57,204 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orlando Health Obligated Group', 'total_par_dirty': '400000000', 'total_par': 400000000.0, 'series_name_obligor': 'Taxable Hospital Revenue Bonds, Series 2025B', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=6IKPA'}
+2025-02-07 10:57:57,204 - INFO - Successfully scraped homepage and found 10 deals
+2025-02-07 10:58:00,269 - INFO - Scraping page 2
+2025-02-07 10:58:03,352 - ERROR - Error parsing amount: could not convert string to float: 'Catholic Health System'
+2025-02-07 10:58:03,401 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Investor Update', 'state': 'NY', 'issuer': 'Catholic Health System', 'total_par_dirty': 'Catholic Health System', 'total_par': None, 'series_name_obligor': 'Investor Update Wednesday, January 15, 2025', 'underwriters_advisors': [''], 'date_dirty': '01/15/25', 'date': datetime.datetime(2025, 1, 15, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/1JLLB'}
+2025-02-07 10:58:03,401 - INFO - Successfully scraped homepage and found 1 deals
+2025-02-07 10:58:03,435 - INFO - No more pages to scrape
+2025-02-07 10:58:03,435 - INFO - Completed scraping 2 pages. Total deals found: 11
+2025-02-07 10:58:03,436 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-07 10:58:05,586 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-07 10:58:06,245 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:07,322 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-07 10:58:07,322 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:07,322 - INFO - Deal data standardized: {'lead_managers': ['TD Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf', 'unprocessed_data': {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 10:58:07,322 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['TD Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf', 'unprocessed_data': {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 10:58:07,718 - INFO - Deal added to Firestore with ID: lgtPE5fqvUU1q5zfdD4g
+2025-02-07 10:58:07,718 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-07 10:58:08,395 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-07 10:58:09,068 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:10,135 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-07 10:58:10,136 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:10,137 - INFO - Deal data standardized: {'lead_managers': ['J.P. Morgan', 'Barclays Capital'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 10:58:10,138 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['J.P. Morgan', 'Barclays Capital'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 10:58:10,258 - INFO - Deal added to Firestore with ID: dpblcwkaEPZSLoSE3Sy4
+2025-02-07 10:58:10,258 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-07 10:58:11,290 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-07 10:58:12,001 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:13,058 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-07 10:58:13,058 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:13,058 - WARNING - Unknown counsel website: http://www.hinckleyallen.com/
+2025-02-07 10:58:13,059 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/']}}
+2025-02-07 10:58:13,059 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['Morgan Stanley', 'BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/']}}
+2025-02-07 10:58:13,179 - INFO - Deal added to Firestore with ID: lCSZexXrct10dSz3WoF7
+2025-02-07 10:58:13,179 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-07 10:58:13,840 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-07 10:58:14,488 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:15,534 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-07 10:58:15,535 - WARNING - Unknown co-manager name: Siebert Williams Shank & Co., LLC
+2025-02-07 10:58:15,535 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'RBC Capital Markets'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}}
+2025-02-07 10:58:15,535 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['Morgan Stanley', 'RBC Capital Markets'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}}
+2025-02-07 10:58:15,655 - INFO - Deal added to Firestore with ID: eBnEf3lQRVpnetOt8v4I
+2025-02-07 10:58:15,655 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-07 10:58:16,613 - INFO - Initiated download for file: WAHealthcare01a-FIN.pdf
+2025-02-07 10:58:17,259 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:18,304 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\WAHealthcare01a-FIN.pdf
+2025-02-07 10:58:18,305 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:18,305 - INFO - Deal data standardized: {'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Orrick Herrington'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\WAHealthcare01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/']}}
+2025-02-07 10:58:18,305 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'WA', 'issuer': 'Washington Health Care Facilities Authority', 'total_par_dirty': '172745000', 'total_par': 172745000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A (Fred Hutchinson Cancer Center)', 'underwriters_advisors': ['BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/27/25', 'date': datetime.datetime(2025, 1, 27, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=KMYTU', 'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Orrick Herrington'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\WAHealthcare01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/']}}
+2025-02-07 10:58:18,443 - INFO - Deal added to Firestore with ID: iVdrwnXXwB0D19acMsvY
+2025-02-07 10:58:18,444 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=4IE0A
+2025-02-07 10:58:19,078 - INFO - Initiated download for file: MSGulfport01a-FIN.pdf
+2025-02-07 10:58:19,729 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:21,735 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MSGulfport01a-FIN.pdf
+2025-02-07 10:58:21,736 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:21,736 - INFO - Deal data standardized: {'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Balch & Bingham'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSGulfport01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.balch.com/']}}
+2025-02-07 10:58:21,736 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'City of Gulfport', 'total_par_dirty': '71285000', 'total_par': 71285000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Memorial Hospital at Gulfport Project), Series 2025', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/24/25', 'date': datetime.datetime(2025, 1, 24, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=4IE0A', 'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Balch & Bingham'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSGulfport01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.balch.com/']}}
+2025-02-07 10:58:21,849 - INFO - Deal added to Firestore with ID: npLPDvN1POFsfjCUrLDx
+2025-02-07 10:58:21,849 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=7D65B
+2025-02-07 10:58:22,604 - INFO - Initiated download for file: NYDASNY11c-FIN.pdf
+2025-02-07 10:58:23,457 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:24,462 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYDASNY11c-FIN.pdf
+2025-02-07 10:58:24,462 - WARNING - Unknown co-manager name: American Veterans Group, PBC
+2025-02-07 10:58:24,462 - WARNING - Unknown co-manager name: Blaylock Van, LLC
+2025-02-07 10:58:24,462 - WARNING - Unknown co-manager name: BNY Mellon Capital Markets, LLC
+2025-02-07 10:58:24,463 - WARNING - Unknown counsel website: http://www.holleypearsonfarrer.com/
+2025-02-07 10:58:24,463 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo'], 'municipal_advisors': [], 'counsels': ['Orrick Herrington', 'http://www.holleypearsonfarrer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYDASNY11c-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/', 'http://www.holleypearsonfarrer.com/']}}
+2025-02-07 10:58:24,463 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'Dormitory Authority of the State of New York', 'total_par_dirty': '1113870000', 'total_par': 1113870000.0, 'series_name_obligor': 'Northwell Health Obligated Group Revenue Bonds, Series 2024A and Series 2025A (Forward Delivery)', 'underwriters_advisors': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/23/25', 'date': datetime.datetime(2025, 1, 23, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=7D65B', 'lead_managers': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo'], 'municipal_advisors': [], 'counsels': ['Orrick Herrington', 'http://www.holleypearsonfarrer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYDASNY11c-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/', 'http://www.holleypearsonfarrer.com/']}}
+2025-02-07 10:58:24,572 - INFO - Deal added to Firestore with ID: fuzD4PmXatjLSL6CgoCK
+2025-02-07 10:58:24,573 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=M736W
+2025-02-07 10:58:25,437 - INFO - Initiated download for file: MNChildrens01a-FIN.pdf
+2025-02-07 10:58:26,075 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:27,079 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MNChildrens01a-FIN.pdf
+2025-02-07 10:58:27,079 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:27,080 - INFO - Deal data standardized: {'lead_managers': ['J.P. Morgan', 'Piper Sandler'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Dorsey & Whitney'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNChildrens01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/']}}
+2025-02-07 10:58:27,080 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Minneapolis and Housing and Redevelopment Authority of the City of Saint Paul', 'total_par_dirty': '182620000', 'total_par': 182620000.0, 'series_name_obligor': 'Health Care System Revenue Bonds, Series 2025 (Children’s Health Care)', 'underwriters_advisors': ['J.P. Morgan', 'Piper Sandler & Co.'], 'date_dirty': '01/22/25', 'date': datetime.datetime(2025, 1, 22, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=M736W', 'lead_managers': ['J.P. Morgan', 'Piper Sandler'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Dorsey & Whitney'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNChildrens01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/']}}
+2025-02-07 10:58:27,202 - INFO - Deal added to Firestore with ID: 7XPveSFJFSnGE9Rl2gMI
+2025-02-07 10:58:27,203 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=T81UK
+2025-02-07 10:58:27,821 - INFO - Initiated download for file: FLOrlandoHealth01a-FIN.pdf
+2025-02-07 10:58:28,480 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:29,486 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLOrlandoHealth01a-FIN.pdf
+2025-02-07 10:58:29,487 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:29,487 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 10:58:29,487 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orange County Health Facilities Authority', 'total_par_dirty': '853080000', 'total_par': 853080000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Orlando Health Obligated Group), Series 2025A', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=T81UK', 'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 10:58:29,602 - INFO - Deal added to Firestore with ID: XwHmWAV8uOHNtO8flwAj
+2025-02-07 10:58:29,603 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=6IKPA
+2025-02-07 10:58:30,228 - INFO - Initiated download for file: FLOrlandoHealth02a-FIN.pdf
+2025-02-07 10:58:31,123 - INFO - Agreed to terms and conditions
+2025-02-07 10:58:32,178 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLOrlandoHealth02a-FIN.pdf
+2025-02-07 10:58:32,179 - WARNING - Unknown co-manager name: 
+2025-02-07 10:58:32,180 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 10:58:32,180 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orlando Health Obligated Group', 'total_par_dirty': '400000000', 'total_par': 400000000.0, 'series_name_obligor': 'Taxable Hospital Revenue Bonds, Series 2025B', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=6IKPA', 'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 10:58:32,301 - INFO - Deal added to Firestore with ID: oY0tuDatiTZdX0bXA7gv
+2025-02-07 10:58:32,302 - INFO - Starting to scrape deal details from https://www.munios.com/1JLLB
+2025-02-07 10:58:32,528 - INFO - No lead managers found: Message: no such element: Unable to locate element: {"method":"css selector","selector":".lead"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:32,542 - INFO - No co-managers found: Message: no such element: Unable to locate element: {"method":"css selector","selector":".members"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:32,555 - INFO - No municipal advisors found: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ma"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:32,564 - INFO - No counsels found: Message: no such element: Unable to locate element: {"method":"css selector","selector":".bc"}
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:42,715 - ERROR - Error during OS download process: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:42,716 - ERROR - Error scraping deal details: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FBB202F5+28725]
+	(No symbol) [0x00007FF6FBA82AE0]
+	(No symbol) [0x00007FF6FB91510A]
+	(No symbol) [0x00007FF6FB9693D2]
+	(No symbol) [0x00007FF6FB9695FC]
+	(No symbol) [0x00007FF6FB9B3407]
+	(No symbol) [0x00007FF6FB98FFEF]
+	(No symbol) [0x00007FF6FB9B0181]
+	(No symbol) [0x00007FF6FB98FD53]
+	(No symbol) [0x00007FF6FB95A0E3]
+	(No symbol) [0x00007FF6FB95B471]
+	GetHandleVerifier [0x00007FF6FBE4F30D+3366989]
+	GetHandleVerifier [0x00007FF6FBE612F0+3440688]
+	GetHandleVerifier [0x00007FF6FBE578FD+3401277]
+	GetHandleVerifier [0x00007FF6FBBEAAAB+858091]
+	(No symbol) [0x00007FF6FBA8E74F]
+	(No symbol) [0x00007FF6FBA8A304]
+	(No symbol) [0x00007FF6FBA8A49D]
+	(No symbol) [0x00007FF6FBA78B69]
+	BaseThreadInitThunk [0x00007FFF596DE8D7+23]
+	RtlUserThreadStart [0x00007FFF59F7BF2C+44]
+
+2025-02-07 10:58:42,716 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Investor Update', 'state': 'NY', 'issuer': 'Catholic Health System', 'total_par_dirty': 'Catholic Health System', 'total_par': None, 'series_name_obligor': 'Investor Update Wednesday, January 15, 2025', 'underwriters_advisors': [''], 'date_dirty': '01/15/25', 'date': datetime.datetime(2025, 1, 15, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/1JLLB'}
+2025-02-07 10:58:42,822 - INFO - Deal added to Firestore with ID: LQFpi2l35d8b7Y16vo5i
+2025-02-07 10:58:42,822 - INFO - Scraping process completed
+2025-02-07 11:06:26,241 - INFO - Logging started
+2025-02-07 11:06:26,242 - INFO - Starting scraping process
+2025-02-07 11:06:26,295 - INFO - Firestore client initialized using Firebase Admin SDK
+2025-02-07 11:06:40,431 - INFO - Scraping page 1
+2025-02-07 11:06:43,579 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE'}
+2025-02-07 11:06:43,683 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA'}
+2025-02-07 11:06:43,782 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F'}
+2025-02-07 11:06:43,883 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR'}
+2025-02-07 11:06:43,987 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'WA', 'issuer': 'Washington Health Care Facilities Authority', 'total_par_dirty': '172745000', 'total_par': 172745000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A (Fred Hutchinson Cancer Center)', 'underwriters_advisors': ['BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/27/25', 'date': datetime.datetime(2025, 1, 27, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=KMYTU'}
+2025-02-07 11:06:44,090 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'City of Gulfport', 'total_par_dirty': '71285000', 'total_par': 71285000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Memorial Hospital at Gulfport Project), Series 2025', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/24/25', 'date': datetime.datetime(2025, 1, 24, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=4IE0A'}
+2025-02-07 11:06:44,204 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'Dormitory Authority of the State of New York', 'total_par_dirty': '1113870000', 'total_par': 1113870000.0, 'series_name_obligor': 'Northwell Health Obligated Group Revenue Bonds, Series 2024A and Series 2025A (Forward Delivery)', 'underwriters_advisors': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/23/25', 'date': datetime.datetime(2025, 1, 23, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=7D65B'}
+2025-02-07 11:06:44,314 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Minneapolis and Housing and Redevelopment Authority of the City of Saint Paul', 'total_par_dirty': '182620000', 'total_par': 182620000.0, 'series_name_obligor': 'Health Care System Revenue Bonds, Series 2025 (Children’s Health Care)', 'underwriters_advisors': ['J.P. Morgan', 'Piper Sandler & Co.'], 'date_dirty': '01/22/25', 'date': datetime.datetime(2025, 1, 22, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=M736W'}
+2025-02-07 11:06:44,426 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orange County Health Facilities Authority', 'total_par_dirty': '853080000', 'total_par': 853080000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Orlando Health Obligated Group), Series 2025A', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=T81UK'}
+2025-02-07 11:06:44,546 - INFO - Scraped hompage deal: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orlando Health Obligated Group', 'total_par_dirty': '400000000', 'total_par': 400000000.0, 'series_name_obligor': 'Taxable Hospital Revenue Bonds, Series 2025B', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=6IKPA'}
+2025-02-07 11:06:44,546 - INFO - Successfully scraped homepage and found 10 deals
+2025-02-07 11:06:47,611 - INFO - Scraping page 2
+2025-02-07 11:06:50,663 - INFO - Successfully scraped homepage and found 0 deals
+2025-02-07 11:06:50,707 - INFO - No more pages to scrape
+2025-02-07 11:06:50,707 - INFO - Completed scraping 2 pages. Total deals found: 10
+2025-02-07 11:06:50,708 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=S6JLE
+2025-02-07 11:06:52,878 - INFO - Initiated download for file: IDHealthFacilities02a-OS.pdf
+2025-02-07 11:06:53,517 - INFO - Agreed to terms and conditions
+2025-02-07 11:06:54,521 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities02a-OS.pdf
+2025-02-07 11:06:54,522 - WARNING - Unknown co-manager name: 
+2025-02-07 11:06:54,522 - INFO - Deal data standardized: {'lead_managers': ['TD Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf', 'unprocessed_data': {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 11:06:54,522 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '125850000', 'total_par': 125850000.0, 'series_name_obligor': 'Variable Rate Revenue Bonds, Series 2025D (St. Luke’s Health System Project)', 'underwriters_advisors': ['TD Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=S6JLE', 'lead_managers': ['TD Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities02a-OS.pdf', 'unprocessed_data': {'lead_managers': ['http://www.tdsecurities.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 11:06:54,933 - INFO - Deal added to Firestore with ID: bsdfTE36MuyCjH2poR8I
+2025-02-07 11:06:54,934 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=8PTHA
+2025-02-07 11:06:55,561 - INFO - Initiated download for file: IDHealthFacilities01a-FIN.pdf
+2025-02-07 11:06:56,228 - INFO - Agreed to terms and conditions
+2025-02-07 11:06:57,233 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\IDHealthFacilities01a-FIN.pdf
+2025-02-07 11:06:57,233 - WARNING - Unknown co-manager name: 
+2025-02-07 11:06:57,234 - INFO - Deal data standardized: {'lead_managers': ['J.P. Morgan', 'Barclays Capital'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 11:06:57,234 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'ID', 'issuer': 'Idaho Health Facilities Authority', 'total_par_dirty': '579085000', 'total_par': 579085000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A, Series 2025B and Series 2025C (St. Luke’s Health System Project)', 'underwriters_advisors': ['J.P. Morgan', 'Barclays', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/30/25', 'date': datetime.datetime(2025, 1, 30, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=8PTHA', 'lead_managers': ['J.P. Morgan', 'Barclays Capital'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Taft Stettinius & Hollister'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\IDHealthFacilities01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.barclays.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.taftlaw.com/']}}
+2025-02-07 11:06:57,364 - INFO - Deal added to Firestore with ID: E87btpDpewjP2pDLh5Cb
+2025-02-07 11:06:57,364 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=5GK0F
+2025-02-07 11:06:58,065 - INFO - Initiated download for file: MAMassDev02a-FIN.pdf
+2025-02-07 11:06:58,711 - INFO - Agreed to terms and conditions
+2025-02-07 11:06:59,715 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+2025-02-07 11:06:59,716 - WARNING - Unknown co-manager name: 
+2025-02-07 11:06:59,716 - WARNING - Unknown counsel website: http://www.hinckleyallen.com/
+2025-02-07 11:06:59,716 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/']}}
+2025-02-07 11:06:59,716 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MA', 'issuer': 'Massachusetts Development Finance Agency', 'total_par_dirty': '342195000', 'total_par': 342195000.0, 'series_name_obligor': 'Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)', 'underwriters_advisors': ['Morgan Stanley', 'BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=5GK0F', 'lead_managers': ['Morgan Stanley', 'BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['http://www.hinckleyallen.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MAMassDev02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.hinckleyallen.com/']}}
+2025-02-07 11:06:59,828 - INFO - Deal added to Firestore with ID: EjGNGoTintVptqlH1tH8
+2025-02-07 11:06:59,829 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=Y4NVR
+2025-02-07 11:07:00,465 - INFO - Initiated download for file: MDMHHEFA01a-FIN.pdf
+2025-02-07 11:07:01,101 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:01,104 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MDMHHEFA01a-FIN.pdf
+2025-02-07 11:07:01,105 - WARNING - Unknown co-manager name: Siebert Williams Shank & Co., LLC
+2025-02-07 11:07:01,105 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'RBC Capital Markets'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}}
+2025-02-07 11:07:01,106 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MD', 'issuer': 'Maryland Health and Higher Educational Facilities Authority', 'total_par_dirty': '307355000', 'total_par': 307355000.0, 'series_name_obligor': 'Revenue Bonds, University of Maryland Medical System Issue, Series 2025A (Fixed Rate) and Series 2025B (Long-Term Rate)', 'underwriters_advisors': ['Morgan Stanley', 'RBC Capital Markets'], 'date_dirty': '01/29/25', 'date': datetime.datetime(2025, 1, 29, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=Y4NVR', 'lead_managers': ['Morgan Stanley', 'RBC Capital Markets'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': [], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MDMHHEFA01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.rbccm.com/'], 'co_managers': ['Loop Capital Markets', 'Siebert Williams Shank & Co., LLC'], 'municipal_advisors': [], 'counsels': []}}
+2025-02-07 11:07:01,227 - INFO - Deal added to Firestore with ID: tJydGbg0uRnFMIu7mmwS
+2025-02-07 11:07:01,227 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=KMYTU
+2025-02-07 11:07:01,903 - INFO - Initiated download for file: WAHealthcare01a-FIN.pdf
+2025-02-07 11:07:02,547 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:03,553 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\WAHealthcare01a-FIN.pdf
+2025-02-07 11:07:03,553 - WARNING - Unknown co-manager name: 
+2025-02-07 11:07:03,554 - INFO - Deal data standardized: {'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Orrick Herrington'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\WAHealthcare01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/']}}
+2025-02-07 11:07:03,554 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'WA', 'issuer': 'Washington Health Care Facilities Authority', 'total_par_dirty': '172745000', 'total_par': 172745000.0, 'series_name_obligor': 'Revenue Bonds, Series 2025A (Fred Hutchinson Cancer Center)', 'underwriters_advisors': ['BofA Securities', 'Kaufman, Hall & Associates, LLC (MA)', 'PFM Financial Advisors LLC (MA)'], 'date_dirty': '01/27/25', 'date': datetime.datetime(2025, 1, 27, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=KMYTU', 'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall', 'PFM Financial Advisors'], 'counsels': ['Orrick Herrington'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\WAHealthcare01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/', 'http://www.pfm.com/'], 'counsels': ['http://www.orrick.com/']}}
+2025-02-07 11:07:03,663 - INFO - Deal added to Firestore with ID: hJc1HZ6aVWLXHqfTJtK1
+2025-02-07 11:07:03,663 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=4IE0A
+2025-02-07 11:07:04,438 - INFO - Initiated download for file: MSGulfport01a-FIN.pdf
+2025-02-07 11:07:05,081 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:06,086 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MSGulfport01a-FIN.pdf
+2025-02-07 11:07:06,086 - WARNING - Unknown co-manager name: 
+2025-02-07 11:07:06,086 - INFO - Deal data standardized: {'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Balch & Bingham'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSGulfport01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.balch.com/']}}
+2025-02-07 11:07:06,087 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MS', 'issuer': 'City of Gulfport', 'total_par_dirty': '71285000', 'total_par': 71285000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Memorial Hospital at Gulfport Project), Series 2025', 'underwriters_advisors': ['BofA Securities'], 'date_dirty': '01/24/25', 'date': datetime.datetime(2025, 1, 24, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=4IE0A', 'lead_managers': ['BofA Securities'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Balch & Bingham'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MSGulfport01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.bofaml.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.balch.com/']}}
+2025-02-07 11:07:06,260 - INFO - Deal added to Firestore with ID: bu5kn7M5BglgNVP5iRn4
+2025-02-07 11:07:06,261 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=7D65B
+2025-02-07 11:07:06,999 - INFO - Initiated download for file: NYDASNY11c-FIN.pdf
+2025-02-07 11:07:07,656 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:08,660 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\NYDASNY11c-FIN.pdf
+2025-02-07 11:07:08,660 - WARNING - Unknown co-manager name: American Veterans Group, PBC
+2025-02-07 11:07:08,662 - WARNING - Unknown co-manager name: Blaylock Van, LLC
+2025-02-07 11:07:08,662 - WARNING - Unknown co-manager name: BNY Mellon Capital Markets, LLC
+2025-02-07 11:07:08,662 - WARNING - Unknown counsel website: http://www.holleypearsonfarrer.com/
+2025-02-07 11:07:08,662 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo'], 'municipal_advisors': [], 'counsels': ['Orrick Herrington', 'http://www.holleypearsonfarrer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYDASNY11c-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/', 'http://www.holleypearsonfarrer.com/']}}
+2025-02-07 11:07:08,662 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'NY', 'issuer': 'Dormitory Authority of the State of New York', 'total_par_dirty': '1113870000', 'total_par': 1113870000.0, 'series_name_obligor': 'Northwell Health Obligated Group Revenue Bonds, Series 2024A and Series 2025A (Forward Delivery)', 'underwriters_advisors': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'date_dirty': '01/23/25', 'date': datetime.datetime(2025, 1, 23, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=7D65B', 'lead_managers': ['Morgan Stanley', 'Jefferies', 'J.P. Morgan'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo'], 'municipal_advisors': [], 'counsels': ['Orrick Herrington', 'http://www.holleypearsonfarrer.com/'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\NYDASNY11c-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jefferies.com/', 'http://www.jpmorgan.com/'], 'co_managers': ['American Veterans Group, PBC', 'Blaylock Van, LLC', 'BNY Mellon Capital Markets, LLC', 'BofA Securities', 'TD Securities', 'Wells Fargo Securities'], 'municipal_advisors': [], 'counsels': ['http://www.orrick.com/', 'http://www.holleypearsonfarrer.com/']}}
+2025-02-07 11:07:08,793 - INFO - Deal added to Firestore with ID: 9On4CGzxhM1GWtm028AN
+2025-02-07 11:07:08,794 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=M736W
+2025-02-07 11:07:09,412 - INFO - Initiated download for file: MNChildrens01a-FIN.pdf
+2025-02-07 11:07:10,042 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:11,046 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\MNChildrens01a-FIN.pdf
+2025-02-07 11:07:11,046 - WARNING - Unknown co-manager name: 
+2025-02-07 11:07:11,046 - INFO - Deal data standardized: {'lead_managers': ['J.P. Morgan', 'Piper Sandler'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Dorsey & Whitney'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNChildrens01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/']}}
+2025-02-07 11:07:11,046 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'MN', 'issuer': 'City of Minneapolis and Housing and Redevelopment Authority of the City of Saint Paul', 'total_par_dirty': '182620000', 'total_par': 182620000.0, 'series_name_obligor': 'Health Care System Revenue Bonds, Series 2025 (Children’s Health Care)', 'underwriters_advisors': ['J.P. Morgan', 'Piper Sandler & Co.'], 'date_dirty': '01/22/25', 'date': datetime.datetime(2025, 1, 22, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=M736W', 'lead_managers': ['J.P. Morgan', 'Piper Sandler'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['Dorsey & Whitney'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\MNChildrens01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.jpmorgan.com/', 'http://www.pipersandler.com/'], 'co_managers': [''], 'municipal_advisors': [], 'counsels': ['http://www.dorsey.com/']}}
+2025-02-07 11:07:11,162 - INFO - Deal added to Firestore with ID: zIs8KJI2U0VWle87z7ND
+2025-02-07 11:07:11,163 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=T81UK
+2025-02-07 11:07:12,362 - INFO - Initiated download for file: FLOrlandoHealth01a-FIN.pdf
+2025-02-07 11:07:13,042 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:14,063 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLOrlandoHealth01a-FIN.pdf
+2025-02-07 11:07:14,063 - WARNING - Unknown co-manager name: 
+2025-02-07 11:07:14,064 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 11:07:14,064 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orange County Health Facilities Authority', 'total_par_dirty': '853080000', 'total_par': 853080000.0, 'series_name_obligor': 'Hospital Revenue Bonds (Orlando Health Obligated Group), Series 2025A', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=T81UK', 'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth01a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 11:07:14,182 - INFO - Deal added to Firestore with ID: 2wOcCReTjCVbvxPBfavs
+2025-02-07 11:07:14,182 - INFO - Starting to scrape deal details from https://www.munios.com/munios-notice.aspx?e=6IKPA
+2025-02-07 11:07:14,784 - INFO - Initiated download for file: FLOrlandoHealth02a-FIN.pdf
+2025-02-07 11:07:15,418 - INFO - Agreed to terms and conditions
+2025-02-07 11:07:16,423 - INFO - Successfully downloaded: C:\Users\quokka\Downloads\FLOrlandoHealth02a-FIN.pdf
+2025-02-07 11:07:16,423 - WARNING - Unknown co-manager name: 
+2025-02-07 11:07:16,423 - INFO - Deal data standardized: {'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 11:07:16,423 - INFO - Combined with additional data: {'sector': 'HC', 'type': 'FINAL', 'method': 'Negotiated', 'state': 'FL', 'issuer': 'Orlando Health Obligated Group', 'total_par_dirty': '400000000', 'total_par': 400000000.0, 'series_name_obligor': 'Taxable Hospital Revenue Bonds, Series 2025B', 'underwriters_advisors': ['Morgan Stanley', 'J.P. Morgan', 'Kaufman, Hall & Associates, LLC (MA)'], 'date_dirty': '01/21/25', 'date': datetime.datetime(2025, 1, 21, 5, 0, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'url': 'https://www.munios.com/munios-notice.aspx?e=6IKPA', 'lead_managers': ['Morgan Stanley', 'J.P. Morgan'], 'co_managers': [''], 'municipal_advisors': ['Kaufman Hall'], 'counsels': ['Chapman and Cutler'], 'os_file_path': 'C:\\Users\\quokka\\Downloads\\FLOrlandoHealth02a-FIN.pdf', 'unprocessed_data': {'lead_managers': ['http://www.morganstanley.com/', 'http://www.jpmorgan.com/'], 'co_managers': [''], 'municipal_advisors': ['http://www.kaufmanhall.com/'], 'counsels': ['http://www.chapman.com/']}}
+2025-02-07 11:07:16,533 - INFO - Deal added to Firestore with ID: 4UhWRRSq8cT4KRaFinns
+2025-02-07 11:07:16,533 - INFO - Scraping process completed

@@ -29,7 +29,7 @@ def apply_filters(driver, sector):
         # Select Timeframe = Past week
         timeframe_dropdown = driver.find_element(By.ID, "txtAdvTime")
         timeframe_dropdown.click()
-        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='-7']")
+        past_week_option = driver.find_element(By.CSS_SELECTOR, "#txtAdvTime option[value='-30']")
         past_week_option.click()
 
         # Select Type: Finals Only

@@ -266,6 +266,7 @@ class CompanyStandardizer:
                     "Goldman Sachs & Co.",
                     "Goldman Sachs & Co. LLC",
                     "Goldman Sachs & Co. LLC",
+                    "GS",
                 ],
                 "websites": [
                     "goldmansachs.com",
@@ -283,6 +284,19 @@ class CompanyStandardizer:
                     "JPMorgan Chase & Co.",
                     "JPMorgan Chase & Co.",
                     "J.P. MORGAN",
+                    "j.p. morgan",
+                    "j.p morgan",
+                    "j.p. morgan",
+                    "j.p. morgan",
+                    "j.p.morgan",
+                    "jp morgan",
+                    "jpmorgan",
+                    "j. p. m o r g a n",
+                    "j. p. morgan",
+                    "j .p. morgan",
+                    "j. p.morgan",
+                    "j. p. morgan",
+                    "pmorgan",
                 ],
                 "websites": [
                     "jpmorgan.com",
@@ -312,7 +326,6 @@ class CompanyStandardizer:
                     "citigroup.com",
                 ],
             },
-
             {
                 "canonical_name": "RBC Capital Markets",
                 "name_variations": [
@@ -387,11 +400,47 @@ class CompanyStandardizer:
                     "truist.com",
                 ],
             },
+            {
+                "canonical_name": "American Veterans Group",
+                "name_variations": [
+                    "American Veterans Group",
+                    "American Veterans Group, PBC"
+                ],
+                "websites": [
+                    "americanveteransgroup.com"
+                ]
+            },
+            {
+                "canonical_name": "Blaylock Van",
+                "name_variations": [
+                    "Blaylock Van",
+                    "Blaylock Van, LLC"
+                ],
+                "websites": [
+                    "blaylockvan.com"
+                ]
+            },
+            {
+                "canonical_name": "BNY Mellon Capital Markets",
+                "name_variations": [
+                    "BNY Mellon Capital Markets",
+                    "BNY Mellon Capital Markets, LLC"
+                ],
+                "websites": [
+                    "bnymellon.com"
+                ]
+            },
+            {
+                "canonical_name": "Siebert Williams Shank",
+                "name_variations": [
+                    "Siebert Williams Shank & Co., LLC",
+                    "Siebert Williams Shank"
+                ],
+                "websites": [
+                    "siebert.com"
+                ]
+            },
         ]
-        
-        # Add law firms/counsels
-
-
 
         # Municipal Advisors
         municipal_advisors = [
@@ -735,6 +784,16 @@ class CompanyStandardizer:
                 "websites": [
                     "taftlaw.com",
                 ],
+            },
+            {
+                "canonical_name": "Holley Pearson Farrer",
+                "name_variations": [
+                    "Holley Pearson Farrer",
+                    "Holley Pearson Farrer & Associates"
+                ],
+                "websites": [
+                    "holleypearsonfarrer.com"
+                ]
             },
         ]
 
