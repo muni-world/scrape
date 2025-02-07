@@ -109,6 +109,13 @@ class CompanyStandardizer:
         if not raw_name:
             return None
             
+        # Check if this is actually a website URL
+        if raw_name.startswith("http://") or raw_name.startswith("https://"):
+            # Try to get canonical name from website
+            canonical = self.get_canonical_name_from_website(raw_name)
+            if canonical:
+                return canonical
+            
         cleaned_name = raw_name.strip()
         return self._name_to_canonical.get(cleaned_name)
     

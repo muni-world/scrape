@@ -111,13 +111,15 @@ def scrape_deals(driver, sector):
                     "method": deal_method,
                     "state": state,
                     "issuer": issuer,
-                    "total_par_dirty": total_par_str,
                     "total_par": total_par,
                     "series_name_obligor": series_name_obligor,
                     "underwriters_advisors": underwriters_advisors,
-                    "date_dirty": date_str,
                     "date": parsed_date,
                     "url": f"https://www.munios.com/{deal_url}",
+                    "unprocessed_data": {
+                        "total_par": total_par_str,
+                        "date": date_str,
+                    }
                 }
                 logging.info(f"Scraped hompage deal: {deal}")
                 deals.append(deal)

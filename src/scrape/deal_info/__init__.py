@@ -19,52 +19,51 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
     Returns:
         dict: Data with standardized company names and original raw data
     """
+    # Initialize with existing unprocessed_data if it exists
+    existing_unprocessed = data.get("unprocessed_data", {})
+    
+    # Check for lead managers and log error if missing
+    if not data.get("lead_managers"):
+        logging.error("No lead managers found - this is a required field")
+        return {}
+    
     standardized = {
         "lead_managers": [],
         "co_managers": [],
         "municipal_advisors": [],
         "counsels": [],
         "os_file_path": data.get("os_file_path"),
-        # Store all raw data in a nested dictionary
+        # Merge existing unprocessed data with new data
         "unprocessed_data": {
+            **existing_unprocessed,
             "lead_managers": data["lead_managers"],
-            "co_managers": data["co_managers"],
-            "municipal_advisors": data["municipal_advisors"],
-            "counsels": data["counsels"],
+            "co_managers": data.get("co_managers", []),
+            "municipal_advisors": data.get("municipal_advisors", []),
+            "counsels": data.get("counsels", []),
         },
     }
     
-    # Standardize lead managers (from websites)
-    for website in data["lead_managers"]:
-        if canonical_name := standardizer.get_canonical_name_from_website(website):
-            standardized["lead_managers"].append(canonical_name)
-        else:
-            logging.warning(f"Unknown lead manager website: {website}")
-            standardized["lead_managers"].append(website)
+    # Standardize lead managers
+    for manager in data["lead_managers"]:
+        if manager:  # Only process non-empty values
+            canonical = standardizer.get_canonical_name(manager)
+            if canonical:
+                standardized["lead_managers"].append(canonical)
+            else:
+                logging.warning(f"Unknown lead manager name: {manager}")
+                standardized["lead_managers"].append(manager)
     
-    # Standardize co-managers (from names)
-    for name in data["co_managers"]:
-        if canonical_name := standardizer.get_canonical_name(name):
-            standardized["co_managers"].append(canonical_name)
-        else:
-            logging.warning(f"Unknown co-manager name: {name}")
-            standardized["co_managers"].append(name)
-    
-    # Standardize municipal advisors (from websites)
-    for website in data["municipal_advisors"]:
-        if canonical_name := standardizer.get_canonical_name_from_website(website):
-            standardized["municipal_advisors"].append(canonical_name)
-        else:
-            logging.warning(f"Unknown municipal advisor website: {website}")
-            standardized["municipal_advisors"].append(website)
-    
-    # Standardize counsels (from websites)
-    for website in data["counsels"]:
-        if canonical_name := standardizer.get_canonical_name_from_website(website):
-            standardized["counsels"].append(canonical_name)
-        else:
-            logging.warning(f"Unknown counsel website: {website}")
-            standardized["counsels"].append(website)
+    # Standardize other fields
+    for field in ["co_managers", "municipal_advisors", "counsels"]:
+        if field in data:
+            for item in data[field]:
+                if item:  # Only process non-empty values
+                    canonical = standardizer.get_canonical_name(item)
+                    if canonical:
+                        standardized[field].append(canonical)
+                    else:
+                        logging.warning(f"Unknown {field.replace('_', ' ')} name: {item}")
+                        standardized[field].append(item)
     
     return standardized
 
