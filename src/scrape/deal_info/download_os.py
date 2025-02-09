@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import logging
 import os
 import time
+import random
 
 def setup_download(driver):
     """
@@ -48,6 +49,10 @@ def download_os(driver):
         str: The full path to the downloaded file
     """
     try:
+        # Add a random delay between 1-3 seconds before starting download
+        random_delay = random.uniform(1, 5)
+        time.sleep(random_delay)
+        logging.info(f"Waiting {random_delay:.2f} seconds before download")
 
         # Configure download settings
         setup_download(driver)
