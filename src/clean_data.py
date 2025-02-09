@@ -935,6 +935,21 @@ class CompanyStandardizer:
                 ],
                 
             },
+            {
+                "canonical_name": "First River Advisory",
+                "name_variations": [
+                    "First River Advisory",
+                    "First River Advisory L.L.C.",
+                    "First River Advisory LLC",
+                    "First River Advisory L.L.C",
+                    "First River",
+                    "FRA",
+
+                ],
+                "websites": [
+                    "firstriver.com",
+                ],
+            },
         ]
 
         # Law Firms (keep existing law_firms list)
