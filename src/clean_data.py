@@ -259,6 +259,8 @@ class CompanyStandardizer:
                     "Piper Sandler",
                     "Piper Sandler & Co.",
                     "PIPER SANDLER",
+                    "Piper Sandler & Co., Inc.",
+                    "PIPER SANDLER & CO."
                 ],
                 "websites": [
                     "pipersandler.com",
@@ -860,6 +862,17 @@ class CompanyStandardizer:
         # Municipal Advisors
         municipal_advisors = [
             {
+                "canonical_name": "SDAO Advisory Services",
+                "name_variations": [
+                    "SDAO Advisory Services",
+                    "SDAO Advisory Services LLC",
+                    "SDAOAS",
+                ],
+                "websites": [
+                    "sdao.com",
+                ],
+            },
+            {
                 "canonical_name": "Houlihan Lokey",
                 "name_variations": [
                     "Houlihan Lokey",
@@ -920,6 +933,7 @@ class CompanyStandardizer:
                 "websites": [
                     "pfm.com",
                 ],
+                
             },
         ]
 

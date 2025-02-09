@@ -6,7 +6,7 @@ from time import sleep
 import logging
 from .s5_scrape_deals import scrape_deals
 
-def paginate_and_scrape(driver, sector, max_pages=4):
+def paginate_and_scrape(driver, sector, max_pages=1):
     """
     Handles pagination and scrapes deals from all available pages.
     
