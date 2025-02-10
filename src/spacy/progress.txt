@@ -43,6 +43,104 @@ INFO:root:missing_path: 2
 INFO:root:processing_failed: 30
 INFO:root:successfully_processed: 66
 
+3:26 PM - 2025/02/10
+INFO:root:total_documents: 98
+INFO:root:already_processed: 66
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 27
+INFO:root:successfully_processed: 69
+INFO:root:
+
+3:58 PM - 2025/02/10
+INFO:root:total_documents: 98
+INFO:root:already_processed: 69
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 25
+INFO:root:successfully_processed: 71
+
+Example Prompt:
+    Prompt: add another regex pattern to extract the amount from the text it will have "will pay the underwriter/underwriters/purchaser/purchasers a fee" then ignore all text before "$" 
+    example input: Orlando Health will pay the Underwriters a fee for expenses and services in the amount of $3,741,670.07 from the proceeds of the Taxable Bonds.
+    example output (the number after the $): 3,741,670.07
+
+
+
+
+
+28. Document ID: rSI9011OcPqr7eLkgeBT
+INFO:root:   Path: C:\Users\quokka\Downloads\TXTarrant02a-OS.pdf
+INFO:root:   Obligor: Hospital Revenue Refunding Bonds (Baylor Scott & White Health Project), Series 2024A, Series 2024B, Series 2024C and Series 2024D
+INFO:root:   Reason: No discount found in PDF
+WOW they break out econ by bank! This is the initial offering for commerical paper. They do not break out COI On Sources and uses. 
+
+UNDERWRITING
+J.P. Morgan Securities LLC (“JPMS”) has agreed to purchase all of the Series 2024A Bonds and the Series
+2024C Bonds, if any Bonds of such series are purchased. Barclays Capital Inc. (“Barclays” and together with JPMS,
+the “Underwriters”) has agreed to purchase all of the Series 2024B Bonds and the Series 2024D Bonds, if any Bonds
+of such series are purchased.
+JPMS has agreed to purchase the Series 2024A Bonds at a purchase price equal to $96,970,000 (the principal
+amount of the Series 2024A Bonds). BSW Health has agreed to pay JPMS a fee of $134,133.31 as compensation for
+underwriting the Series 2024A Bonds.
+Barclays has agreed to purchase the Series 2024B Bonds at a purchase price equal to $88,455,000 (the
+principal amount of the Series 2024B Bonds). BSW Health has agreed to pay Barclays a fee of $113,964.98 as
+compensation for underwriting the Series 2024B Bonds.
+JPMS has agreed to purchase the Series 2024C Bonds at a purchase price equal to $45,000,000 (the principal
+amount of the Series 2024C Bonds). BSW Health has agreed to pay to JPMS a fee of $62,521.82 as compensation for
+underwriting the Series 2024C Bonds.
+-65-
+Barclays has agreed to purchase the Series 2024D Bonds at a purchase price equal to $50,000,000 (the
+principal amount of the Series 2024D Bonds). BSW Health has agreed to pay Barclays a fee of $64,655.67 as
+compensation for underwriting the Series 2024D Bonds.
+The respective contracts of purchase provide or will provide, as applicable, that the relevant underwriters
+will purchase all of the Bonds of the relevant series if any are purchased. BSW Health has agreed or will agree to
+indemnify the underwriters and the Issuer against certain liabilities, including certain liabilities arising under federal
+and state securities laws in connection with the Bonds. BSW Health will also pay certain expenses of the Issuer and
+the underwriters in connection with the issuance of the Bonds.
+
+
+
+23. Document ID: fBmRKutbKC3htJy1p1mR
+INFO:root:   Path: C:\Users\quokka\Downloads\ZGCommunityFirst01a-FIN.pdf
+INFO:root:   Obligor: Hospital Facilities Refunding Revenue Bonds, Series 2024A and Economic Development Facilities Revenue Refunding and Improvement Bonds, Series 2024B (Community First Solutions Obligated Group)
+
+Tricky they break down by series. Would need to extract botht then add (idealy konw fee per series name for tracking)
+
+Pursuant to a bond purchase agreement (the “Warren County Bond Purchase Agreement”) by and 
+among Warren County, the Borrowers and the Underwriter, the Underwriter will purchase the Series 2024A 
+Bonds at a purchase price of $23,025,465.75, which purchase price reflects $224,731.25 of Underwriter’s 
+discount and $1,325,197.00 of original issue premium.  Pursuant to a bond purchase agreement (the “Port 
+Authority  Bond  Purchase  Agreement”)  by  and  among  the  Port  Authority,  the  Borrowers  and  the  
+Underwriter, the Underwriter will purchase the Series 2024B Bonds at a purchase price of $24,865,777.20, 
+which  purchase  price  reflects  $248,050.00  of  Underwriter’s  discount  and  $913,827.20  of  original  issue  
+premium. 
+
+
+14. Document ID: MbyjzaRls4vqoI4YwYLQ
+INFO:root:   Path: C:\Users\quokka\Downloads\PABerks01a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds (Tower Health Project), Series 2024A-1, Series 2024A-2, Series 2024A-3, Series 2024A-4, Series 2024B-1 and Series 2024B-2
+INFO:root:   Reason: No discount found in PDF
+
+
+UNDERWRITER AND DEALER MANAGER
+Pursuant to an agreement between the Authority, the Corporation and BofA Securities, Inc. (the
+“Underwriter” and “Dealer Manager”), BofA Securities, Inc. has agreed to act as underwriter for the Sale
+Offer and dealer manager for the Exchange Offer. The Corporation will pay the Underwriter a success fee
+for its services equal to $1.00 per $1,000 of the aggregate principal amount of Series 2024A-1 Bonds and
+Series 2024A-2 Bonds issued in the Sale Offer. The Corporation will pay the Dealer Manager a success
+fee under the Exchange Offer. In addition, the Corporation has agreed to pay for the out-of-pocket expenses
+of the Underwriter and Dealer Manager, including its legal counsel. Each Member of the Obligated Group
+has agreed to indemnify the Underwriter, the Dealer Manager and the Authority against losses, claims,
+damages and liabilities to third parties arising out of any materially incorrect or incomplete statements of
+information contained in this Limited Offering Memorandum pertaining to the Obligated Group, their
+hospital facilities or certain other matters.
+
+Have to look at estimated Sources and uses table. Costs of issuance1 6,999,891 
+Includes estimated costs of the Exchange Offer and issuance of the Series 2024 Bonds, including fees and expenses of Bond Counsel, fees and
+expenses for, and fees and expenses of counsel to, the Authority, Members of the Obligated Group, the Underwriter, the Dealer Manager, the
+Information and Exchange Agent, accountant’s fees, financial advisor fees, printing costs and other miscellaneous expenses.
+
+Need Offer to Exchange and Consent Solicitation Statement to find dealer manager success fee  but it is not in OS
+
 
 underwriters’ discount in the amount of $1,741,390.22)
 10. Document ID: 71RAxGRUJd6etUmOPbXf
