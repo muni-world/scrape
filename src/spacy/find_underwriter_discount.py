@@ -27,9 +27,8 @@ def extract_underwriting_discount_from_pdf(pdf_path):
             r"(?:underwriting|underwriter|purchaser)"  # The main terms
             r"(?:s|['’]s|s['’]?)?\s+"    # Optional possessive forms with both apostrophe types
             r"(?:compensation|discount|fee|expenses)"  # The type of charge
-            r"\s+of\s+"                  # " of " with flexible spacing
+            r"\s+(?:[^$]*?\s+)?of\s+"    # Match any words before "of" (non-greedy)
         r")"
-
         r"(\$\d+(?:,?\d+)*(?:\.\d+)?)", # Capture any number after $
         re.IGNORECASE | re.DOTALL
     )

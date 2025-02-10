@@ -36,6 +36,19 @@ INFO:root:processing_failed: 35
 INFO:root:successfully_processed: 61
 INFO:root:
 
+9:02 PM - 2025/02/09
+INFO:root:total_documents: 98
+INFO:root:already_processed: 61
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 30
+INFO:root:successfully_processed: 66
+
+
+underwriters’ discount in the amount of $1,741,390.22)
+10. Document ID: 71RAxGRUJd6etUmOPbXf
+INFO:root:   Path: C:\Users\quokka\Downloads\MAMassDev02a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds, UMass Memorial Health Care Obligated Group Issue, Series N (2025)
+INFO:root:   Reason: No discount found in PDF
 
 
 less Underwriter’s discount of $213,150.00
