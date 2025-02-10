@@ -60,9 +60,16 @@ INFO:root:successfully_processed: 71
 
 Example Prompt:
     Prompt: add another regex pattern to extract the amount from the text it will have "will pay the underwriter/underwriters/purchaser/purchasers a fee" then ignore all text before "$" 
+    Look at other regex patterns and keep formatting consistent. 
     example input: Orlando Health will pay the Underwriters a fee for expenses and services in the amount of $3,741,670.07 from the proceeds of the Taxable Bonds.
     example output (the number after the $): 3,741,670.07
 
+
+prompt: add another regex pattern to extract the amount from the text $number "as compensation for underwriting|purchasing" 
+Example input: JPMS has agreed to purchase the Series 2024A Bonds at a purchase price equal to $96,970,000 (the principal
+amount of the Series 2024A Bonds). BSW Health has agreed to pay JPMS a fee of $134,133.31 as compensation for
+underwriting the Series 2024A Bonds.
+Example output (the number after the $): 134,133.31
 
 
 

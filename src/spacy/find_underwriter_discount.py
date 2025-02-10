@@ -30,6 +30,8 @@ def extract_underwriting_discount_from_pdf(pdf_path):
       "of underwriter's/underwriters'/purchaser's/purchasers' discount/fees"
     This pattern captures only the digits after "$".
 
+  Pattern 5: Matches "$XXX.XX as compensation for underwriting/purchasing"
+
   For all patterns, only the number (without the "$") is captured.
   Example:
     Input: "Pursuant to ... less $725,500.00 of Underwriter's discount plus ..."
@@ -95,6 +97,13 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     re.IGNORECASE | re.DOTALL
   )
 
+  # Pattern 5: Matches "$XXX.XX as compensation for underwriting/purchasing"
+  compensation_pattern = re.compile(
+    r"\$(\d+(?:,?\d+)*(?:\.\d+?))"  # Capture the number after $
+    r"\s+as compensation for\s+"     # Directly match the key phrase
+    r"(?:underwriting|purchasing)", # Match either activity
+    re.IGNORECASE | re.DOTALL
+  )
 
   # Open the PDF document using the fitz library.
   with fitz.open(pdf_path) as doc:
@@ -119,6 +128,11 @@ def extract_underwriting_discount_from_pdf(pdf_path):
 
       # Try Pattern 4.
       match = before_discount_pattern.search(text)
+      if match:
+        return match.group(1)
+
+      # Try NEW Pattern 5.
+      match = compensation_pattern.search(text)
       if match:
         return match.group(1)
 
