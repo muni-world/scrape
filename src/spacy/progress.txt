@@ -1,0 +1,81 @@
+7:08 PM - 2025/02/09
+INFO:root:total_documents: 98
+INFO:root:already_processed: 0
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 61
+INFO:root:successfully_processed: 35
+
+7:31 PM - 2025/02/09
+INFO:root:total_documents: 98
+INFO:root:already_processed: 35
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 80
+INFO:root:successfully_processed: 16
+
+7:53 PM - 2025/02/09
+INFO:root:total_documents: 98
+INFO:root:already_processed: 35
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 76
+INFO:root:successfully_processed: 20
+INFO:root:
+
+8:08
+INFO:root:total_documents: 98
+INFO:root:already_processed: 39
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 70
+INFO:root:successfully_processed: 26
+INFO:root:
+
+8:15 PM - 2025/02/09
+INFO:root:total_documents: 98
+INFO:root:already_processed: 45
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 35
+INFO:root:successfully_processed: 61
+INFO:root:
+
+
+
+less Underwriter’s discount of $213,150.00
+4. Document ID: 1R67NPtd7wqYSc7NPOH8
+INFO:root:   Path: C:\Users\quokka\Downloads\CODelNorte01a-FIN.pdf
+INFO:root:   Obligor: Healthcare Facilities Revenue Refunding Bonds (Rio Grande Hospital Refunding Project), Series 2024
+INFO:root:   Reason: No discount found in PDF
+
+
+The  underwriting  compensation for the Series 2024A Bonds is $2,590,140.00
+2. Document ID: 0LJmqrJVIGC1c3ABqNY3
+INFO:root:   Path: C:\Users\quokka\Downloads\COHFA01a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds, Series 2024A (Intermountain Health)
+INFO:root:   Reason: No discount found in PDF
+
+
+
+
+
+INFO:root:   Path: C:\Users\quokka\Downloads\OHMontgomery01a-FIN.pdf
+INFO:root:   Obligor: Health Care Facilities Revenue Refunding and Improvement Bonds, Series 2024 (Solvita Project)
+INFO:root:   Reason: No discount found in PDF
+INFO:root:
+INFO:root:   Path: C:\Users\quokka\Downloads\OHMontgomery01a-FIN.pdf
+INFO:root:   Obligor: Health Care Facilities Revenue Refunding and Improvement Bonds, Series 2024 (Solvita Project)
+INFO:root:   Reason: No discount found in PDF
+
+
+
+No Mention of COI in cmmericla paper? 
+63. Document ID: zx0cuEuNoaMzjqjYxyGi
+INFO:root:   Path: C:\Users\quokka\Downloads\PAPhiladelphia06a-OS.pdf
+INFO:root:   Obligor: Taxable Commercial Paper Notes, Series A of 2024
+INFO:root:   Reason: No discount found in PDF
+
+
+Remarketing OS are included in downlaod. Not new issues.  No Fee listed 
+1. Document ID: 06UgaV4TtUFW2ETKyRaQ
+INFO:root:   Path: C:\Users\quokka\Downloads\SCJEDA05a-OS.pdf
+INFO:root:   Obligor: Hospital Revenue Bonds (Prisma Health Obligated Group), Series 2018C
+INFO:root:   Reason: No discount found in PDF
+todo: They say "Reoffering circullar, we could filter those out or mark them. 
+https://www.munios.com/munios-notice.aspx?e=QIMQG
