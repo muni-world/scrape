@@ -58,6 +58,14 @@ INFO:root:missing_path: 2
 INFO:root:processing_failed: 25
 INFO:root:successfully_processed: 71
 
+7:14 PM - 2025/02/10
+INFO:root:total_documents: 98
+INFO:root:already_processed: 72
+INFO:root:missing_path: 2
+INFO:root:processing_failed: 24
+INFO:root:successfully_processed: 72
+INFO:root:
+
 Example Prompt:
     Prompt: add another regex pattern to extract the amount from the text it will have "will pay the underwriter/underwriters/purchaser/purchasers a fee" then ignore all text before "$" 
     Look at other regex patterns and keep formatting consistent. 

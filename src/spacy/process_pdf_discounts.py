@@ -64,25 +64,37 @@ def process_pdf_discounts():
                 continue
             
             try:
-                # Extract discount from PDF
-                discount_str = extract_underwriting_discount_from_pdf(os_file_path)
-                
-                if discount_str:
-                    # Convert string like "$1,234.56" to float 1234.56
-                    discount_value = float(discount_str.replace("$", "").replace(",", ""))
-                    
-                    # Update Firestore document with both the total and the mapping
+                # Extract discount from PDF, now returns a dict or None
+                discount_result = extract_underwriting_discount_from_pdf(os_file_path)
+
+                if discount_result:
+                    # Check if discount_result is a dictionary and extract 'total'
+                    if isinstance(discount_result, dict) and "total" in discount_result:
+                        discount_value = discount_result["total"]
+                    else:
+                        # Handle unexpected return type (should be dict or None)
+                        logging.error(f"Unexpected return type from extract_underwriting_discount_from_pdf for doc {doc.id}: {type(discount_result)}")
+                        results["processing_failed"] += 1
+                        results["failed_documents"].append({
+                            "doc_id": doc.id,
+                            "path": os_file_path,
+                            "reason": f"Unexpected return type from discount extraction: {type(discount_result)}",
+                            "obligor": deal_data.get("series_name_obligor", "Unknown"),
+                        })
+                        continue # Skip to the next document
+
+                    # discount_value is already a float from extract_underwriting_discount_pdf
+                    # No need to convert from string or remove '$' and ',' again here.
+
+                    # Update Firestore document with the structured underwriter_fee data
                     doc.reference.update({
                         "underwriters_fee_total": discount_value,
-                        "underwriter_fee": {
-                            "total": discount_value,
-                            "scrape_success": True,
-                        },
+                        "underwriter_fee": discount_result, # Store the entire dict
                     })
-                    
+
                     logging.info(f"Updated deal {doc.id} with fee: {discount_value}")
                     results["successfully_processed"] += 1
-                    
+
                 else:
                     # Enhanced logging with obligor name and file path
                     results["failed_documents"].append({

@@ -41,7 +41,7 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     pdf_path (str): The file path to the PDF document.
 
   Returns:
-    str or None: The extracted discount or fee amount (digits only), or None if not found.
+    dict or None: The extracted discount or fee amount (digits only), or None if not found.
   """
 
   # Validate that pdf_path is a string.
@@ -99,43 +99,56 @@ def extract_underwriting_discount_from_pdf(pdf_path):
 
   # Pattern 5: Matches "$XXX.XX as compensation for underwriting/purchasing"
   compensation_pattern = re.compile(
-    r"\$(\d+(?:,?\d+)*(?:\.\d+?))"  # Capture the number after $
-    r"\s+as compensation for\s+"     # Directly match the key phrase
-    r"(?:underwriting|purchasing)", # Match either activity
-    re.IGNORECASE | re.DOTALL
+    r"\$(\d+(?:,?\d+)*(?:\.\d+?))"      # Capture the number after $
+    r"(?:\s|\n)*as\s+compensation\s+for" # Match "as compensation for" with flexible whitespace
+    r"(?:\s|\n)*"                        # Allow any whitespace/newlines
+    r"(?:underwriting|purchasing)",       # Match either activity
+    re.IGNORECASE | re.MULTILINE         # Add MULTILINE flag for better newline handling
   )
 
-  # Open the PDF document using the fitz library.
+  # Initialize collection list (like empty folders for our findings)
+  amounts = []
+  
   with fitz.open(pdf_path) as doc:
-    # Loop through each page in the PDF.
+    # Search every page/drawer in the PDF cabinet
     for page in doc:
       text = page.get_text()
+      
+      # Create list of all our search patterns
+      patterns = [
+        of_pattern, is_pattern, will_pay_pattern,
+        before_discount_pattern, compensation_pattern
+      ]
+      
+      # Check each pattern like using different search filters
+      for pattern in patterns:
+        # Find all matches in current page
+        matches = pattern.finditer(text)
+        for match in matches:
+          # Clean and convert found numbers (remove $ and commas)
+          amount_str = match.group(1).replace(",", "")
+          try:
+            amount = float(amount_str)
+            amounts.append(amount)  # File the finding
+          except ValueError:
+            continue  # Skip invalid numbers like empty strings
 
-      # Try Pattern 1.
-      match = of_pattern.search(text)
-      if match:
-        return match.group(1)
+  # Handle case where no amounts found
+  if not amounts:
+    return None
 
-      # Try Pattern 2.
-      match = is_pattern.search(text)
-      if match:
-        return match.group(1)
+  # Analyze findings like sorting documents
+  are_identical = len(set(amounts)) == 1  # Check if all copies are same
+  total = amounts[0] if are_identical else sum(amounts)
+  needs_review = len(amounts) > 1  # Flag if multiple documents found
 
-      # Try Pattern 3.
-      match = will_pay_pattern.search(text)
-      if match:
-        return match.group(1)
-
-      # Try Pattern 4.
-      match = before_discount_pattern.search(text)
-      if match:
-        return match.group(1)
-
-      # Try NEW Pattern 5.
-      match = compensation_pattern.search(text)
-      if match:
-        return match.group(1)
-
-  # Return None if no patterns match.
-  return None
+  # Package results like final report
+  return {
+    "total": total,
+    "scrape_breakdown": {
+      "amounts": amounts,
+      "are_amounts_identical": are_identical,
+      "is_dupe_review_completed": not needs_review
+    }
+  }
 
