@@ -98,6 +98,8 @@ def scrape_deal_info(url, driver=None, standardizer=None, should_download_os=Tru
             "co_managers": [],
             "municipal_advisors": [],
             "counsels": [],
+            "os_type": None,
+            "cusips": {},  # Add new dictionary for CUSIPs
         }
 
         def safe_get_links(class_name, section_name):
@@ -163,8 +165,39 @@ def scrape_deal_info(url, driver=None, standardizer=None, should_download_os=Tru
             if os_file_path:  # Only add the path if we successfully downloaded the OS
                 raw_data["os_file_path"] = os_file_path
 
+        # Get OS type if available
+        try:
+            os_type_element = driver.find_element(By.CLASS_NAME, "osType")
+            raw_data["os_type"] = os_type_element.text.strip()
+            logging.info(f"Found OS type: {raw_data['os_type']}")
+        except Exception as e:
+            logging.info(f"No OS type found: {str(e)}")
+
+        # Get CUSIP numbers and their EMMA links
+        try:
+            cusip_row = driver.find_element(By.CLASS_NAME, "cusip")
+            cusip_links = cusip_row.find_elements(By.TAG_NAME, "a")
+            
+            for link in cusip_links:
+                cusip_number = link.text.strip()
+                emma_link = link.get_attribute("href")
+                if cusip_number and emma_link:
+                    raw_data["cusips"][cusip_number] = emma_link
+            
+            logging.info(f"Found {len(raw_data['cusips'])} CUSIP numbers")
+        except Exception as e:
+            logging.info(f"No CUSIP numbers found: {str(e)}")
+
         # Standardize the scraped data
         standardized_data = standardize_scraped_data(raw_data, standardizer)
+        
+        # Update standardized_data to include os_type and cusips
+        if raw_data["os_type"]:
+            standardized_data["os_type"] = raw_data["os_type"]
+            standardized_data["unprocessed_deal_scrape"]["os_type"] = raw_data["os_type"]
+        if raw_data["cusips"]:
+            standardized_data["cusips"] = raw_data["cusips"]
+            standardized_data["unprocessed_deal_scrape"]["cusips"] = raw_data["cusips"]
         
         logging.info(f"Deal data standardized: {standardized_data}")
         return standardized_data
