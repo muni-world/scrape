@@ -31,6 +31,8 @@ def standardize_scraped_data(data: dict, standardizer: CompanyStandardizer) -> d
         "municipal_advisors": [],
         "counsels": [],
         "os_file_path": data.get("os_file_path"),
+        "os_type": data.get("os_type"),
+        "cusips": data.get("cusips", {}),
         "unprocessed_deal_scrape": {
             "lead_managers": data.get("lead_managers", []),
             "co_managers": data.get("co_managers", []),
@@ -99,7 +101,7 @@ def scrape_deal_info(url, driver=None, standardizer=None, should_download_os=Tru
             "municipal_advisors": [],
             "counsels": [],
             "os_type": None,
-            "cusips": {},  # Add new dictionary for CUSIPs
+            "cusips": {},
         }
 
         def safe_get_links(class_name, section_name):
@@ -190,14 +192,6 @@ def scrape_deal_info(url, driver=None, standardizer=None, should_download_os=Tru
 
         # Standardize the scraped data
         standardized_data = standardize_scraped_data(raw_data, standardizer)
-        
-        # Update standardized_data to include os_type and cusips
-        if raw_data["os_type"]:
-            standardized_data["os_type"] = raw_data["os_type"]
-            standardized_data["unprocessed_deal_scrape"]["os_type"] = raw_data["os_type"]
-        if raw_data["cusips"]:
-            standardized_data["cusips"] = raw_data["cusips"]
-            standardized_data["unprocessed_deal_scrape"]["cusips"] = raw_data["cusips"]
         
         logging.info(f"Deal data standardized: {standardized_data}")
         return standardized_data
