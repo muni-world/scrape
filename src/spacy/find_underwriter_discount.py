@@ -60,24 +60,25 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     , re.IGNORECASE | re.DOTALL
   )
 
-  # Pattern 2: Matches phrases like "discount ... is $123.45"
+  # Pattern 2: Matches phrases like "discount ... is $123.45" or "discount ... will be $123.45"
   is_pattern = re.compile(
     r"(?:"                              # start non-capturing group
     r"(?:underwriting|underwriter|purchaser)"  # keywords
-    r"(?:s|['’]s|s['’]?)?\s+"            # optional possessive forms
+    r"(?:s|['’]s|s['’]?)?\s*"            # optional possessive forms, with flexible spacing
     r"(?:compensation|discount|fee|expenses)"  # type of charge
-    r"[^$]*?"                           # non-greedy match until "$"
-    r"is\s+"                            # match "is"
+    r"[\s\S]*?"                         # match any character including newlines (non-greedy)
+    r"(?:is|will\s+be)\s*"              # match "is" or "will be" with flexible spacing
     r")"
     r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"      # capture number after "$"
-    , re.IGNORECASE | re.DOTALL
+    , re.IGNORECASE
   )
 
   # Pattern 3: Matches phrases like "will pay the underwriter(s)/purchaser(s) a fee"
+  # or "will also pay the underwriter(s)/purchaser(s) a fee"
   # then captures the first number after "$"
   will_pay_pattern = re.compile(
     r"(?:"                              # start non-capturing group
-    r"will\s+pay\s+the\s+"               # match "will pay the"
+    r"will\s+(?:also\s+)?pay\s+the\s+"  # match "will pay the" or "will also pay the"
     r"(?:underwriter(?:s)?|purchaser(?:s)?)"  # match keywords plus optional plural
     r"\s+a\s+fee"                         # match "a fee"
     r")"

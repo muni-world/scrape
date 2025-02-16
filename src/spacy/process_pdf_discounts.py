@@ -3,7 +3,7 @@ from firebase_admin import credentials, firestore
 import logging
 from find_underwriter_discount import extract_underwriting_discount_from_pdf
 
-def process_pdf_discounts():
+def process_pdf_discounts(reprocess_processed=True):
     """
     Cycles through Firestore deals collection to find and process PDFs that need underwriter fee extraction.
     
@@ -11,6 +11,10 @@ def process_pdf_discounts():
     1. Checks if underwriters_fee_total is null
     2. If null and os_file_path exists, processes the PDF
     3. Updates Firestore with extracted fee amount
+    
+    Args:
+        reprocess_processed (bool): If True, re-process documents with existing fees.
+                                  If False (default), skip already processed docs.
     
     Returns:
         dict: Summary of processing results with counts of successful/failed updates
@@ -45,10 +49,23 @@ def process_pdf_discounts():
             results["total_documents"] += 1
             deal_data = doc.to_dict()
             
-            # Log if we're processing an already processed document
-            if deal_data.get("underwriters_fee_total") is not None:
-                logging.info(f"Reprocessing document {doc.id} with existing fee: {deal_data['underwriters_fee_total']}")
+            # Check if document has the correct os_type
+            os_type = deal_data.get("os_type")
+            if os_type not in ["OFFICIAL STATEMENT", "OFFERING MEMORANDUM"]:
                 results["already_processed"] += 1
+                # logging.info(f"Skipping document {doc.id} with os_type: {os_type}")
+                continue
+
+            # New skip logic ========================
+            # Check if document is already processed
+            if deal_data.get("underwriters_fee_total") is not None:
+                if not reprocess_processed:  # If switch is OFF
+                    logging.info(f"Skipping already processed document {doc.id}")
+                    results["already_processed"] += 1
+                    continue  # Jump to next document
+                else:  # If switch is ON
+                    logging.info(f"Reprocessing document {doc.id} with existing fee: {deal_data['underwriters_fee_total']}")
+            # =======================================
             
             # Skip if no PDF path
             os_file_path = deal_data.get("os_file_path")
@@ -151,4 +168,9 @@ def process_pdf_discounts():
         return results
 
 if __name__ == "__main__":
-    process_pdf_discounts() 
+    # MANUAL SWITCH CONTROL
+    # Set this to True to reprocess all documents (even processed ones)
+    # Set to False to skip already processed documents (normal operation)
+    REPROCESS_SWITCH = True  # ← Change this value manually
+    
+    process_pdf_discounts(reprocess_processed=REPROCESS_SWITCH) 

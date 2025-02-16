@@ -1,3 +1,145 @@
+6:04 PM - 2025/02/16
+    INFO:root:total_documents: 498
+    INFO:root:already_processed: 289
+    INFO:root:missing_path: 49
+    INFO:root:processing_failed: 96
+    INFO:root:successfully_processed: 64
+
+
+6:10 PM - 2025/02/16
+Looking at only Offical Statement and offering memorandum
+    INFO:root:total_documents: 498
+    INFO:root:already_processed: 451
+    INFO:root:missing_path: 0
+    INFO:root:processing_failed: 47
+    INFO:root:successfully_processed: 0
+
+6:20 PM - 2025/02/16
+INFO:root:total_documents: 498
+INFO:root:already_processed: 451
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 46
+INFO:root:successfully_processed: 1
+INFO:root:
+
+
+1. Document ID: 18t1DfgaIEepMM72kEJ3
+INFO:root:   Path: C:\Users\quokka\Downloads\MUPublicFinAuth14a-FIN.pdf
+INFO:root:   Obligor: Public Finance Authority Hospital Revenue Bonds (Carson Valley Medical Center) Series 2021A
+INFO:root:   Reason: No discount found in PDF
+INFO:root:
+
+The  Corporation  will  also  pay  the  
+Underwriter  a  fee  of  $382,495.54.  
+
+6:28 PM - 2025/02/16
+INFO:root:total_documents: 498
+INFO:root:already_processed: 452
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 44
+INFO:root:successfully_processed: 2
+
+
+2. Document ID: 44GLfICWwDglKIyUqtKq
+INFO:root:   Path: C:\Users\quokka\Downloads\AZMaricopa05a-FIN.pdf
+INFO:root:   Obligor: Hospital Revenue Bonds (HonorHealth), Series 2024A
+INFO:root:   Reason: No discount found in PDF
+
+If  the  Bonds  are  sold  to  produce  the  yields  shown  on  the  inside  front  cover  page  hereof,  the  
+Underwriters’  compensation  will  be  $490,158.01.  
+
+
+
+
+
+
+
+
+Example Prompt:
+    Prompt: add another regex pattern to extract the amount from the text it will have "will pay the underwriter/underwriters/purchaser/purchasers a fee" then ignore all text before "$" 
+    Look at other regex patterns and keep formatting consistent. 
+    example input: Orlando Health will pay the Underwriters a fee for expenses and services in the amount of $3,741,670.07 from the proceeds of the Taxable Bonds.
+    example output (the number after the $): 3,741,670.07
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 7:08 PM - 2025/02/09
 INFO:root:total_documents: 98
 INFO:root:already_processed: 0

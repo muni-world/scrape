@@ -6,7 +6,7 @@ from scrape.homepage import run_scrape
 from scrape.deal_info import scrape_deal_info
 from utils import initialize_driver, setup_logging
 
-def main(should_download_os=False):
+def main(should_download_os=True):
     """
     Main function to run the entire scraping process using a single Chrome instance and store deals in Firestore.
     
@@ -68,4 +68,4 @@ def main(should_download_os=False):
 # Run the main function when the script is executed.
 if __name__ == "__main__":
     # You can modify this value to control OS downloads
-    main(should_download_os=False)
+    main(should_download_os=True)
