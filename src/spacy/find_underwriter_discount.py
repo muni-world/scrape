@@ -34,6 +34,8 @@ def extract_underwriting_discount_from_pdf(pdf_path):
 
   Pattern 6: Matches phrases like "will be paid a fee in the amount of $XXX.XX"
 
+  Pattern 7: Matches phrases like "pay the underwriter/purchaser a fee of $XXX.XX"
+
   For all patterns, only the number (without the "$") is captured.
   Example:
     Input: "Pursuant to ... less $725,500.00 of Underwriter's discount plus ..."
@@ -75,17 +77,15 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     , re.IGNORECASE
   )
 
-  # Pattern 3: Matches phrases like "will pay the underwriter(s)/purchaser(s) a fee"
-  # or "will also pay the underwriter(s)/purchaser(s) a fee"
-  # then captures the first number after "$"
+  # Pattern 3: Matches phrases like "pay the underwriter(s)/purchaser(s) fee"
+  # then captures the number after "$"
   will_pay_pattern = re.compile(
-    r"(?:"                              # start non-capturing group
-    r"will\s+(?:also\s+)?pay\s+the\s+"  # match "will pay the" or "will also pay the"
+    r"pay\s+the\s+"                     # match "pay the"
     r"(?:underwriter(?:s)?|purchaser(?:s)?)"  # match keywords plus optional plural
-    r"\s+a\s+fee"                         # match "a fee"
-    r")"
-    r".*?"                                # non-greedy match until "$"
-    r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"      # capture number after "$"
+    r".*?fee"                           # match any chars until "fee"
+    r"(?:\s+of)?"                       # optionally match "of"
+    r"[\s\S]*?"                         # non-greedy match until "$"
+    r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"   # capture number after "$"
     , re.IGNORECASE | re.DOTALL
   )
 
@@ -122,6 +122,17 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     , re.IGNORECASE | re.DOTALL
   )
 
+  # Pattern 7: Matches phrases like "pay the underwriter/purchaser a fee of $XXX.XX"
+  fee_of_pattern = re.compile(
+    r"pay\s+the\s+"                     # match "pay the "
+    r"(?:series\s+\w+\s+)?"             # optionally match "Series XXXX " 
+    r"(?:underwriter|purchaser)"        # match "underwriter" or "purchaser"
+    r"s?\s+"                            # optional plural s only
+    r"a\s+fee\s+of\s+"                  # match "a fee of "
+    r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"    # capture number after "$"
+    , re.IGNORECASE | re.DOTALL
+  )
+
   # Initialize collection list (like empty folders for our findings)
   amounts = []
   
@@ -134,7 +145,7 @@ def extract_underwriting_discount_from_pdf(pdf_path):
       patterns = [
         of_pattern, is_pattern, will_pay_pattern,
         before_discount_pattern, compensation_pattern,
-        will_be_paid_pattern
+        will_be_paid_pattern, fee_of_pattern
       ]
       
       # Check each pattern like using different search filters

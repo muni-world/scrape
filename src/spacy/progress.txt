@@ -79,6 +79,22 @@ From  the  proceeds  of  the  Series
 2021C Bonds, the Underwriter will be paid a fee in the amount of $151,314.80 related to the Series 2021 
 Bonds. 
 
+INFO:root:total_documents: 498
+INFO:root:already_processed: 459
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 39
+INFO:root:successfully_processed: 0
+INFO:root:
+
+INFO:root:Processing complete. Summary:
+INFO:root:total_documents: 498
+INFO:root:already_processed: 459
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 37
+INFO:root:successfully_processed: 2
+
+
+
 3. Document ID: 8qw4cnI5bD8B6lHkOeht
 INFO:root:   Path: C:\Users\quokka\Downloads\CAAdventist03a-OS.pdf
 INFO:root:   Obligor: Federally Taxable Revenue Bonds (Adventist Health System/West), Series 2024B and Series 2024C
@@ -88,6 +104,14 @@ INFO:root:
 The Corporation has agreed to pay the Series 2024B 
 Underwriter a fee of $160,994 and the Series 2024C Underwriter a fee of $157,840 from its own funds, as 
 compensation for underwriting the Series 2024B Bonds and the Series 2024C Bonds, respectively. 
+
+
+  Prompt: add another regex pattern to extract the amount from the text the "underwriter/underwriters/purchaser/purchasers a fee of $" 
+    Look at other regex patterns and keep formatting and methods consistent. 
+    example input: The Corporation has agreed to pay the Series 2024B 
+Underwriter a fee of $160,994 and the Series 2024C Underwriter a fee of $157,840 from its own funds, as 
+compensation for underwriting the Series 2024B Bonds and the Series 2024C Bonds, respectively. 
+    example output (the number after the $): 160,994 and 157,840
 
 
 
@@ -101,12 +125,36 @@ Example Prompt:
 
 
 
+INFO:root:total_documents: 498
+INFO:root:already_processed: 461
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 33
+INFO:root:successfully_processed: 4
+
+
+1. Document ID: Avt75CNIa7RCVx6IGl6B
+INFO:root:   Path: C:\Users\quokka\Downloads\CAPubFinAuth01a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds (Sharp HealthCare), Series 2024A
+INFO:root:   Reason: No discount found in PDF
+
+The  Obligated  Group  has  agreed  to  pay  the  Underwriters  an  aggregate  fee  of  $1,281,288.75  for  their  
+services  with  respect  to  the  Bonds. 
+
+    Prompt: add another regex pattern to extract the amount from the text it will have "has agreed to pay the underwriter/underwriters/purchaser/purchasers a fee" then ignore all text before "$" 
+    Look at other regex patterns and keep formatting consistent. 
+    example input: Orlando Health will pay the Underwriters a fee for expenses and services in the amount of $3,741,670.07 from the proceeds of the Taxable Bonds.
+    example output (the number after the $): 3,741,670.07
 
 
 
+1. Document ID: FfSK7xE8I1qPfjHgcjn9
+INFO:root:   Path: C:\Users\quokka\Downloads\COHFA05b-OS.pdf
+INFO:root:   Obligor: Revenue Bonds, Series 2022E and Series 2022F (Intermountain Healthcare)
+INFO:root:   Reason: No discount found in PDF
 
-
-
+The  underwriting 
+compensation is (i) $200,240.64 for the Series 2022E Bonds, and (ii) $199,402.64 for the Series 2022F 
+Bonds, which amounts will be paid from funds provided by the Parent Corporation. 
 
 
 

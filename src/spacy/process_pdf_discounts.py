@@ -22,22 +22,13 @@ def process_pdf_discounts(reprocess_processed=True):
     # Initialize logging
     logging.basicConfig(level=logging.INFO)
     
-    # Initialize Firestore with retry settings
+    # Initialize Firestore
     try:
-        # Add retry settings to the client
-        settings = firestore.ClientSettings(
-            retry=firestore.RetrySettings(
-                initial_delay=1.0,  # Start with 1 second delay
-                maximum_delay=30.0,  # Max 30 seconds between retries
-                multiplier=2.0,     # Double the delay each time
-                max_attempts=5      # Try up to 5 times
-            )
-        )
-        db = firestore.client(settings=settings)
+        db = firestore.client()
     except ValueError:
         cred = credentials.Certificate("secrets/serviceAccountKey.json")
         firebase_admin.initialize_app(cred)
-        db = firestore.client(settings=settings)
+        db = firestore.client()
     
     # Initialize counters for summary and failed documents list
     results = {
@@ -47,6 +38,7 @@ def process_pdf_discounts(reprocess_processed=True):
         "processing_failed": 0,
         "successfully_processed": 0,
         "failed_documents": [],  # New list to track failures
+        "successful_documents": [],  # New list to track successes
     }
 
     try:
@@ -119,6 +111,15 @@ def process_pdf_discounts(reprocess_processed=True):
                         "underwriter_fee": discount_result,
                     })
                     results["successfully_processed"] += 1
+                    # Track successful updates
+                    results["successful_documents"].append({
+                        "doc_id": doc.id,
+                        "obligor": deal_data.get("series_name_obligor", "Unknown"),
+                        "os_type": os_type,
+                        "pdf_path": os_file_path,
+                        "old_fee": old_value,
+                        "new_fee": discount_value,
+                    })
 
                 else:
                     # Enhanced logging with obligor name, file path, and os_type
@@ -172,18 +173,16 @@ def process_pdf_discounts(reprocess_processed=True):
                 logging.info(f"   Obligor: {fail['obligor']}")
                 logging.info(f"   Reason: {fail['reason']}")
 
-        # Add new section for changed documents
+        # Replace the existing "Changed Documents Report" section with:
         if results["successfully_processed"] > 0:
-            logging.info("\nChanged Documents Report:")
-            for doc in docs:
-                deal_data = doc.to_dict()
-                if "underwriter_fee" in deal_data and deal_data["underwriter_fee"].get("scrape_success", False):
-                    logging.info(f"\nDocument ID: {doc.id}")
-                    logging.info(f"   Obligor: {deal_data.get('series_name_obligor', 'Unknown')}")
-                    logging.info(f"   OS Type: {deal_data.get('os_type', 'Unknown')}")
-                    logging.info(f"   PDF Path: {deal_data.get('os_file_path', 'Unknown')}")
-                    logging.info(f"   Old Fee: {deal_data.get('previous_underwriters_fee_total', 'Unknown')}")
-                    logging.info(f"   New Fee: {deal_data.get('underwriters_fee_total', 'Unknown')}")
+            logging.info("\nSuccessfully Processed Documents Report:")
+            for idx, success in enumerate(results["successful_documents"], 1):
+                logging.info(f"\n{idx}. Document ID: {success['doc_id']}")
+                logging.info(f"   Obligor: {success['obligor']}")
+                logging.info(f"   OS Type: {success['os_type']}")
+                logging.info(f"   PDF Path: {success['pdf_path']}")
+                logging.info(f"   Old Fee: {success['old_fee']}")
+                logging.info(f"   New Fee: {success['new_fee']}")
 
         return results
         
