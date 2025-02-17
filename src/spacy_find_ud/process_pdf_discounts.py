@@ -263,29 +263,28 @@ def process_pdf_discounts(reprocess_processed=True):
                 db = firestore.client()  # Try again
         # ========== END BATCH PROCESSING ==========
 
-        # Log summary
-        logging.info("Processing complete. Summary:")
+        # Log summary with extra spacing
+        logging.info("\nProcessing complete. Summary:\n")
         for key, value in results.items():
             if key not in ["failed_documents", "successful_documents"]:  # Skip printing both document lists
-                logging.info(f"{key}: {value}")
+                logging.info(f"{key}: {value}\n")
         
-        # Print failed documents report
+        # Print failed documents report with extra spacing
         if results["failed_documents"]:
-            logging.info("\nFailed Documents Report:")
+            logging.info("\nFailed Documents Report:\n")
             for idx, fail in enumerate(results["failed_documents"], 1):
                 logging.info(f"\n{idx}. Document ID: {fail['doc_id']}")
                 logging.info(f"   Path: {fail['path']}")
                 logging.info(f"   Obligor: {fail['obligor']}")
-                logging.info(f"   URL: {fail['url']}")  # Add URL logging
-                logging.info(f"   Reason: {fail['reason']}")
+                logging.info(f"   URL: {fail['url']}")
+                logging.info(f"   Reason: {fail['reason']}\n")
 
-        # Replace the existing success logging section with:
+        # Multiple Fees section with extra spacing
         if results["successfully_processed"] > 0:
-            # New: Multiple Fees section
             try:
                 multiple_fees_docs = [d for d in results["successful_documents"] if d and d.get("multiple_fees")]
                 if multiple_fees_docs:
-                    logging.info("\nSuccessfully Processed Multiple Fees Found:")
+                    logging.info("\nSuccessfully Processed Multiple Fees Found:\n")
                     for idx, doc in enumerate(multiple_fees_docs, 1):
                         if not doc:
                             continue
@@ -294,11 +293,11 @@ def process_pdf_discounts(reprocess_processed=True):
                         logging.info(f"   PDF: {doc.get('pdf_path', 'N/A')}")
                         logging.info(f"   URL: {doc.get('url', 'N/A')}")
                         logging.info(f"   Found {len(doc.get('amounts', []))} fees: {doc.get('amounts', [])}")
-                        logging.info(f"   Total fee used: {doc.get('new_fee', 'N/A')}")  # Added total fee
+                        logging.info(f"   Total fee used: {doc.get('new_fee', 'N/A')}\n")
             except Exception as e:
-                logging.error(f"Error logging multiple fees: {str(e)}")
+                logging.error(f"Error logging multiple fees: {str(e)}\n")
 
-            # Override Summary Section
+            # Override Summary Section with extra spacing
             try:
                 override_summary = {}
                 for doc in results["successful_documents"]:
@@ -319,7 +318,7 @@ def process_pdf_discounts(reprocess_processed=True):
                         override_summary[url]["changes"].update(doc.get("override_changes", {}).keys())
 
                 if override_summary:
-                    logging.info("\nOverride Summary:")
+                    logging.info("\nOverride Summary:\n")
                     for url, data in override_summary.items():
                         logging.info(f"\nURL: {url}")
                         logging.info(f"Total documents affected: {data['count']}")
@@ -327,7 +326,7 @@ def process_pdf_discounts(reprocess_processed=True):
                         logging.info("Affected documents:")
                         for doc in data["docs"]:
                             logging.info(f"  - {doc['doc_id']} ({doc['obligor']})")
-                            logging.info(f"    Changes: {doc['changes']}")
+                            logging.info(f"    Changes: {doc['changes']}\n")
             except Exception as e:
                 logging.error(f"Error creating override summary: {str(e)}")
 

@@ -1751,3 +1751,301 @@ Successfully Processed Multiple Fees Found:
 2025-02-17 10:57:57,543 - root - INFO -    URL: https://www.munios.com/munios-notice.aspx?e=WJNQW
 2025-02-17 10:57:57,543 - root - INFO -    Found 2 fees: [224731.25, 248050.0]
 2025-02-17 10:57:57,543 - root - INFO -    Total fee used: 472781.25
+2025-02-17 11:41:41,446 - root - INFO - Reprocessing document 0AudoS4DhHYBzIdsoa1M with existing fee: 304410.0
+2025-02-17 11:41:42,197 - root - WARNING - Multiple fees found in 0AudoS4DhHYBzIdsoa1M
+PDF: C:\Users\quokka\Downloads\MUNationalFinAuth08a-OS.pdf
+Amounts: [153739.0, 150671.0]
+Using total: 304410.0
+2025-02-17 11:41:42,310 - root - INFO - Reprocessing document 0DnbqCSpMOfCAiG5fy9k with existing fee: 429438.19
+2025-02-17 11:41:43,182 - root - INFO - Reprocessing document 0OCLnmDiDyLjrHsem8R1 with existing fee: 101242712.11
+2025-02-17 11:41:43,926 - root - WARNING - Multiple fees found in 0OCLnmDiDyLjrHsem8R1
+PDF: C:\Users\quokka\Downloads\MUBonSecours01c-FIN.pdf
+Amounts: [393417.86, 401480.38, 100447813.87]
+Using total: 101242712.11
+2025-02-17 11:41:44,239 - root - INFO - Reprocessing document 0cEWWbymJeC7E7c2TfUP with existing fee: 2559182.9
+2025-02-17 11:41:45,183 - root - WARNING - Multiple fees found in 0cEWWbymJeC7E7c2TfUP
+PDF: C:\Users\quokka\Downloads\MUSSMHealth01a-FIN.pdf
+Amounts: [1279487.0, 1279487.0, 26.2, 182.7]
+Using total: 2559182.9
+2025-02-17 11:41:45,511 - root - INFO - Reprocessing document 0fcqKDzxZIRhWCMxwD7A with existing fee: 395462.6
+2025-02-17 11:41:46,733 - root - INFO - Reprocessing document 0trIqUr6co3037Ysyyvv with existing fee: 7689759.3100000005
+2025-02-17 11:41:48,182 - root - WARNING - Multiple fees found in 0trIqUr6co3037Ysyyvv
+PDF: C:\Users\quokka\Downloads\MUHamiltonHealth01b-FIN.pdf
+Amounts: [832852.78, 276906.53, 6580000.0]
+Using total: 7689759.3100000005
+2025-02-17 11:41:48,372 - root - INFO - Reprocessing document 0uxVLOkh46dLgJXbJAOp with existing fee: 1079850.0
+2025-02-17 11:41:49,007 - root - INFO - Reprocessing document 18t1DfgaIEepMM72kEJ3 with existing fee: 382495.54
+2025-02-17 11:41:49,758 - root - WARNING - Multiple fees found in 18t1DfgaIEepMM72kEJ3
+PDF: C:\Users\quokka\Downloads\MUPublicFinAuth14a-FIN.pdf
+Amounts: [382495.54, 382495.54]
+Using total: 382495.54
+2025-02-17 11:41:50,093 - root - INFO - Reprocessing document 19TqvFOErN8C5ZO0fKWR with existing fee: 423514.0
+2025-02-17 11:41:50,979 - root - WARNING - Multiple fees found in 19TqvFOErN8C5ZO0fKWR
+PDF: C:\Users\quokka\Downloads\MTMFFA01a-FIN.pdf
+Amounts: [258872.25, 164641.75]
+Using total: 423514.0
+2025-02-17 11:41:51,196 - root - INFO - Reprocessing document 1EeJRZ3GdI0q3CjuPA4g with existing fee: 246372.5
+2025-02-17 11:41:51,999 - root - INFO - Reprocessing document 1He2dwpD8EoYoLKCg9G4 with existing fee: 526173.77
+2025-02-17 11:41:52,944 - root - WARNING - Multiple fees found in 1He2dwpD8EoYoLKCg9G4
+PDF: C:\Users\quokka\Downloads\MUBaptistHealth01a-FIN.pdf
+Amounts: [526173.77, 526173.77]
+Using total: 526173.77
+2025-02-17 11:41:53,025 - root - INFO - Reprocessing document 1NqUhFvQTtAZPGbCXFsp with existing fee: 3223736.41
+2025-02-17 11:41:53,916 - root - INFO - Reprocessing document 1W1TzDmrXTyz6XDjpr0n with existing fee: 752329.6
+2025-02-17 11:41:55,025 - root - INFO - Reprocessing document 1sqJ84TN1ssFpJornhid with existing fee: 1194572.61
+2025-02-17 11:41:55,707 - root - INFO - Reprocessing document 2KpR4xxYEuyCFMNRdt8v with existing fee: 1889348.0
+2025-02-17 11:41:56,499 - root - INFO - Reprocessing document 2aJv4keYxVb6nZB9Y13G with existing fee: 621572.38
+2025-02-17 11:41:57,580 - root - INFO - Reprocessing document 2fhwm3BtbQZGsHzptIWt with existing fee: 2559182.9
+2025-02-17 11:41:58,451 - root - WARNING - Multiple fees found in 2fhwm3BtbQZGsHzptIWt
+PDF: C:\Users\quokka\Downloads\MUSSMHealth01a-FIN.pdf
+Amounts: [1279487.0, 1279487.0, 26.2, 182.7]
+Using total: 2559182.9
+2025-02-17 11:41:58,597 - root - INFO - Reprocessing document 2phs1hzDbDXnFnP9mGUR with existing fee: 781380.47
+2025-02-17 11:42:01,216 - root - INFO - Reprocessing document 2uYa584ILAaVyEs7usRX with existing fee: 1655669.5299999998
+2025-02-17 11:42:02,073 - root - WARNING - Multiple fees found in 2uYa584ILAaVyEs7usRX
+PDF: C:\Users\quokka\Downloads\INFinanceAuth11a-FIN.pdf
+Amounts: [1520269.13, 135400.4]
+Using total: 1655669.5299999998
+2025-02-17 11:42:02,247 - root - INFO - Reprocessing document 347rzwtgyBKynm12km7T with existing fee: 348495.0
+2025-02-17 11:42:03,334 - root - INFO - Reprocessing document 35FKCEqWwppQNwsJuunR with existing fee: 856552.5
+2025-02-17 11:42:04,295 - root - INFO - Reprocessing document 370rxlczp5z9VyorDZzf with existing fee: 535738.24
+2025-02-17 11:42:04,973 - root - INFO - Reprocessing document 3FzoOAP6vSf2DW3IQ1nz with existing fee: 1358981.57
+2025-02-17 11:42:06,149 - root - INFO - Reprocessing document 44GLfICWwDglKIyUqtKq with existing fee: 490158.01
+2025-02-17 11:42:06,592 - root - INFO - Reprocessing document 48l7Y57IMtmL2FO2whvo with existing fee: 3223736.41
+2025-02-17 11:42:07,423 - root - INFO - Reprocessing document 48x1sioKIKZZHKSLS8OT with existing fee: 2253616.11
+2025-02-17 11:42:08,245 - root - WARNING - Multiple fees found in 48x1sioKIKZZHKSLS8OT
+PDF: C:\Users\quokka\Downloads\MUCommonSpirit02b-FIN.pdf
+Amounts: [2253616.11, 2253616.11]
+Using total: 2253616.11
+2025-02-17 11:42:08,357 - root - INFO - Reprocessing document 49cCUM0X6jcx4yYep5ut with existing fee: 81525.09
+2025-02-17 11:42:09,054 - root - WARNING - Multiple fees found in 49cCUM0X6jcx4yYep5ut
+PDF: C:\Users\quokka\Downloads\ILFinanceAuth08a-OS.pdf
+Amounts: [81525.09, 81525.09]
+Using total: 81525.09
+2025-02-17 11:42:09,139 - root - INFO - Reprocessing document 4Y0kBblg60A8u68G9rP4 with existing fee: 8422173.9
+2025-02-17 11:42:09,964 - root - INFO - Reprocessing document 4nTrZEhIfR7gIoOAM4gr with existing fee: 106000.0
+2025-02-17 11:42:10,487 - root - INFO - Reprocessing document 4qdJHdzSA6TvxXc47pUR with existing fee: 2005520.0
+2025-02-17 11:42:11,644 - root - INFO - Reprocessing document 5BEFPFpLSldPRVUvKwpR with existing fee: 1947351.0
+2025-02-17 11:42:12,961 - root - WARNING - Multiple fees found in 5BEFPFpLSldPRVUvKwpR
+PDF: C:\Users\quokka\Downloads\GAHospitalAuthority01a-FIN.pdf
+Amounts: [930447.0, 1016904.0]
+Using total: 1947351.0
+2025-02-17 11:42:13,075 - root - INFO - Reprocessing document 5H6xlPYvgxup4BkcIQep with existing fee: 746091.2
+2025-02-17 11:42:14,166 - root - INFO - Reprocessing document 5UIcPaOGwZImCAsh7u0c with existing fee: 1121350.0
+2025-02-17 11:42:15,215 - root - INFO - Reprocessing document 5gFwqeRC4ULWO0vxeAfO with existing fee: 1533684.25
+2025-02-17 11:42:16,057 - root - WARNING - Multiple fees found in 5gFwqeRC4ULWO0vxeAfO
+PDF: C:\Users\quokka\Downloads\TXHarris03a-FIN.pdf
+Amounts: [1018786.47, 284099.94, 230797.84]
+Using total: 1533684.25
+2025-02-17 11:42:16,211 - root - INFO - Reprocessing document 5wZqSmAzBaS0ZqWNeJOX with existing fee: 953395.92
+2025-02-17 11:42:17,223 - root - INFO - Processed batch up to 5wZqSmAzBaS0ZqWNeJOX
+2025-02-17 11:42:17,423 - root - INFO - Reprocessing document 5yHD9gXJlzHDz1J2XG6I with existing fee: 615867.5
+2025-02-17 11:42:18,145 - root - INFO - Reprocessing document 6Lf6rG7D445uNprAF0u8 with existing fee: 114720.54
+2025-02-17 11:42:18,917 - root - INFO - Reprocessing document 6bbpAXClmhqubYpqQnm5 with existing fee: 3000203.22
+2025-02-17 11:42:19,385 - root - WARNING - Multiple fees found in 6bbpAXClmhqubYpqQnm5
+PDF: C:\Users\quokka\Downloads\ZGEveryAge01a-FIN.pdf
+Amounts: [2739294.47, 260908.75]
+Using total: 3000203.22
+2025-02-17 11:42:19,504 - root - INFO - Reprocessing document 6jctaSVifbESUaoXli6u with existing fee: 1082991.11
+2025-02-17 11:42:20,381 - root - INFO - Reprocessing document 6pUzvRV261mv8cqdH1D8 with existing fee: 458100.0
+2025-02-17 11:42:21,519 - root - INFO - Reprocessing document 6sHGz6V2rX2lkLEmQXoR with existing fee: 151314.8
+2025-02-17 11:42:22,422 - root - INFO - Reprocessing document 6vN8Ol5NpZADH0Rlj8LI with existing fee: 424722.55
+2025-02-17 11:42:23,551 - root - INFO - Reprocessing document 73l4FA6jcCRtbR8T5RUL with existing fee: 590919.11
+2025-02-17 11:42:24,291 - root - INFO - Reprocessing document 74F7YqNQGlkdmtR4vV1i with existing fee: 257375.53
+2025-02-17 11:42:25,308 - root - WARNING - Multiple fees found in 74F7YqNQGlkdmtR4vV1i
+PDF: C:\Users\quokka\Downloads\CACHFFA04a-OS.pdf
+Amounts: [124805.53, 132570.0]
+Using total: 257375.53
+2025-02-17 11:42:25,397 - root - INFO - Reprocessing document 7GYaIXJvfLzrcnHqmKUS with existing fee: 3630000.0
+2025-02-17 11:42:26,076 - root - WARNING - Multiple fees found in 7GYaIXJvfLzrcnHqmKUS
+PDF: C:\Users\quokka\Downloads\MUNationalFinAuth01a-FIN.pdf
+Amounts: [25000.0, 1802500.0, 1802500.0]
+Using total: 3630000.0
+2025-02-17 11:42:26,351 - root - INFO - Reprocessing document 7Ixk5yDUrw4HBBwl9bbt with existing fee: 37959.23
+2025-02-17 11:42:26,829 - root - INFO - Reprocessing document 7fdlUm1yfythEyUZ0fzj with existing fee: 151020.0
+2025-02-17 11:42:27,521 - root - INFO - Reprocessing document 7qgq16MTm5pYIlysXbtu with existing fee: 1252367.75
+2025-02-17 11:42:28,312 - root - INFO - Reprocessing document 7tn73nWU26ZRH6wjFGv8 with existing fee: 3986532.9
+2025-02-17 11:42:29,156 - root - INFO - Reprocessing document 7x9FnZEg2GsNyRqazf9K with existing fee: 935787.3400000001
+2025-02-17 11:42:29,936 - root - WARNING - Multiple fees found in 7x9FnZEg2GsNyRqazf9K
+PDF: C:\Users\quokka\Downloads\MUSSMHealth03a-FIN.pdf
+Amounts: [467801.77, 467801.77, 1.1, 182.7]
+Using total: 935787.3400000001
+2025-02-17 11:42:30,021 - root - INFO - Reprocessing document 8BGHpgwZepsGCxZmQTfh with existing fee: 671199.63
+2025-02-17 11:42:30,957 - root - INFO - Reprocessing document 8HcjOjW297opQTEPJLRc with existing fee: 2580777.7
+2025-02-17 11:42:31,754 - root - WARNING - Multiple fees found in 8HcjOjW297opQTEPJLRc
+PDF: C:\Users\quokka\Downloads\FLMiami01b-Dade13-FIN.pdf
+Amounts: [1290388.85, 814683.95, 475704.9]
+Using total: 2580777.7
+2025-02-17 11:42:31,850 - root - INFO - Reprocessing document 8N9n90josNzJx3Vf50ro with existing fee: 2230720.25
+2025-02-17 11:42:32,871 - root - WARNING - Multiple fees found in 8N9n90josNzJx3Vf50ro
+PDF: C:\Users\quokka\Downloads\KYLouisville01a-FIN.pdf
+Amounts: [1199788.0, 1030932.25]
+Using total: 2230720.25
+2025-02-17 11:42:32,943 - root - INFO - Reprocessing document 8fiHU4YyDufzbU8cQm0M with existing fee: 667400.0
+2025-02-17 11:42:33,624 - root - INFO - Reprocessing document 8qw4cnI5bD8B6lHkOeht with existing fee: 160994.0
+2025-02-17 11:42:34,768 - root - INFO - Reprocessing document 8sjC7s0r4ZrmtsUEEhGM with existing fee: 116024827.22
+2025-02-17 11:42:35,545 - root - WARNING - Multiple fees found in 8sjC7s0r4ZrmtsUEEhGM
+PDF: C:\Users\quokka\Downloads\MUBonSecours02a-FIN.pdf
+Amounts: [393209.72, 415250.19, 115216367.31]
+Using total: 116024827.22
+2025-02-17 11:42:35,656 - root - INFO - Reprocessing document 8su0I3YdbIMs7U6uReGn with existing fee: 758951.4
+2025-02-17 11:42:36,229 - root - INFO - Reprocessing document 9MK6QpedNamjkrL1vZkQ with existing fee: 373311.49
+2025-02-17 11:42:37,186 - root - INFO - Reprocessing document 9QWUQAjRPtj1E1W8RqPr with existing fee: 755220.36
+2025-02-17 11:42:38,089 - root - INFO - Reprocessing document 9p2yZTxYtLzsTSvvqJEj with existing fee: 195203.61
+2025-02-17 11:42:38,611 - root - WARNING - Multiple fees found in 9p2yZTxYtLzsTSvvqJEj
+PDF: C:\Users\quokka\Downloads\MAMassDev02a-OS.pdf
+Amounts: [97337.75, 97865.86]
+Using total: 195203.61
+2025-02-17 11:42:38,712 - root - INFO - Reprocessing document AAcrRZOErdrr0Nt6Q9El with existing fee: 437060.75
+2025-02-17 11:42:39,232 - root - WARNING - Multiple fees found in AAcrRZOErdrr0Nt6Q9El
+PDF: C:\Users\quokka\Downloads\MDBaltimore03a-FIN.pdf
+Amounts: [437060.75, 437060.75]
+Using total: 437060.75
+2025-02-17 11:42:39,406 - root - INFO - Reprocessing document AB7mgmPoLp968Ahtdo9U with existing fee: 1700572.01
+2025-02-17 11:42:40,397 - root - WARNING - Multiple fees found in AB7mgmPoLp968Ahtdo9U
+PDF: C:\Users\quokka\Downloads\TXTarrant03a-FIN.pdf
+Amounts: [1615851.5, 84720.51]
+Using total: 1700572.01
+2025-02-17 11:42:40,483 - root - INFO - Reprocessing document AFRpcm5LYjmQbAujnXgh with existing fee: 856552.5
+2025-02-17 11:42:41,360 - root - INFO - Reprocessing document AOb0XHanr2BgSsMiAYJ4 with existing fee: 233750.0
+2025-02-17 11:42:41,655 - root - INFO - Reprocessing document AU8WmzggEcD5KLeiKtbm with existing fee: 814006.4
+2025-02-17 11:42:43,042 - root - INFO - Reprocessing document AV9nYLYpV1ncebJ6bkpj with existing fee: 811867.5
+2025-02-17 11:42:44,366 - root - INFO - Reprocessing document AXDg8UMvgZ92shQRU42r with existing fee: 722831.25
+2025-02-17 11:42:44,896 - root - INFO - Reprocessing document Aazl12cas0lC6KFURz8U with existing fee: 520261.52
+2025-02-17 11:42:45,710 - root - INFO - Reprocessing document AuvXELIyuHi1sMbNxWI5 with existing fee: 725500.0
+2025-02-17 11:42:46,569 - root - INFO - Reprocessing document Avt75CNIa7RCVx6IGl6B with existing fee: 1281288.75
+2025-02-17 11:42:47,457 - root - INFO - Reprocessing document AzR2OzrTt3lJbe4aGSFh with existing fee: 1232439.5
+2025-02-17 11:42:48,045 - root - INFO - Reprocessing document Azfmf22KfH7h1JnZCtFJ with existing fee: 4018005.16
+2025-02-17 11:42:48,900 - root - WARNING - Multiple fees found in Azfmf22KfH7h1JnZCtFJ
+PDF: C:\Users\quokka\Downloads\CACHFFA03a-FIN.pdf
+Amounts: [4018005.16, 4018005.16, 4018005.16]
+Using total: 4018005.16
+2025-02-17 11:42:48,981 - root - INFO - Reprocessing document BX0hSlTQgTGADYxDVYl8 with existing fee: 1150454.25
+2025-02-17 11:42:50,004 - root - INFO - Reprocessing document BbRJBCmSo8eFJKf1mLL7 with existing fee: 507400.0
+2025-02-17 11:42:50,749 - root - WARNING - Multiple fees found in BbRJBCmSo8eFJKf1mLL7
+PDF: C:\Users\quokka\Downloads\WIWHEFA01a-FIN.pdf
+Amounts: [294400.0, 213000.0]
+Using total: 507400.0
+2025-02-17 11:42:50,975 - root - INFO - Reprocessing document BbyIZh56KFj3TCtgu1JY with existing fee: 283247.45
+2025-02-17 11:42:52,593 - root - INFO - Reprocessing document C5DHBjvYgIcICVVLeM1U with existing fee: 90875.0
+2025-02-17 11:42:52,979 - root - INFO - Reprocessing document CKfvGdqjCfQzfNF6pBLL with existing fee: 3832884.3
+2025-02-17 11:42:53,781 - root - WARNING - Multiple fees found in CKfvGdqjCfQzfNF6pBLL
+PDF: C:\Users\quokka\Downloads\FLBrevard01b-FIN.pdf
+Amounts: [1706147.71, 210294.44, 1706147.71, 210294.44]
+Using total: 3832884.3
+2025-02-17 11:42:54,097 - root - INFO - Reprocessing document CihZg0HxwPiOp5Jq8vT9 with existing fee: 155027.25
+2025-02-17 11:42:55,094 - root - INFO - Reprocessing document Cl9ngTYEi6D3xdwI5Ihg with existing fee: 471376.08
+2025-02-17 11:42:55,849 - root - INFO - Processed batch up to Cl9ngTYEi6D3xdwI5Ihg
+2025-02-17 11:42:56,089 - root - INFO - Reprocessing document ClN9IxhequqoicdlMRzv with existing fee: 631725.0
+2025-02-17 11:42:56,651 - root - WARNING - Multiple fees found in ClN9IxhequqoicdlMRzv
+PDF: C:\Users\quokka\Downloads\ZGMeadowlarkHills01b-FIN.pdf
+Amounts: [554850.0, 76875.0]
+Using total: 631725.0
+2025-02-17 11:42:56,865 - root - INFO - Reprocessing document CoJiWpfwgpcq87410Eko with existing fee: 761162.0
+2025-02-17 11:42:57,901 - root - WARNING - Multiple fees found in CoJiWpfwgpcq87410Eko
+PDF: C:\Users\quokka\Downloads\MUPublicFinAuth04a-FIN.pdf
+Amounts: [761162.0, 761162.0]
+Using total: 761162.0
+2025-02-17 11:42:58,037 - root - INFO - Reprocessing document D18O9e5ymenRv9sAQQZk with existing fee: 1463308.75
+2025-02-17 11:42:58,932 - root - INFO - Reprocessing document D3eDI4OdA5L1PJekWUHS with existing fee: 235238.45
+2025-02-17 11:43:00,053 - root - INFO - Reprocessing document DCJ5IIl3XvTMaFCzSQsa with existing fee: 887855.14
+2025-02-17 11:43:01,000 - root - INFO - Reprocessing document DIBv76z6P1EnbHok4Rxa with existing fee: 421483.97
+2025-02-17 11:43:02,177 - root - INFO - Reprocessing document DNtVXJ2W7DLcEofV4uZJ with existing fee: 1461075.0
+2025-02-17 11:43:03,199 - root - INFO - Reprocessing document DSWjiMWSBggbuVzFNCsN with existing fee: 1125000.0
+2025-02-17 11:43:04,021 - root - INFO - Reprocessing document DXCVhqj59g72WWzqgbMz with existing fee: 140000.0
+2025-02-17 11:43:04,824 - root - INFO - Reprocessing document Di4oKlhMMpRuQd1EV9B4 with existing fee: 10986426.0
+2025-02-17 11:43:05,472 - root - WARNING - Multiple fees found in Di4oKlhMMpRuQd1EV9B4
+PDF: C:\Users\quokka\Downloads\CAKaiser01a-FIN.pdf
+Amounts: [10986426.0, 10986426.0]
+Using total: 10986426.0
+2025-02-17 11:43:05,657 - root - INFO - Reprocessing document DqmoPM0TKGYit6ZJAGJC with existing fee: 671199.63
+2025-02-17 11:43:06,496 - root - INFO - Reprocessing document E3Q8pC1OqV3U5RqDEMst with existing fee: 1000289.95
+2025-02-17 11:43:07,445 - root - INFO - Reprocessing document EPlSYWCqel9RMICtbI5q with existing fee: 113791.47
+2025-02-17 11:43:08,522 - root - INFO - Reprocessing document ESNN9fcBI4HGRRbJwYqc with existing fee: 2093655.0
+2025-02-17 11:43:09,407 - root - INFO - Reprocessing document ElTBp7OHLY2QzqVFKKRM with existing fee: 1799437.5
+2025-02-17 11:43:10,837 - root - WARNING - Multiple fees found in ElTBp7OHLY2QzqVFKKRM
+PDF: C:\Users\quokka\Downloads\NYOnondaga01a-FIN.pdf
+Amounts: [1047435.65, 752001.85]
+Using total: 1799437.5
+2025-02-17 11:43:10,978 - root - INFO - Reprocessing document EzwgqMGBiviHPOdV9qaF with existing fee: 439073.65
+2025-02-17 11:43:12,139 - root - INFO - Reprocessing document FA3j1jXxgDOEi5Aob7VU with existing fee: 191971.14
+2025-02-17 11:43:13,361 - root - INFO - Reprocessing document FAIURDiBEihXvlWwTU8e with existing fee: 937765.0
+2025-02-17 11:43:14,068 - root - WARNING - Multiple fees found in FAIURDiBEihXvlWwTU8e
+PDF: C:\Users\quokka\Downloads\CACHFFA02a-FIN.pdf
+Amounts: [856955.09, 80809.91]
+Using total: 937765.0
+2025-02-17 11:43:14,377 - root - INFO - Reprocessing document FfSK7xE8I1qPfjHgcjn9 with existing fee: 399643.28
+2025-02-17 11:43:15,388 - root - INFO - Reprocessing document FijqOFhvipFcayk358ze with existing fee: 1695401.1
+2025-02-17 11:43:16,470 - root - WARNING - Multiple fees found in FijqOFhvipFcayk358ze
+PDF: C:\Users\quokka\Downloads\TNErlanger01a-FIN.pdf
+Amounts: [1695401.1, 1695401.1]
+Using total: 1695401.1
+2025-02-17 11:43:16,766 - root - INFO - Reprocessing document FrV5y8n2E0KpVWHGvnpg with existing fee: 2207876.39
+2025-02-17 11:43:17,514 - root - INFO - Reprocessing document Fv7l1O4bR9AfrtoI8kkC with existing fee: 1793930.0
+2025-02-17 11:43:18,485 - root - WARNING - Multiple fees found in Fv7l1O4bR9AfrtoI8kkC
+PDF: C:\Users\quokka\Downloads\GAWellstar01b-FIN.pdf
+Amounts: [1019098.25, 200733.25, 271550.0, 302548.5]
+Using total: 1793930.0
+2025-02-17 11:43:18,641 - root - INFO - Reprocessing document GDKAmUkIFM0xrS94vFYR with existing fee: 2713500.0
+2025-02-17 11:43:19,249 - root - WARNING - Multiple fees found in GDKAmUkIFM0xrS94vFYR
+PDF: C:\Users\quokka\Downloads\WAHealthcare02a-FIN.pdf
+Amounts: [1000.0, 2712500.0]
+Using total: 2713500.0
+2025-02-17 11:43:19,357 - root - INFO - Reprocessing document GGNZT6BLFtLPHls8bhGb with existing fee: 1496861.31
+2025-02-17 11:43:20,906 - root - INFO - Reprocessing document GORKMzI3llVCPK2pJAL5 with existing fee: 2629705.5
+2025-02-17 11:43:22,291 - root - INFO - Reprocessing document GTQeTO4oC8uVxvar8oSp with existing fee: 222231.63
+2025-02-17 11:43:23,418 - root - INFO - Reprocessing document GVCvpSOzIK5juiY66ai3 with existing fee: 378329.95
+2025-02-17 11:43:24,271 - root - WARNING - Multiple fees found in GVCvpSOzIK5juiY66ai3
+PDF: C:\Users\quokka\Downloads\WABellevue01a-FIN.pdf
+Amounts: [120527.24, 257802.71]
+Using total: 378329.95
+2025-02-17 11:43:24,426 - root - WARNING - Manual override applied for Gau7pvRUYVpYCKsWwI4D
+URL: https://www.munios.com/munios-notice.aspx?e=602FW
+OS Path: C:\Users\quokka\Downloads\MUBonSecours04a-OS.pdf
+Changed fields:
+- os_type: OFFERING MEMORANDUM \u2192 COMMERCIAL PAPER OFFERING MEMORANDUM
+2025-02-17 11:43:24,426 - root - INFO - Reprocessing document GhHXeBD5qrDNpyWQDXik with existing fee: 80294.01
+2025-02-17 11:43:25,548 - root - WARNING - Multiple fees found in GhHXeBD5qrDNpyWQDXik
+PDF: C:\Users\quokka\Downloads\MUAdventistHealth01b-OS.pdf
+Amounts: [80294.01, 80294.01]
+Using total: 80294.01
+2025-02-17 11:43:25,763 - root - INFO - Reprocessing document GhJlZmP0kTL3QuRGXIHD with existing fee: 450616.48
+2025-02-17 11:43:26,655 - root - INFO - Reprocessing document GjP5I5iqpfZyKsbfeSwh with existing fee: 2254806.04
+2025-02-17 11:43:27,388 - root - WARNING - Multiple fees found in GjP5I5iqpfZyKsbfeSwh
+PDF: C:\Users\quokka\Downloads\TXTarrant05a-FIN.pdf
+Amounts: [1227232.99, 489743.14, 537829.91]
+Using total: 2254806.04
+2025-02-17 11:43:27,480 - root - INFO - Reprocessing document Gq6TCcx9yfqRiRbMjRe8 with existing fee: 1848750.0
+2025-02-17 11:43:28,489 - root - INFO - Reprocessing document H1frkcrIMR9JTVWZ0ALK with existing fee: 945524.2000000001
+2025-02-17 11:43:29,092 - root - WARNING - Multiple fees found in H1frkcrIMR9JTVWZ0ALK
+PDF: C:\Users\quokka\Downloads\GAWellstar01a-FIN.pdf
+Amounts: [282904.65, 662619.55]
+Using total: 945524.2000000001
+2025-02-17 11:43:29,199 - root - INFO - Reprocessing document H3TRl56vs0GDYC1zSdab with existing fee: 188779.0
+2025-02-17 11:43:29,705 - root - INFO - Reprocessing document HH7nieo9ed9w3zWeBnqO with existing fee: 9104453.35
+2025-02-17 11:43:30,255 - root - WARNING - Multiple fees found in HH7nieo9ed9w3zWeBnqO
+PDF: C:\Users\quokka\Downloads\MOMOHELA03a-FIN.pdf
+Amounts: [8852593.35, 251860.0]
+Using total: 9104453.35
+2025-02-17 11:43:30,371 - root - INFO - Reprocessing document HKqypWxHsIxpZO0kGhAt with existing fee: 4026971.77
+2025-02-17 11:43:31,258 - root - WARNING - Multiple fees found in HKqypWxHsIxpZO0kGhAt
+PDF: C:\Users\quokka\Downloads\MUCommonSpirit02a-FIN.pdf
+Amounts: [4026971.77, 4026971.77]
+Using total: 4026971.77
+2025-02-17 11:43:31,578 - root - INFO - Reprocessing document HTbZ6AkcC2CfYntPqGkb with existing fee: 151020.0
+2025-02-17 11:43:32,426 - root - INFO - Reprocessing document HW6lw75lj59H2ohxMkEP with existing fee: 592500.0
+2025-02-17 11:43:33,142 - root - WARNING - Multiple fees found in HW6lw75lj59H2ohxMkEP
+PDF: C:\Users\quokka\Downloads\VAArlington04a-FIN.pdf
+Amounts: [592500.0, 592500.0]
+Using total: 592500.0
+2025-02-17 11:43:33,515 - root - INFO - Reprocessing document HcWVRCNoDuQ4kg9vFUFD with existing fee: 267412.9
+2025-02-17 11:43:34,060 - root - INFO - Processed batch up to HcWVRCNoDuQ4kg9vFUFD
+2025-02-17 11:43:34,208 - root - INFO - Reprocessing document Hcsa2SBTD91ajzREZjTu with existing fee: 1660000.0
+2025-02-17 11:43:34,844 - root - INFO - Reprocessing document HxICnPKeFvoiW1WOAMjH with existing fee: 745217.48
+2025-02-17 11:43:35,699 - root - INFO - Reprocessing document IbZJmHtvJzWxaHTFBgpT with existing fee: 327252.47
+2025-02-17 11:43:36,818 - root - INFO - Reprocessing document IgSZ7FukGMWtAToCbBnD with existing fee: 256798.07
+2025-02-17 11:43:37,135 - root - WARNING - Multiple fees found in IgSZ7FukGMWtAToCbBnD
+PDF: C:\Users\quokka\Downloads\MUPublicFinAuth17a-FIN.pdf
+Amounts: [129971.35, 126826.72]
+Using total: 256798.07
+2025-02-17 11:43:37,235 - root - INFO - Reprocessing document IiumhlWnTO3cEBrwXBjN with existing fee: 380820.0
