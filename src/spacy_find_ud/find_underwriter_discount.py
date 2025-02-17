@@ -96,7 +96,7 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     r"(?:\s+\w+)?\s+"                     # optionally allow one word between
     r"(?:underwriting|underwriter|purchaser)"  # keywords
     r"(?:s|['’]s|s['’]?)?\s+"                # optional possessive forms
-    r"(?:discount|fees|expenses))",                    # capture "discount" or "fees"
+    r"(?:discount|fees|expenses)",                    # capture "discount" or "fees"
     re.IGNORECASE | re.DOTALL
   )
 
@@ -127,7 +127,7 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     r"pay\s+the\s+"                     # match "pay the "
     r"(?:series\s+\w+\s+)?"             # optionally match "Series XXXX " 
     r"(?:underwriter|purchaser)"        # match "underwriter" or "purchaser"
-    r"s?\s+"                            # optional plural s only
+    r"(?:s)?\s+"                        # optional plural s in non-capturing group
     r"a\s+fee\s+of\s+"                  # match "a fee of "
     r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"    # capture number after "$"
     , re.IGNORECASE | re.DOTALL

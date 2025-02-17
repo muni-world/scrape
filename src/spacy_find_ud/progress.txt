@@ -200,7 +200,11 @@ INFO:root:successful_documents: []
 
 
 
-
+2025-02-17 12:29:02,984 - root - INFO - total_documents: 498
+2025-02-17 12:29:02,984 - root - INFO - already_processed: 0
+2025-02-17 12:29:02,984 - root - INFO - missing_path: 49
+2025-02-17 12:29:02,984 - root - INFO - processing_failed: 81
+2025-02-17 12:29:02,984 - root - INFO - successfully_processed: 368
 
 
 
