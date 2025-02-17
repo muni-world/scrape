@@ -266,7 +266,7 @@ def process_pdf_discounts(reprocess_processed=True):
         # Log summary
         logging.info("Processing complete. Summary:")
         for key, value in results.items():
-            if key != "failed_documents":  # Skip printing the failed documents list in summary
+            if key not in ["failed_documents", "successful_documents"]:  # Skip printing both document lists
                 logging.info(f"{key}: {value}")
         
         # Print failed documents report
@@ -294,30 +294,53 @@ def process_pdf_discounts(reprocess_processed=True):
                         logging.info(f"   PDF: {doc.get('pdf_path', 'N/A')}")
                         logging.info(f"   URL: {doc.get('url', 'N/A')}")
                         logging.info(f"   Found {len(doc.get('amounts', []))} fees: {doc.get('amounts', [])}")
+                        logging.info(f"   Total fee used: {doc.get('new_fee', 'N/A')}")  # Added total fee
             except Exception as e:
                 logging.error(f"Error logging multiple fees: {str(e)}")
 
-            # New: Override section
-            override_docs = [d for d in results["successful_documents"] if d.get("had_override")]
-            if override_docs:
-                logging.info("\nSuccessfully Processed with Override:")
-                for idx, doc in enumerate(override_docs, 1):
-                    logging.info(f"\n{idx}. Document ID: {doc['doc_id']}")
-                    logging.info(f"   Obligor: {doc['obligor']}")
-                    logging.info(f"   PDF: {doc['pdf_path']}")
-                    logging.info(f"   URL: {doc['url']}")
-                    logging.info(f"   Override changes: {doc['override_changes']}")
+            # Override Summary Section
+            try:
+                override_summary = {}
+                for doc in results["successful_documents"]:
+                    if doc.get("had_override"):
+                        url = doc.get("url", "N/A")
+                        if url not in override_summary:
+                            override_summary[url] = {
+                                "count": 0,
+                                "docs": [],
+                                "changes": set(),
+                            }
+                        override_summary[url]["count"] += 1
+                        override_summary[url]["docs"].append({
+                            "doc_id": doc["doc_id"],
+                            "obligor": doc["obligor"],
+                            "changes": doc.get("override_changes", {}),
+                        })
+                        override_summary[url]["changes"].update(doc.get("override_changes", {}).keys())
 
-            # Existing Successful Documents Report
-            logging.info("\nSuccessfully Processed Documents Report:")
-            for idx, success in enumerate(results["successful_documents"], 1):
-                logging.info(f"\n{idx}. Document ID: {success['doc_id']}")
-                logging.info(f"   Obligor: {success['obligor']}")
-                logging.info(f"   OS Type: {success['os_type']}")
-                logging.info(f"   PDF Path: {success['pdf_path']}")
-                logging.info(f"   URL: {success['url']}")
-                logging.info(f"   Old Fee: {success['old_fee']}")
-                logging.info(f"   New Fee: {success['new_fee']}")
+                if override_summary:
+                    logging.info("\nOverride Summary:")
+                    for url, data in override_summary.items():
+                        logging.info(f"\nURL: {url}")
+                        logging.info(f"Total documents affected: {data['count']}")
+                        logging.info(f"Fields modified: {', '.join(data['changes'])}")
+                        logging.info("Affected documents:")
+                        for doc in data["docs"]:
+                            logging.info(f"  - {doc['doc_id']} ({doc['obligor']})")
+                            logging.info(f"    Changes: {doc['changes']}")
+            except Exception as e:
+                logging.error(f"Error creating override summary: {str(e)}")
+
+            # Existing Successful Documents Report - Commented out to reduce log verbosity
+            # logging.info("\nSuccessfully Processed Documents Report:")
+            # for idx, success in enumerate(results["successful_documents"], 1):
+            #     logging.info(f"\n{idx}. Document ID: {success['doc_id']}")
+            #     logging.info(f"   Obligor: {success['obligor']}")
+            #     logging.info(f"   OS Type: {success['os_type']}")
+            #     logging.info(f"   PDF Path: {success['pdf_path']}")
+            #     logging.info(f"   URL: {success['url']}")
+            #     logging.info(f"   Old Fee: {success['old_fee']}")
+            #     logging.info(f"   New Fee: {success['new_fee']}")
 
         return results
         
