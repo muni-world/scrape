@@ -93,10 +93,10 @@ def extract_underwriting_discount_from_pdf(pdf_path):
   # "of underwriter's/underwriters'/purchaser's/purchasers' discount/fees"
   before_discount_pattern = re.compile(
     r"\$(\d+(?:,?\d+)*(?:\.\d+)?)"       # match "$" then capture number
-    r"(?:\s+of\s+"                         # non-capturing group: " of "
+    r"(?:\s+\w+)?\s+"                     # optionally allow one word between
     r"(?:underwriting|underwriter|purchaser)"  # keywords
     r"(?:s|['’]s|s['’]?)?\s+"                # optional possessive forms
-    r"(?:discount|fees|expenses))",                    # capture "discount" or "fees"
+    r"(?:discount|fees|expenses)",                    # capture "discount" or "fees"
     re.IGNORECASE | re.DOTALL
   )
 
@@ -127,7 +127,7 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     r"pay\s+the\s+"                     # match "pay the "
     r"(?:series\s+\w+\s+)?"             # optionally match "Series XXXX " 
     r"(?:underwriter|purchaser)"        # match "underwriter" or "purchaser"
-    r"s?\s+"                            # optional plural s only
+    r"(?:s)?\s+"                        # optional plural s in non-capturing group
     r"a\s+fee\s+of\s+"                  # match "a fee of "
     r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"    # capture number after "$"
     , re.IGNORECASE | re.DOTALL

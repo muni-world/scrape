@@ -1,0 +1,8 @@
+start with Process_pdf_discounts.py and run it.
+    1. you can specify if you want reprocess everything or just new ones by looking at bottom of page and changing REPROCESS_SWITCH
+
+#TODO:
+    1. Check all multiple entry fees and see if they are correct.
+    2. Normalize os_type to make sure the everything is in correct category
+    3. Make sure duplicates are not being processed when supplements come out 
+    4. Add entites coming in as websites to names in fullstack

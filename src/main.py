@@ -68,4 +68,4 @@ def main(should_download_os=True):
 # Run the main function when the script is executed.
 if __name__ == "__main__":
     # You can modify this value to control OS downloads
-    main(should_download_os=True)
+    main(should_download_os=False)

@@ -159,6 +159,52 @@ Bonds, which amounts will be paid from funds provided by the Parent Corporation.
 
 
 
+7:48 2/17/2025
+INFO:root:total_documents: 498
+INFO:root:already_processed: 467
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 31
+INFO:root:successfully_processed: 0
+INFO:root:successful_documents: []
+
+8:16 2/17/2025
+INFO:root:total_documents: 498
+INFO:root:already_processed: 468
+INFO:root:missing_path: 0
+INFO:root:processing_failed: 30
+INFO:root:successfully_processed: 0
+INFO:root:successful_documents: []
+
+9:21 2/17/2025
+2025-02-17 08:50:54,764 - root - INFO - total_documents: 498
+2025-02-17 08:50:54,765 - root - INFO - already_processed: 120
+2025-02-17 08:50:54,765 - root - INFO - missing_path: 0
+2025-02-17 08:50:54,765 - root - INFO - processing_failed: 32
+2025-02-17 08:50:54,765 - root - INFO - successfully_processed: 346
+
+
+
+2025-02-17 12:08:26,351 - root - INFO - total_documents: 498
+2025-02-17 12:08:26,351 - root - INFO - already_processed: 120
+2025-02-17 12:08:26,351 - root - INFO - missing_path: 0
+2025-02-17 12:08:26,351 - root - INFO - processing_failed: 32
+2025-02-17 12:08:26,351 - root - INFO - successfully_processed: 346
+
+    8. Document ID: 2fhwm3BtbQZGsHzptIWt
+    2025-02-17 12:08:26,357 - root - INFO -    Obligor: Health Facilities Revenue Bonds (SSM Health), Series 2022A
+    2025-02-17 12:08:26,357 - root - INFO -    PDF: C:\Users\quokka\Downloads\MUSSMHealth01a-FIN.pdf
+    2025-02-17 12:08:26,357 - root - INFO -    URL: https://www.munios.com/munios-notice.aspx?e=2GCBW
+    2025-02-17 12:08:26,357 - root - INFO -    Found 4 fees: [1279487.0, 1279487.0, 26.2, 182.7]
+    2025-02-17 12:08:26,357 - root - INFO -    Total fee used: 2559182.9
+
+
+
+
+2025-02-17 12:29:02,984 - root - INFO - total_documents: 498
+2025-02-17 12:29:02,984 - root - INFO - already_processed: 0
+2025-02-17 12:29:02,984 - root - INFO - missing_path: 49
+2025-02-17 12:29:02,984 - root - INFO - processing_failed: 81
+2025-02-17 12:29:02,984 - root - INFO - successfully_processed: 368
 
 
 
@@ -166,6 +212,21 @@ Bonds, which amounts will be paid from funds provided by the Parent Corporation.
 
 
 
+
+
+
+
+
+
+
+TODO:
+INFO:root:Reprocessing document 6sHGz6V2rX2lkLEmQXoR with existing fee: 151INFO:root:Reprocessing document 6vN8Ol5NpZADH0Rlj8LI with existing fee: 424722.55
+INFO:root:Reprocessing document 6vN8Ol5NpZADH0Rlj8LI with existing fee: 424INFO:root:Reprocessing document 6vN8Ol5NpZADH0Rlj8LI with existing fee: 424INFO:root:Reprocessing document 6vN8Ol5NpZADH0Rlj8LI with existing fee: 424722.55
+
+Todo: 
+INFO:root:Reprocessing document u6C2iwFGZCB0eZ53bsKA with existing fee: 79000.0
+INFO:root:Reprocessing document uAvUJBvNhXSbLCFKghsF with existing fee: 1661442.5
+ERROR:root:Fatal error in process_pdf_discounts: '_UnaryStreamMultiCallable' object has no attribute '_retry'
 
 
 

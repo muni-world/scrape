@@ -313,6 +313,7 @@ class CompanyStandardizer:
                     "Goldman Sachs & Co. LLC",
                     "Goldman Sachs & Co. LLC",
                     "GS",
+                    "GOLDMAN SACHS & CO. LLC",
                 ],
                 "websites": [
                     "goldmansachs.com",
@@ -323,6 +324,7 @@ class CompanyStandardizer:
                 "canonical_name": "J.P. Morgan",
                 "name_variations": [
                     "JPMorgan",
+                    "J.P. Morgan Securities LLC",
                     "J.P. Morgan",
                     "JP Morgan",
                     "JPMorgan Chase",
@@ -334,6 +336,7 @@ class CompanyStandardizer:
                     "j.p morgan",
                     "j.p. morgan",
                     "j.p. morgan",
+                    "J. P. Morgan"
                     "j.p.morgan",
                     "jp morgan",
                     "jpmorgan",
@@ -342,7 +345,7 @@ class CompanyStandardizer:
                     "j .p. morgan",
                     "j. p.morgan",
                     "j. p. morgan",
-                    "pmorgan",
+                    "jpmorgan",
                 ],
                 "websites": [
                     "jpmorgan.com",
@@ -490,6 +493,7 @@ class CompanyStandardizer:
                     "SWS",
                     "Siebert Williams",
                     "SIEBERT WILLIAMS SHANK",
+                    "SIEBERT WILLIAMS SHANK & CO., LLC",
                 ],
                 "websites": [
                     "siebertwilliams.com",
@@ -856,7 +860,71 @@ class CompanyStandardizer:
                     "saul.com",
                 ],
             },
-            
+            {
+                "canonical_name": "Oppenheimer & Co.",
+                "name_variations": [
+                    "Oppenheimer & Co.",
+                    "Oppenheimer",
+                    "OPPENHEIMER",
+                    "Oppenheimer & Co. Inc.",
+                    "Opco",
+                ],
+                "websites": [
+                    "opco.com",
+                    "oppenheimer.com",
+                ],
+            },
+            {
+                "canonical_name": "Mesirow Financial",
+                "name_variations": [
+                    "Mesirow Financial",
+                    "Mesirow",
+                    "MESIROW",
+                    "Mesirow Financial Holdings, Inc.",
+                ],
+                "websites": [
+                    "mesirow.com",
+                    "mesirowfinancial.com",
+                ],
+            },
+            {
+                "canonical_name": "Blue River Analytics",
+                "name_variations": [
+                    "Blue River Analytics",
+                    "Blue River",
+                    "BRV",
+                    "BRV LLC",
+                    "Blue River Analytics, LLC",
+                ],
+                "websites": [
+                    "brv-llc.com",
+                ],
+            },
+            {
+                "canonical_name": "The Frazer Lanier Company",
+                "name_variations": [
+                    "The Frazer Lanier Company",
+                    "Frazer Lanier",
+                    "FRAZER LANIER",
+                    "Frazer Lanier Company",
+                ],
+                "websites": [
+                    "frazerlanier.com",
+                ],
+            },
+            {
+                "canonical_name": "UMB Financial",
+                "name_variations": [
+                    "UMB Financial",
+                    "UMB Bank",
+                    "UMB",
+                    "UMB Financial Corporation",
+                    "UMB Bank n.a.",
+                ],
+                "websites": [
+                    "umb.com",
+                ],
+            },
         ]
 
         # Municipal Advisors
@@ -948,6 +1016,269 @@ class CompanyStandardizer:
                 ],
                 "websites": [
                     "firstriver.com",
+                ],
+            },
+            {
+                "canonical_name": "Columbia Capital",
+                "name_variations": [
+                    "Columbia Capital",
+                    "Columbia Capital Management",
+                    "Columbia Capital Management, LLC",
+                ],
+                "websites": [
+                    "columbiacapital.com",
+                ],
+            },
+            {
+                "canonical_name": "Melio & Company",
+                "name_variations": [
+                    "Melio & Company",
+                    "Melio and Company",
+                    "Melio & Co",
+                    "Melio Company",
+                ],
+                "websites": [
+                    "meliocompany.com",
+                ],
+            },
+            {
+                "canonical_name": "Ponder & Co.",
+                "name_variations": [
+                    "Ponder & Co.",
+                    "Ponder and Company",
+                    "Ponder & Company",
+                    "Ponder",
+                ],
+                "websites": [
+                    "ponderco.com",
+                ],
+            },
+            {
+                "canonical_name": "Swap Financial Group",
+                "name_variations": [
+                    "Swap Financial Group",
+                    "Swap Financial",
+                    "SWAP Financial Group",
+                    "SFG",
+                ],
+                "websites": [
+                    "swapfinancial.com",
+                ],
+            },
+            {
+                "canonical_name": "AAFAF",
+                "name_variations": [
+                    "AAFAF",
+                    "Puerto Rico Fiscal Agency and Financial Advisory Authority",
+                    "Autoridad de Asesoría Financiera y Agencia Fiscal",
+                ],
+                "websites": [
+                    "aafaf.pr.gov",
+                ],
+            },
+            {
+                "canonical_name": "Acacia Financial Group",
+                "name_variations": [
+                    "Acacia Financial Group",
+                    "Acacia Financial",
+                    "ACACIA",
+                    "Acacia Financial Group, Inc.",
+                ],
+                "websites": [
+                    "acaciafin.com",
+                ],
+            },
+            {
+                "canonical_name": "Argent Financial Group",
+                "name_variations": [
+                    "Argent Financial Group",
+                    "Argent Financial",
+                    "ARGENT",
+                    "Argent Financial Group, Inc.",
+                ],
+                "websites": [
+                    "argentfinancial.com",
+                ],
+            },
+            {
+                "canonical_name": "Brown Advisory",
+                "name_variations": [
+                    "Brown Advisory",
+                    "Brown Advisory LLC",
+                    "BROWN ADVISORY",
+                ],
+                "websites": [
+                    "brownadvisory.com",
+                ],
+            },
+            {
+                "canonical_name": "Evercrest Capital",
+                "name_variations": [
+                    "Evercrest Capital",
+                    "Evercrest Advisors",
+                    "EVERCREST",
+                    "Evercrest Capital Advisors",
+                ],
+                "websites": [
+                    "evercrestadvisors.com",
+                ],
+            },
+            {
+                "canonical_name": "First Tryon Advisors",
+                "name_variations": [
+                    "First Tryon Advisors",
+                    "First Tryon",
+                    "FIRST TRYON",
+                ],
+                "websites": [
+                    "firsttryon.com",
+                ],
+            },
+            {
+                "canonical_name": "Government Capital Securities",
+                "name_variations": [
+                    "Government Capital Securities",
+                    "Government Capital Securities Corporation",
+                    "GovCap Securities",
+                    "GOVCAP",
+                ],
+                "websites": [
+                    "govcapsecurities.com",
+                ],
+            },
+            {
+                "canonical_name": "Hammond Hanlon Camp",
+                "name_variations": [
+                    "Hammond Hanlon Camp",
+                    "Hammond Hanlon Camp LLC",
+                    "H2C",
+                    "H2C Securities",
+                ],
+                "websites": [
+                    "h2c.com",
+                ],
+            },
+            {
+                "canonical_name": "Hamlin Capital Advisors",
+                "name_variations": [
+                    "Hamlin Capital Advisors",
+                    "Hamlin Capital",
+                    "Hamlin Advisors",
+                    "HAMLIN",
+                ],
+                "websites": [
+                    "hamlinadvisors.com",
+                ],
+            },
+            {
+                "canonical_name": "Huron Consulting Group",
+                "name_variations": [
+                    "Huron Consulting Group",
+                    "Huron Consulting",
+                    "Huron",
+                    "HURON",
+                ],
+                "websites": [
+                    "huronconsultinggroup.com",
+                ],
+            },
+            {
+                "canonical_name": "Lamont Financial Services",
+                "name_variations": [
+                    "Lamont Financial Services",
+                    "Lamont Financial",
+                    "LAMONT",
+                    "Lamont Financial Services Corporation",
+                ],
+                "websites": [
+                    "lamontfin.com",
+                ],
+            },
+            {
+                "canonical_name": "The Majors Group",
+                "name_variations": [
+                    "The Majors Group",
+                    "Majors Group",
+                    "MAJORS GROUP",
+                    "Majors",
+                ],
+                "websites": [
+                    "majorsgrp.com",
+                ],
+            },
+            {
+                "canonical_name": "Marathon Capital",
+                "name_variations": [
+                    "Marathon Capital",
+                    "MARATHON CAPITAL",
+                    "Marathon",
+                    "MARA Capital",
+                ],
+                "websites": [
+                    "mara-cap.com",
+                ],
+            },
+            {
+                "canonical_name": "Public Resources Advisory Group",
+                "name_variations": [
+                    "Public Resources Advisory Group",
+                    "PRAG",
+                    "Public Resources",
+                    "PRAG Advisors",
+                ],
+                "websites": [
+                    "pragadvisors.com",
+                ],
+            },
+            {
+                "canonical_name": "Prager & Co.",
+                "name_variations": [
+                    "Prager & Co.",
+                    "Prager",
+                    "PRAGER",
+                    "Prager & Company",
+                    "Prager & Company, LLC",
+                ],
+                "websites": [
+                    "prager.com",
+                ],
+            },
+            {
+                "canonical_name": "Robert W. Baird",
+                "name_variations": [
+                    "Robert W. Baird",
+                    "Baird",
+                    "R.W. Baird",
+                    "Robert W. Baird & Co.",
+                    "BAIRD",
+                ],
+                "websites": [
+                    "rwbaird.com",
+                ],
+            },
+            {
+                "canonical_name": "Stifel",
+                "name_variations": [
+                    "Stifel",
+                    "STIFEL",
+                    "Stifel Financial",
+                    "Stifel Financial Corp.",
+                    "Stifel, Nicolaus & Company",
+                ],
+                "websites": [
+                    "stifel.com",
+                ],
+            },
+            {
+                "canonical_name": "Yuba Group",
+                "name_variations": [
+                    "Yuba Group",
+                    "YUBA GROUP",
+                    "Yuba",
+                    "The Yuba Group",
+                ],
+                "websites": [
+                    "yubagroup.com",
                 ],
             },
         ]
@@ -1249,6 +1580,554 @@ class CompanyStandardizer:
                 "websites": [
                     "hinckleyallen.com",  # Existing website
                     "www.hinckleyallen.com",  # New website to add
+                ],
+            },
+            {
+                "canonical_name": "Calfee Halter & Griswold",
+                "name_variations": [
+                    "Calfee Halter & Griswold",
+                    "Calfee",
+                    "CALFEE",
+                    "Calfee Law",
+                ],
+                "websites": [
+                    "calfee.com",
+                ],
+            },
+            {
+                "canonical_name": "Friday Eldredge & Clark",
+                "name_variations": [
+                    "Friday Eldredge & Clark",
+                    "Friday Firm",
+                    "FRIDAY",
+                    "Friday Law",
+                ],
+                "websites": [
+                    "fridayfirm.com",
+                ],
+            },
+            {
+                "canonical_name": "Llorente & Heckler",
+                "name_variations": [
+                    "Llorente & Heckler",
+                    "Llorente and Heckler",
+                    "LLORENTE HECKLER",
+                ],
+                "websites": [
+                    "llorenteheckler.com",
+                ],
+            },
+            {
+                "canonical_name": "Turner Law",
+                "name_variations": [
+                    "Turner Law",
+                    "Turner Law PC",
+                    "TURNER LAW",
+                ],
+                "websites": [
+                    "turnerlawpc.com",
+                ],
+            },
+            {
+                "canonical_name": "Barclay Damon",
+                "name_variations": [
+                    "Barclay Damon",
+                    "Barclay Damon LLP",
+                    "BARCLAY DAMON",
+                ],
+                "websites": [
+                    "barclaydamon.com",
+                ],
+            },
+            {
+                "canonical_name": "Best Best & Krieger",
+                "name_variations": [
+                    "Best Best & Krieger",
+                    "BBK Law",
+                    "BB&K",
+                    "Best Best and Krieger",
+                ],
+                "websites": [
+                    "bbklaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Buchanan Ingersoll & Rooney",
+                "name_variations": [
+                    "Buchanan Ingersoll & Rooney",
+                    "Buchanan Ingersoll",
+                    "BIPC",
+                    "Buchanan Law",
+                ],
+                "websites": [
+                    "bipc.com",
+                ],
+            },
+            {
+                "canonical_name": "Bond Schoeneck & King",
+                "name_variations": [
+                    "Bond Schoeneck & King",
+                    "Bond Schoeneck",
+                    "BSK Law",
+                    "BSK",
+                ],
+                "websites": [
+                    "bsk.com",
+                ],
+            },
+            {
+                "canonical_name": "Butler Snow",
+                "name_variations": [
+                    "Butler Snow",
+                    "Butler Snow LLP",
+                    "BUTLER SNOW",
+                ],
+                "websites": [
+                    "butlersnow.com",
+                ],
+            },
+            {
+                "canonical_name": "Cozen O'Connor",
+                "name_variations": [
+                    "Cozen O'Connor",
+                    "Cozen",
+                    "COZEN",
+                    "Cozen O'Connor PC",
+                ],
+                "websites": [
+                    "cozen.com",
+                ],
+            },
+            {
+                "canonical_name": "Dilworth Paxson",
+                "name_variations": [
+                    "Dilworth Paxson",
+                    "Dilworth",
+                    "DILWORTH",
+                    "Dilworth Paxson LLP",
+                ],
+                "websites": [
+                    "dilworthlaw.com",
+                ],
+            },
+            {
+                "canonical_name": "D. Seaton & Associates",
+                "name_variations": [
+                    "D. Seaton & Associates",
+                    "D Seaton",
+                    "D. Seaton",
+                    "Seaton & Associates",
+                ],
+                "websites": [
+                    "dseatonaa.com",
+                ],
+            },
+            {
+                "canonical_name": "Eckert Seamans",
+                "name_variations": [
+                    "Eckert Seamans",
+                    "Eckert Seamans Cherin & Mellott",
+                    "ECKERT SEAMANS",
+                ],
+                "websites": [
+                    "eckertseamans.com",
+                ],
+            },
+            {
+                "canonical_name": "Foster Garvey",
+                "name_variations": [
+                    "Foster Garvey",
+                    "Foster Garvey PC",
+                    "FOSTER GARVEY",
+                    "Foster Law",
+                ],
+                "websites": [
+                    "foster.com",
+                ],
+            },
+            {
+                "canonical_name": "Frost Brown Todd",
+                "name_variations": [
+                    "Frost Brown Todd",
+                    "Frost Brown Todd LLC",
+                    "FBT Law",
+                    "FROST BROWN TODD",
+                ],
+                "websites": [
+                    "frostbrowntodd.com",
+                ],
+            },
+            {
+                "canonical_name": "Fryberger Buchanan",
+                "name_variations": [
+                    "Fryberger Buchanan",
+                    "Fryberger",
+                    "FRYBERGER",
+                    "Fryberger Law",
+                ],
+                "websites": [
+                    "fryberger.com",
+                ],
+            },
+            {
+                "canonical_name": "Gordon Rees Scully Mansukhani",
+                "name_variations": [
+                    "Gordon Rees Scully Mansukhani",
+                    "Gordon & Rees",
+                    "GRSM",
+                    "GPW Law",
+                ],
+                "websites": [
+                    "gpwlawfirm.com",
+                ],
+            },
+            {
+                "canonical_name": "GrayRobinson",
+                "name_variations": [
+                    "GrayRobinson",
+                    "Gray Robinson",
+                    "GRAY ROBINSON",
+                    "GrayRobinson PA",
+                ],
+                "websites": [
+                    "gray-robinson.com",
+                ],
+            },
+            {
+                "canonical_name": "Greensfelder",
+                "name_variations": [
+                    "Greensfelder",
+                    "Greensfelder, Hemker & Gale",
+                    "GREENSFELDER",
+                    "Greensfelder Law",
+                ],
+                "websites": [
+                    "greensfelder.com",
+                ],
+            },
+            {
+                "canonical_name": "Greenberg Traurig",
+                "name_variations": [
+                    "Greenberg Traurig",
+                    "GT Law",
+                    "GREENBERG TRAURIG",
+                    "Greenberg Traurig LLP",
+                ],
+                "websites": [
+                    "gtlaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Hall Render",
+                "name_variations": [
+                    "Hall Render",
+                    "Hall Render Killian Heath & Lyman",
+                    "HALL RENDER",
+                    "Hall Render Law",
+                ],
+                "websites": [
+                    "hallrender.com",
+                ],
+            },
+            {
+                "canonical_name": "Hillis Clark Martin & Peterson",
+                "name_variations": [
+                    "Hillis Clark Martin & Peterson",
+                    "HCMP",
+                    "Hillis Clark",
+                    "HCMP Law",
+                ],
+                "websites": [
+                    "hcmp.com",
+                ],
+            },
+            {
+                "canonical_name": "Ice Miller",
+                "name_variations": [
+                    "Ice Miller",
+                    "Ice Miller LLP",
+                    "ICE MILLER",
+                    "Ice Miller Law",
+                ],
+                "websites": [
+                    "icemiller.com",
+                ],
+            },
+            {
+                "canonical_name": "Jones Walker",
+                "name_variations": [
+                    "Jones Walker",
+                    "Jones Walker LLP",
+                    "JONES WALKER",
+                    "Jones Walker Law",
+                ],
+                "websites": [
+                    "joneswalker.com",
+                ],
+            },
+            {
+                "canonical_name": "Jackson Walker",
+                "name_variations": [
+                    "Jackson Walker",
+                    "Jackson Walker LLP",
+                    "JACKSON WALKER",
+                    "JW Law",
+                ],
+                "websites": [
+                    "jw.com",
+                ],
+            },
+            {
+                "canonical_name": "Kelly Hart",
+                "name_variations": [
+                    "Kelly Hart",
+                    "Kelly Hart & Hallman",
+                    "KELLY HART",
+                    "Kelly Hart Law",
+                ],
+                "websites": [
+                    "kellyhart.com",
+                ],
+            },
+            {
+                "canonical_name": "K&L Gates",
+                "name_variations": [
+                    "K&L Gates",
+                    "KL Gates",
+                    "K AND L GATES",
+                    "K&L Gates LLP",
+                ],
+                "websites": [
+                    "klgates.com",
+                ],
+            },
+            {
+                "canonical_name": "King & Spalding",
+                "name_variations": [
+                    "King & Spalding",
+                    "King and Spalding",
+                    "KING & SPALDING",
+                    "King & Spalding LLP",
+                ],
+                "websites": [
+                    "kslaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Locke Lord",
+                "name_variations": [
+                    "Locke Lord",
+                    "Locke Lord LLP",
+                    "LOCKE LORD",
+                    "Locke Lord Law",
+                ],
+                "websites": [
+                    "lockelord.com",
+                ],
+            },
+            {
+                "canonical_name": "Maynard Cooper & Gale",
+                "name_variations": [
+                    "Maynard Cooper & Gale",
+                    "Maynard Cooper",
+                    "MAYNARD COOPER",
+                    "Maynard Law",
+                ],
+                "websites": [
+                    "maynardcooper.com",
+                ],
+            },
+            {
+                "canonical_name": "Miller Canfield",
+                "name_variations": [
+                    "Miller Canfield",
+                    "Miller, Canfield, Paddock and Stone",
+                    "MILLER CANFIELD",
+                    "Miller Canfield Law",
+                ],
+                "websites": [
+                    "millercanfield.com",
+                ],
+            },
+            {
+                "canonical_name": "Modrall Sperling",
+                "name_variations": [
+                    "Modrall Sperling",
+                    "Modrall",
+                    "MODRALL",
+                    "Modrall Law",
+                ],
+                "websites": [
+                    "modrall.com",
+                ],
+            },
+            {
+                "canonical_name": "Nixon Peabody",
+                "name_variations": [
+                    "Nixon Peabody",
+                    "Nixon Peabody LLP",
+                    "NIXON PEABODY",
+                    "Nixon Law",
+                ],
+                "websites": [
+                    "nixonpeabody.com",
+                ],
+            },
+            {
+                "canonical_name": "Pacifica Law Group",
+                "name_variations": [
+                    "Pacifica Law Group",
+                    "Pacifica Law",
+                    "PACIFICA",
+                    "Pacifica Legal",
+                ],
+                "websites": [
+                    "pacificalawgroup.com",
+                ],
+            },
+            {
+                "canonical_name": "Parker Poe",
+                "name_variations": [
+                    "Parker Poe",
+                    "Parker Poe Adams & Bernstein",
+                    "PARKER POE",
+                    "Parker Poe Law",
+                ],
+                "websites": [
+                    "parkerpoe.com",
+                ],
+            },
+            {
+                "canonical_name": "Polsinelli",
+                "name_variations": [
+                    "Polsinelli",
+                    "Polsinelli PC",
+                    "POLSINELLI",
+                    "Polsinelli Law",
+                ],
+                "websites": [
+                    "polsinelli.com",
+                ],
+            },
+            {
+                "canonical_name": "Pope Flynn",
+                "name_variations": [
+                    "Pope Flynn",
+                    "Pope Flynn Group",
+                    "POPE FLYNN",
+                    "Pope Flynn LLC",
+                ],
+                "websites": [
+                    "popeflynn.com",
+                ],
+            },
+            {
+                "canonical_name": "Pullman & Comley",
+                "name_variations": [
+                    "Pullman & Comley",
+                    "Pullman & Comley LLC",
+                    "PULLMAN",
+                    "Pullman Law",
+                ],
+                "websites": [
+                    "pullcom.com",
+                ],
+            },
+            {
+                "canonical_name": "Quilling Selander",
+                "name_variations": [
+                    "Quilling Selander",
+                    "Quilling, Selander, Lownds, Winslett & Moser",
+                    "QUILLING",
+                    "QT Law",
+                ],
+                "websites": [
+                    "qtllp.com",
+                ],
+            },
+            {
+                "canonical_name": "Ropes & Gray",
+                "name_variations": [
+                    "Ropes & Gray",
+                    "Ropes and Gray",
+                    "ROPES & GRAY",
+                    "Ropes & Gray LLP",
+                ],
+                "websites": [
+                    "ropesgray.com",
+                ],
+            },
+            {
+                "canonical_name": "Savage Law Partners",
+                "name_variations": [
+                    "Savage Law Partners",
+                    "Savage Law",
+                    "SAVAGE LAW",
+                    "Savage Law Partners LLP",
+                ],
+                "websites": [
+                    "savagelawpartners.com",
+                ],
+            },
+            {
+                "canonical_name": "Smith Gambrell & Russell",
+                "name_variations": [
+                    "Smith Gambrell & Russell",
+                    "Smith Gambrell",
+                    "SGR Law",
+                    "SGR",
+                ],
+                "websites": [
+                    "sgrlaw.com",
+                ],
+            },
+            {
+                "canonical_name": "Sherman & Howard",
+                "name_variations": [
+                    "Sherman & Howard",
+                    "Sherman and Howard",
+                    "SHERMAN HOWARD",
+                    "Sherman & Howard LLC",
+                ],
+                "websites": [
+                    "shermanhoward.com",
+                ],
+            },
+            {
+                "canonical_name": "Stradling Yocca Carlson & Rauth",
+                "name_variations": [
+                    "Stradling Yocca Carlson & Rauth",
+                    "Stradling",
+                    "SYCR",
+                    "Stradling Law",
+                ],
+                "websites": [
+                    "sycr.com",
+                ],
+            },
+            {
+                "canonical_name": "Thompson Hine",
+                "name_variations": [
+                    "Thompson Hine",
+                    "Thompson Hine LLP",
+                    "THOMPSON HINE",
+                    "Thompson Law",
+                ],
+                "websites": [
+                    "thompsonhine.com",
+                ],
+            },
+            {
+                "canonical_name": "Kennedy & Graven",
+                "name_variations": [
+                    "Kennedy & Graven",
+                    "Kennedy and Graven",
+                    "KENNEDY & GRAVEN",
+                    "Kennedy & Graven Chartered",
+                    "Kennedy Graven",
+                ],
+                "websites": [
+                    "kennedy-graven.com",
                 ],
             },
         ]
