@@ -4,6 +4,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from scrape.homepage import run_scrape
 from scrape.deal_info import scrape_deal_info
+from scrape.emma_os import run_emma_os_scraper
 from utils import initialize_driver, setup_logging
 
 def main(should_download_os=True):
@@ -56,6 +57,19 @@ def main(should_download_os=True):
                     continue
         else:
             logging.warning("No deals were retrieved")
+
+        # If you want to run only the emma_os scraper:
+        run_scraper()
+        
+        # Or if you want to run it as part of the full process:
+        # driver = initialize_driver()
+        # try:
+        #     deals = run_scrape(driver)
+        #     for deal in deals:
+        #         deal_info = scrape_deal_info(deal['url'], driver, should_download_os=should_download_os)
+        #     run_scraper(driver)  # Add this line to run emma_os scraper with the same driver
+        # finally:
+        #     driver.quit()
     except Exception as e:
         logging.error(f"Scraping failed: {str(e)}")
     finally:
@@ -68,4 +82,5 @@ def main(should_download_os=True):
 # Run the main function when the script is executed.
 if __name__ == "__main__":
     # You can modify this value to control OS downloads
-    main(should_download_os=False)
+    # main(should_download_os=False)
+    run_emma_os_scraper()
