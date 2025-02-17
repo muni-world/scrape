@@ -131,6 +131,8 @@ def process_pdf_discounts(reprocess_processed=True):
 
                 # Existing os_type check now uses potentially overridden value
                 os_type = deal_data.get("os_type")
+
+                # ========== uncomment ot specify os_type ==========
                 if os_type not in ["OFFICIAL STATEMENT", "OFFERING MEMORANDUM"]:
                     results["already_processed"] += 1
                     continue
