@@ -268,16 +268,30 @@ def process_pdf_discounts(reprocess_processed=True):
         for key, value in results.items():
             if key not in ["failed_documents", "successful_documents"]:  # Skip printing both document lists
                 logging.info(f"{key}: {value}")
-        
-        # Print failed documents report
+
+
+        # Print failed documents report grouped by os_type
         if results["failed_documents"]:
-            logging.info("\nFailed Documents Report:")
-            for idx, fail in enumerate(results["failed_documents"], 1):
-                logging.info(f"\n{idx}. Document ID: {fail['doc_id']}")
-                logging.info(f"   Path: {fail['path']}")
-                logging.info(f"   Obligor: {fail['obligor']}")
-                logging.info(f"   URL: {fail['url']}")  # Add URL logging
-                logging.info(f"   Reason: {fail['reason']}")
+            # Group documents by os_type
+            failures_by_type = {}
+            for fail in results["failed_documents"]:
+                os_type = fail.get("os_type", "Unknown")
+                if os_type not in failures_by_type:
+                    failures_by_type[os_type] = []
+                failures_by_type[os_type].append(fail)
+
+            logging.info("\nFailed Documents Report (Grouped by OS Type):")
+            for os_type, failures in failures_by_type.items():
+                logging.info(f"\n=== {os_type} ===")
+                logging.info(f"Total Failures: {len(failures)}")
+                
+                for idx, fail in enumerate(failures, 1):
+                    logging.info(f"\n  {idx}. Document ID: {fail['doc_id']}")
+                    logging.info(f"     Path: {fail['path']}")
+                    logging.info(f"     Obligor: {fail['obligor']}")
+                    logging.info(f"     URL: {fail['url']}")
+                    logging.info(f"     Reason: {fail['reason']}")
+                logging.info("")  # Add blank line between OS types
 
         # Replace the existing success logging section with:
         if results["successfully_processed"] > 0:
@@ -295,8 +309,10 @@ def process_pdf_discounts(reprocess_processed=True):
                         logging.info(f"   URL: {doc.get('url', 'N/A')}")
                         logging.info(f"   Found {len(doc.get('amounts', []))} fees: {doc.get('amounts', [])}")
                         logging.info(f"   Total fee used: {doc.get('new_fee', 'N/A')}")  # Added total fee
+                        logging.info("")  # Add blank line between multiple fees documents
             except Exception as e:
                 logging.error(f"Error logging multiple fees: {str(e)}")
+                logging.info("")  # Add blank line after error
 
             # Override Summary Section
             try:
@@ -328,8 +344,10 @@ def process_pdf_discounts(reprocess_processed=True):
                         for doc in data["docs"]:
                             logging.info(f"  - {doc['doc_id']} ({doc['obligor']})")
                             logging.info(f"    Changes: {doc['changes']}")
+                        logging.info("")  # Add blank line between override summaries
             except Exception as e:
                 logging.error(f"Error creating override summary: {str(e)}")
+                logging.info("")  # Add blank line after error
 
             # Existing Successful Documents Report - Commented out to reduce log verbosity
             # logging.info("\nSuccessfully Processed Documents Report:")
