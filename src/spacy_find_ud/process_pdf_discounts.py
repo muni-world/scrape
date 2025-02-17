@@ -64,12 +64,20 @@ def process_pdf_discounts(reprocess_processed=True):
 
     def create_success_record(old_fee, new_fee, **base_fields):
         """Extends base record with success details"""
-        return {
-            **base_fields,
-            "pdf_path": base_fields.pop("path"),  # Rename to pdf_path
-            "old_fee": old_fee,
-            "new_fee": new_fee
-        }
+        try:
+            return {
+                **base_fields,
+                "pdf_path": base_fields.pop("path"),  # Rename to pdf_path
+                "old_fee": old_fee,
+                "new_fee": new_fee,
+                "multiple_fees": len(discount_result.get("scrape_breakdown", {}).get("amounts", [])) > 1 if discount_result else False,
+                "had_override": base_fields["url"] in overrides if base_fields["url"] != "N/A" else False,
+                "override_changes": base_fields.get("overridden_fields", {}),
+                "amounts": discount_result.get("scrape_breakdown", {}).get("amounts", []),
+            }
+        except Exception as e:
+            logging.error(f"Error creating success record for {doc.id}: {str(e)}")
+            return None
 
     try:
         # ========== BATCH PROCESSING ==========
@@ -108,6 +116,17 @@ def process_pdf_discounts(reprocess_processed=True):
                     # Apply overrides like temporary sticky notes
                     for field, new_value in overrides[url].items():
                         deal_data[field] = new_value
+
+                    # NEW: Log override details
+                    logging.warning(
+                        f"Manual override applied for {doc.id}\n"
+                        f"URL: {url}\n"
+                        f"OS Path: {deal_data.get('os_file_path', 'N/A')}\n"
+                        "Changed fields:\n" + 
+                        "\n".join([f"- {field}: {old_val} → {new_val}" 
+                                  for (field, old_val), new_val in 
+                                  zip(override_changes.items(), overrides[url].values())])
+                    )
                 # ========== END OVERRIDE CHECK ==========
 
                 # Existing os_type check now uses potentially overridden value
@@ -146,19 +165,38 @@ def process_pdf_discounts(reprocess_processed=True):
                         # Check if discount_result is a dictionary and extract 'total'
                         if isinstance(discount_result, dict) and "total" in discount_result:
                             discount_value = discount_result["total"]
+                            
+                            # NEW: Log if multiple amounts found
+                            if len(discount_result.get("scrape_breakdown", {}).get("amounts", [])) > 1:
+                                logging.warning(
+                                    f"Multiple fees found in {doc.id}\n"
+                                    f"PDF: {os_file_path}\n"
+                                    f"Amounts: {discount_result['scrape_breakdown']['amounts']}\n"
+                                    f"Using total: {discount_value}"
+                                )
                         else:
-                            # Handle unexpected return type (should be dict or None)
+                            # Handle unexpected return type
                             logging.error(f"Unexpected return type from extract_underwriting_discount_from_pdf for doc {doc.id}: {type(discount_result)}")
                             results["processing_failed"] += 1
                             results["failed_documents"].append(create_failure_record(
                                 reason=f"Unexpected return type from discount extraction: {type(discount_result)}",
                                 **create_base_record(doc, os_file_path, os_type)
                             ))
-                            continue # Skip to the next document
+                            continue
 
                         # Get the old value before updating
                         old_value = deal_data.get("underwriters_fee_total")
                         
+                        # NEW: Log value changes
+                        if old_value is not None and old_value != discount_value:
+                            logging.info(
+                                f"Fee changed for {doc.id}\n"
+                                f"PDF: {os_file_path}\n"
+                                f"URL: {url}\n"
+                                f"Old: {old_value} → New: {discount_value}\n"
+                                f"Difference: {discount_value - old_value}"
+                            )
+
                         # Store the previous value before updating
                         update_data = {
                             "previous_underwriters_fee_total": old_value,
@@ -241,15 +279,43 @@ def process_pdf_discounts(reprocess_processed=True):
                 logging.info(f"   URL: {fail['url']}")  # Add URL logging
                 logging.info(f"   Reason: {fail['reason']}")
 
-        # Replace the existing "Changed Documents Report" section with:
+        # Replace the existing success logging section with:
         if results["successfully_processed"] > 0:
+            # New: Multiple Fees section
+            try:
+                multiple_fees_docs = [d for d in results["successful_documents"] if d and d.get("multiple_fees")]
+                if multiple_fees_docs:
+                    logging.info("\nSuccessfully Processed Multiple Fees Found:")
+                    for idx, doc in enumerate(multiple_fees_docs, 1):
+                        if not doc:
+                            continue
+                        logging.info(f"\n{idx}. Document ID: {doc.get('doc_id', 'N/A')}")
+                        logging.info(f"   Obligor: {doc.get('obligor', 'N/A')}")
+                        logging.info(f"   PDF: {doc.get('pdf_path', 'N/A')}")
+                        logging.info(f"   URL: {doc.get('url', 'N/A')}")
+                        logging.info(f"   Found {len(doc.get('amounts', []))} fees: {doc.get('amounts', [])}")
+            except Exception as e:
+                logging.error(f"Error logging multiple fees: {str(e)}")
+
+            # New: Override section
+            override_docs = [d for d in results["successful_documents"] if d.get("had_override")]
+            if override_docs:
+                logging.info("\nSuccessfully Processed with Override:")
+                for idx, doc in enumerate(override_docs, 1):
+                    logging.info(f"\n{idx}. Document ID: {doc['doc_id']}")
+                    logging.info(f"   Obligor: {doc['obligor']}")
+                    logging.info(f"   PDF: {doc['pdf_path']}")
+                    logging.info(f"   URL: {doc['url']}")
+                    logging.info(f"   Override changes: {doc['override_changes']}")
+
+            # Existing Successful Documents Report
             logging.info("\nSuccessfully Processed Documents Report:")
             for idx, success in enumerate(results["successful_documents"], 1):
                 logging.info(f"\n{idx}. Document ID: {success['doc_id']}")
                 logging.info(f"   Obligor: {success['obligor']}")
                 logging.info(f"   OS Type: {success['os_type']}")
                 logging.info(f"   PDF Path: {success['pdf_path']}")
-                logging.info(f"   URL: {success['url']}")  # Add URL logging
+                logging.info(f"   URL: {success['url']}")
                 logging.info(f"   Old Fee: {success['old_fee']}")
                 logging.info(f"   New Fee: {success['new_fee']}")
 
