@@ -313,6 +313,7 @@ class CompanyStandardizer:
                     "Goldman Sachs & Co. LLC",
                     "Goldman Sachs & Co. LLC",
                     "GS",
+                    "GOLDMAN SACHS & CO. LLC",
                 ],
                 "websites": [
                     "goldmansachs.com",
@@ -323,6 +324,7 @@ class CompanyStandardizer:
                 "canonical_name": "J.P. Morgan",
                 "name_variations": [
                     "JPMorgan",
+                    "J.P. Morgan Securities LLC",
                     "J.P. Morgan",
                     "JP Morgan",
                     "JPMorgan Chase",
@@ -334,6 +336,7 @@ class CompanyStandardizer:
                     "j.p morgan",
                     "j.p. morgan",
                     "j.p. morgan",
+                    "J. P. Morgan"
                     "j.p.morgan",
                     "jp morgan",
                     "jpmorgan",
@@ -342,7 +345,7 @@ class CompanyStandardizer:
                     "j .p. morgan",
                     "j. p.morgan",
                     "j. p. morgan",
-                    "pmorgan",
+                    "jpmorgan",
                 ],
                 "websites": [
                     "jpmorgan.com",
@@ -490,6 +493,7 @@ class CompanyStandardizer:
                     "SWS",
                     "Siebert Williams",
                     "SIEBERT WILLIAMS SHANK",
+                    "SIEBERT WILLIAMS SHANK & CO., LLC",
                 ],
                 "websites": [
                     "siebertwilliams.com",
@@ -2111,6 +2115,19 @@ class CompanyStandardizer:
                 ],
                 "websites": [
                     "thompsonhine.com",
+                ],
+            },
+            {
+                "canonical_name": "Kennedy & Graven",
+                "name_variations": [
+                    "Kennedy & Graven",
+                    "Kennedy and Graven",
+                    "KENNEDY & GRAVEN",
+                    "Kennedy & Graven Chartered",
+                    "Kennedy Graven",
+                ],
+                "websites": [
+                    "kennedy-graven.com",
                 ],
             },
         ]
