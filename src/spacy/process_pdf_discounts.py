@@ -22,13 +22,22 @@ def process_pdf_discounts(reprocess_processed=True):
     # Initialize logging
     logging.basicConfig(level=logging.INFO)
     
-    # Initialize Firestore if not already initialized
+    # Initialize Firestore with retry settings
     try:
-        db = firestore.client()
+        # Add retry settings to the client
+        settings = firestore.ClientSettings(
+            retry=firestore.RetrySettings(
+                initial_delay=1.0,  # Start with 1 second delay
+                maximum_delay=30.0,  # Max 30 seconds between retries
+                multiplier=2.0,     # Double the delay each time
+                max_attempts=5      # Try up to 5 times
+            )
+        )
+        db = firestore.client(settings=settings)
     except ValueError:
         cred = credentials.Certificate("secrets/serviceAccountKey.json")
         firebase_admin.initialize_app(cred)
-        db = firestore.client()
+        db = firestore.client(settings=settings)
     
     # Initialize counters for summary and failed documents list
     results = {
@@ -100,25 +109,25 @@ def process_pdf_discounts(reprocess_processed=True):
                         })
                         continue # Skip to the next document
 
-                    # discount_value is already a float from extract_underwriting_discount_pdf
-                    # No need to convert from string or remove '$' and ',' again here.
-
-                    # Update Firestore document with the structured underwriter_fee data
+                    # Get the old value before updating
+                    old_value = deal_data.get("underwriters_fee_total")
+                    
+                    # Store the previous value before updating
                     doc.reference.update({
+                        "previous_underwriters_fee_total": old_value,
                         "underwriters_fee_total": discount_value,
-                        "underwriter_fee": discount_result, # Store the entire dict
+                        "underwriter_fee": discount_result,
                     })
-
-                    logging.info(f"Updated deal {doc.id} with fee: {discount_value}")
                     results["successfully_processed"] += 1
 
                 else:
-                    # Enhanced logging with obligor name and file path
+                    # Enhanced logging with obligor name, file path, and os_type
                     results["failed_documents"].append({
                         "doc_id": doc.id,
                         "path": os_file_path,
                         "reason": "No discount found in PDF",
                         "obligor": deal_data.get("series_name_obligor", "Unknown"),
+                        "os_type": os_type,  # Add os_type to the failure record
                     })
                     # Update document to indicate scrape failure
                     doc.reference.update({
@@ -135,12 +144,14 @@ def process_pdf_discounts(reprocess_processed=True):
                     "path": os_file_path,
                     "reason": str(e),
                     "obligor": deal_data.get("series_name_obligor", "Unknown"),
+                    "os_type": os_type,  # Add os_type to the error record
                 })
-                # Enhanced logging with obligor name and file path
+                # Enhanced logging with obligor name, file path, and os_type
                 logging.error(
                     f"Error processing deal {doc.id}\n"
                     f"Obligor: {deal_data.get('series_name_obligor', 'Unknown')}\n"
                     f"PDF Path: {os_file_path}\n"
+                    f"OS Type: {os_type}\n"  # Add os_type to the error log
                     f"Error: {str(e)}"
                 )
                 results["processing_failed"] += 1
@@ -160,7 +171,20 @@ def process_pdf_discounts(reprocess_processed=True):
                 logging.info(f"   Path: {fail['path']}")
                 logging.info(f"   Obligor: {fail['obligor']}")
                 logging.info(f"   Reason: {fail['reason']}")
-            
+
+        # Add new section for changed documents
+        if results["successfully_processed"] > 0:
+            logging.info("\nChanged Documents Report:")
+            for doc in docs:
+                deal_data = doc.to_dict()
+                if "underwriter_fee" in deal_data and deal_data["underwriter_fee"].get("scrape_success", False):
+                    logging.info(f"\nDocument ID: {doc.id}")
+                    logging.info(f"   Obligor: {deal_data.get('series_name_obligor', 'Unknown')}")
+                    logging.info(f"   OS Type: {deal_data.get('os_type', 'Unknown')}")
+                    logging.info(f"   PDF Path: {deal_data.get('os_file_path', 'Unknown')}")
+                    logging.info(f"   Old Fee: {deal_data.get('previous_underwriters_fee_total', 'Unknown')}")
+                    logging.info(f"   New Fee: {deal_data.get('underwriters_fee_total', 'Unknown')}")
+
         return results
         
     except Exception as e:
@@ -171,6 +195,6 @@ if __name__ == "__main__":
     # MANUAL SWITCH CONTROL
     # Set this to True to reprocess all documents (even processed ones)
     # Set to False to skip already processed documents (normal operation)
-    REPROCESS_SWITCH = True  # ← Change this value manually
+    REPROCESS_SWITCH = False  # ← Change this value manually
     
     process_pdf_discounts(reprocess_processed=REPROCESS_SWITCH) 

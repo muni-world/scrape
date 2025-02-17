@@ -32,6 +32,8 @@ def extract_underwriting_discount_from_pdf(pdf_path):
 
   Pattern 5: Matches "$XXX.XX as compensation for underwriting/purchasing"
 
+  Pattern 6: Matches phrases like "will be paid a fee in the amount of $XXX.XX"
+
   For all patterns, only the number (without the "$") is captured.
   Example:
     Input: "Pursuant to ... less $725,500.00 of Underwriter's discount plus ..."
@@ -107,6 +109,19 @@ def extract_underwriting_discount_from_pdf(pdf_path):
     re.IGNORECASE | re.MULTILINE         # Add MULTILINE flag for better newline handling
   )
 
+  # Pattern 6: Matches phrases like "will be paid a fee in the amount of $XXX.XX"
+  will_be_paid_pattern = re.compile(
+    r"(?:"                              # start non-capturing group
+    r"(?:underwriter|purchaser)"        # match "underwriter" or "purchaser"
+    r"(?:s|['’]s|s['’]?)?\s+"           # optional possessive forms
+    r"will\s+be\s+paid\s+a\s+fee"       # match "will be paid a fee"
+    r"[\s\S]*?"                         # match any character including newlines (non-greedy)
+    r"of\s+"                            # match "of"
+    r")"
+    r"\$(\d+(?:,?\d+)*(?:\.\d+)?),?"    # capture number after "$"
+    , re.IGNORECASE | re.DOTALL
+  )
+
   # Initialize collection list (like empty folders for our findings)
   amounts = []
   
@@ -118,7 +133,8 @@ def extract_underwriting_discount_from_pdf(pdf_path):
       # Create list of all our search patterns
       patterns = [
         of_pattern, is_pattern, will_pay_pattern,
-        before_discount_pattern, compensation_pattern
+        before_discount_pattern, compensation_pattern,
+        will_be_paid_pattern
       ]
       
       # Check each pattern like using different search filters

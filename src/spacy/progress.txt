@@ -51,6 +51,44 @@ Underwriters’  compensation  will  be  $490,158.01.
 
 
 
+1. Document ID: 5H6xlPYvgxup4BkcIQep
+INFO:root:   Path: C:\Users\quokka\Downloads\PACentralBradford01a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds (The Guthrie Clinic Issue), Series 2021B and Series 2021C (Federally Taxable)
+INFO:root:   Reason: No discount found in PDF
+INFO:root:
+
+From  the  proceeds  of  the  
+"Series  2021C  Bonds,  the  Underwriter  will  be  paid  a  fee  in  the  amount  of  $746,091.20," 
+
+  Prompt: add another regex pattern to extract the amount from the text the "underwriter/underwriters/purchaser/purchasers will be paid a fee" and then ignore all text before "of $" 
+    Look at other regex patterns and keep formatting and methods consistent. 
+    example input: Series  2021C  Bonds,  the  Underwriter  will  be  paid  a  fee  in  the  amount  of  $746,091.20,
+    example output (the number after the $): 746,091.20
+
+
+
+2. Document ID: 6sHGz6V2rX2lkLEmQXoR
+INFO:root:   Path: C:\Users\quokka\Downloads\PACentralBradford02a-FIN.pdf
+INFO:root:   Obligor: Revenue Bonds (The Guthrie Clinic Issue) Series 2021D
+INFO:root:   Reason: No discount found in PDF
+INFO:root:
+
+From  the  proceeds  of  the  Series 
+ 
+
+2021C Bonds, the Underwriter will be paid a fee in the amount of $151,314.80 related to the Series 2021 
+Bonds. 
+
+3. Document ID: 8qw4cnI5bD8B6lHkOeht
+INFO:root:   Path: C:\Users\quokka\Downloads\CAAdventist03a-OS.pdf
+INFO:root:   Obligor: Federally Taxable Revenue Bonds (Adventist Health System/West), Series 2024B and Series 2024C
+INFO:root:   Reason: No discount found in PDF
+INFO:root:
+
+The Corporation has agreed to pay the Series 2024B 
+Underwriter a fee of $160,994 and the Series 2024C Underwriter a fee of $157,840 from its own funds, as 
+compensation for underwriting the Series 2024B Bonds and the Series 2024C Bonds, respectively. 
+
 
 
 
