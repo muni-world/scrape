@@ -91,32 +91,28 @@ def process_emma_page(driver, cusip_url):
       lambda d: d.execute_script("return document.readyState") == "complete"
     )
 
-    # Check for error message first
-    try:
-      error_element = driver.find_element(By.CSS_SELECTOR, "div.error-content h4 span")
-      if "no records exist for this CUSIP" in error_element.text:
-        logging.info("No records exist for this CUSIP, skipping...")
-        return None
-    except Exception as error_check_e:
-      # If we can't find the error element, continue with finding the OS link
-      logging.debug(f"No error message found, proceeding to find OS link: {str(error_check_e)}")
-      
-      # Find the OS link using the ga-name attribute
-      link_element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "a[ga-name='ClickLinkOS']"))
-      )
-      
-      href = link_element.get_attribute("href")
-      if not href:
-        return None
+    # Check for error message first - moved outside of try block
+    error_element = driver.find_element(By.CSS_SELECTOR, "div.error-content h4 span")
+    if error_element and "no records exist for this CUSIP" in error_element.text:
+      logging.info("No records exist for this CUSIP, skipping...")
+      return None
 
-      # Ensure URL is complete
-      if not (href.startswith("http://") or href.startswith("https://")):
-        full_url = "https://emma.msrb.org" + href
-      else:
-        full_url = href
+    # Only try to find OS link if no error was found
+    link_element = WebDriverWait(driver, 10).until(
+      EC.presence_of_element_located((By.CSS_SELECTOR, "a[ga-name='ClickLinkOS']"))
+    )
+    
+    href = link_element.get_attribute("href")
+    if not href:
+      return None
 
-      return full_url
+    # Ensure URL is complete
+    if not (href.startswith("http://") or href.startswith("https://")):
+      full_url = "https://emma.msrb.org" + href
+    else:
+      full_url = href
+
+    return full_url
 
   except Exception as e:
     logging.error(f"Error processing EMMA page: {str(e)}")
