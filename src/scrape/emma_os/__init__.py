@@ -8,12 +8,10 @@ Usage:
   Otherwise, only documents without that field are processed.
 """
 
-import firebase_admin
-from firebase_admin import credentials, firestore
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from utils import initialize_driver
+from utils import initialize_driver, initialize_firestore
 import time
 import logging
 import random
@@ -32,14 +30,8 @@ logging.basicConfig(
 # When False, only documents without an "emma_os_url" field will be processed.
 RERUN_ALL = False
 
-# Initialize firebase_admin if not already initialized.
-if not firebase_admin._apps:
-    # Use the same service account approach as in main.py
-    cred = credentials.Certificate("secrets/serviceAccountKey.json")
-    firebase_admin.initialize_app(cred)
-
 # Get Firestore client
-db = firestore.client()
+db = initialize_firestore()
 
 def handle_popups(driver):
   """
@@ -91,28 +83,32 @@ def process_emma_page(driver, cusip_url):
       lambda d: d.execute_script("return document.readyState") == "complete"
     )
 
-    # Check for error message first - moved outside of try block
-    error_element = driver.find_element(By.CSS_SELECTOR, "div.error-content h4 span")
-    if error_element and "no records exist for this CUSIP" in error_element.text:
-      logging.info("No records exist for this CUSIP, skipping...")
-      return None
+    # Check for error message first
+    try:
+      error_element = driver.find_element(By.CSS_SELECTOR, "div.error-content h4 span")
+      if "no records exist for this CUSIP" in error_element.text:
+        logging.info("No records exist for this CUSIP, skipping...")
+        return None
+    except Exception as error_check_e:
+      # If we can't find the error element, continue with finding the OS link
+      logging.debug(f"No error message found, proceeding to find OS link: {str(error_check_e)}")
+      
+      # Find the OS link using the ga-name attribute
+      link_element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "a[ga-name='ClickLinkOS']"))
+      )
+      
+      href = link_element.get_attribute("href")
+      if not href:
+        return None
 
-    # Only try to find OS link if no error was found
-    link_element = WebDriverWait(driver, 10).until(
-      EC.presence_of_element_located((By.CSS_SELECTOR, "a[ga-name='ClickLinkOS']"))
-    )
-    
-    href = link_element.get_attribute("href")
-    if not href:
-      return None
+      # Ensure URL is complete
+      if not (href.startswith("http://") or href.startswith("https://")):
+        full_url = "https://emma.msrb.org" + href
+      else:
+        full_url = href
 
-    # Ensure URL is complete
-    if not (href.startswith("http://") or href.startswith("https://")):
-      full_url = "https://emma.msrb.org" + href
-    else:
-      full_url = href
-
-    return full_url
+      return full_url
 
   except Exception as e:
     logging.error(f"Error processing EMMA page: {str(e)}")
@@ -134,7 +130,7 @@ def run_emma_os_scraper():
     driver = initialize_driver()
     
     # Get initial Firestore client
-    db = firestore.client()
+    db = initialize_firestore()
     
     # Process documents in batches
     last_doc = None
@@ -204,7 +200,7 @@ def run_emma_os_scraper():
         last_doc = docs[-1]
         
         # Refresh Firestore connection after each batch
-        db = firestore.client()
+        db = initialize_firestore()
         
         # Add small delay between batches
         time.sleep(2)
@@ -215,7 +211,7 @@ def run_emma_os_scraper():
         time.sleep(10)
         try:
           # Attempt to refresh connection
-          db = firestore.client()
+          db = initialize_firestore()
         except Exception as refresh_error:
           logging.error(f"Failed to refresh connection: {str(refresh_error)}")
           raise  # Re-raise if we can't recover
